@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Resources | Engr. John Ibrahim Ocheje</title>
+
+  <meta name="description" content="Useful public, electoral and civic resources relating to Idah Federal Constituency and the 2027 public engagement platform of Engr. John Ibrahim Ocheje.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root {
+      --green: #006b3c;
+      --green-dark: #004f2c;
+      --gold: #f4c400;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e7eb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fff;
+      border: 3px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 14px;
+      letter-spacing: .4px;
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+    }
+
+    nav a {
+      font-size: 13px;
+      font-weight: 600;
+      color: #344054;
+      transition: .2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--green);
+    }
+
+    .nav-cta {
+      background: var(--green);
+      color: #fff !important;
+      padding: 11px 17px;
+      border-radius: 8px;
+    }
+
+    .nav-cta:hover {
+      background: var(--green-dark);
+    }
+
+    .menu-btn {
+      display: none;
+      border: none;
+      background: transparent;
+      font-size: 28px;
+      cursor: pointer;
+      color: var(--dark);
+    }
+
+    /* HERO */
+
+    .page-hero {
+      background:
+        linear-gradient(
+          135deg,
+          rgba(0,107,60,.96),
+          rgba(0,79,44,.94)
+        ),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg");
+
+      background-size: cover;
+      background-position: center;
+
+      color: #fff;
+      padding: 90px 0;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .page-hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(42px, 6vw, 64px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .page-hero p {
+      color: rgba(255,255,255,.9);
+      font-size: 17px;
+      max-width: 720px;
+    }
+
+    /* RESOURCE SECTION */
+
+    .resources-section {
+      padding: 80px 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .section-heading .eyebrow {
+      color: var(--green);
+    }
+
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(32px, 5vw, 46px);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .resource-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      background: #fff;
+      transition: .25s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(0,0,0,.08);
+      border-color: rgba(0,107,60,.3);
+    }
+
+    .resource-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      background: #e9f5ef;
+      color: var(--green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .resource-card h3 {
+      font-size: 18px;
+      margin-bottom: 9px;
+    }
+
+    .resource-card p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 22px;
+      flex-grow: 1;
+    }
+
+    .resource-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .resource-link:hover {
+      color: var(--green-dark);
+    }
+
+    /* CIVIC INFORMATION */
+
+    .civic-section {
+      background: var(--light);
+      padding: 75px 0;
+    }
+
+    .civic-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .civic-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 30px;
+    }
+
+    .civic-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 25px;
+      margin-bottom: 13px;
+    }
+
+    .civic-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .civic-list {
+      list-style: none;
+    }
+
+    .civic-list li {
+      position: relative;
+      padding-left: 23px;
+      margin-bottom: 10px;
+      color: #475467;
+      font-size: 13px;
+    }
+
+    .civic-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--green);
+      font-weight: 800;
+    }
+
+    /* OFFICIAL RESOURCE */
+
+    .official-section {
+      padding: 75px 0;
+    }
+
+    .official-box {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      background: #fff;
+    }
+
+    .official-content {
+      max-width: 700px;
+    }
+
+    .official-content h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .official-content p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .official-btn {
+      background: var(--green);
+      color: #fff;
+      padding: 13px 20px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .official-btn:hover {
+      background: var(--green-dark);
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 0 0 75px;
+    }
+
+    .cta-box {
+      background:
+        linear-gradient(
+          110deg,
+          rgba(0,107,60,.97),
+          rgba(0,79,44,.94)
+        ),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg");
+
+      background-size: cover;
+      background-position: center;
+
+      border-radius: 22px;
+      padding: 55px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .cta-box h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 13px;
+    }
+
+    .cta-box p {
+      max-width: 680px;
+      margin: 0 auto 25px;
+      color: rgba(255,255,255,.86);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 5px;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #111;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,.7);
+      color: #fff;
+    }
+
+    .btn-outline:hover {
+      background: #fff;
+      color: var(--green);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--footer);
+      color: #fff;
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+      margin-bottom: 40px;
+    }
+
+    footer h3 {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer a {
+      color: #aeb8c4;
+      font-size: 13px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    .footer-brand {
+      color: #fff;
+      font-weight: 800;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 20px;
+      text-align: center;
+      color: #8793a1;
+      font-size: 12px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 950px) {
+
+      nav {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+
+        background: #fff;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 20px;
+
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 15px 30px rgba(0,0,0,.08);
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      nav a {
+        padding: 12px 5px;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .resource-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .civic-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .official-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    }
+
+    @media (max-width: 650px) {
+
+      .page-hero {
+        padding: 70px 0;
+      }
+
+      .resources-section,
+      .civic-section,
+      .official-section {
+        padding: 60px 0;
+      }
+
+      .resource-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .official-box {
+        padding: 25px;
+      }
+
+      .official-btn {
+        width: 100%;
+        text-align: center;
+      }
+
+      .cta {
+        padding-bottom: 60px;
+      }
+
+      .cta-box {
+        padding: 40px 22px;
+      }
+
+      .cta-box h2 {
+        font-size: 31px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container nav">
+
+      <a href="index.html" class="brand">
+
+        <div class="logo">
+          JO
+        </div>
+
+        <div class="brand-text">
+
+          <strong>
+            JOHN IBRAHIM OCHEJE
+          </strong>
+
+          <span>
+            2027 • IDAH FEDERAL CONSTITUENCY
+          </span>
+
+        </div>
+
+      </a>
+
+
+      <button
+        class="menu-btn"
+        onclick="toggleMenu()"
+        aria-label="Open navigation menu">
+
+        ☰
+
+      </button>
+
+
+      <nav id="mainNav">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="agenda.html">
+          Agenda
+        </a>
+
+        <a href="news.html">
+          News
+        </a>
+
+        <a href="gallery.html">
+          Gallery
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+        <a href="volunteer.html" class="nav-cta">
+          Join Us
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="page-hero">
+
+    <div class="container hero-content">
+
+      <span class="eyebrow">
+        Information Centre
+      </span>
+
+      <h1>
+        Resources
+      </h1>
+
+      <p>
+        Useful public, civic and electoral resources for
+        citizens, community members and visitors seeking
+        reliable information.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- RESOURCE CARDS -->
+
+  <section class="resources-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          Useful Links
+        </span>
+
+        <h2>
+          Public & Electoral Resources
+        </h2>
+
+        <p>
+          The links below are provided to help visitors find
+          official information and understand the electoral
+          process.
+        </p>
+
+      </div>
+
+
+      <div class="resource-grid">
+
+
+        <!-- CARD 1 -->
+
+        <div class="resource-card">
+
+          <div class="resource-icon">
+            01
+          </div>
+
+          <h3>
+            INEC Official Website
+          </h3>
+
+          <p>
+            Access official information, announcements,
+            election updates, publications and other
+            resources from the Independent National
+            Electoral Commission.
+          </p>
+
+          <a
+            href="https://inecnigeria.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="resource-link">
+
+            Visit INEC
+            →
+          </a>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+
+        <div class="resource-card">
+
+          <div class="resource-icon">
+            02
+          </div>
+
+          <h3>
+            Voter Registration Portal
+          </h3>
+
+          <p>
+            Use the official INEC voter portal to access
+            available voter-registration services and
+            check relevant voter information.
+          </p>
+
+          <a
+            href="https://cvr.inecnigeria.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="resource-link">
+
+            Open Voter Portal
+            →
+          </a>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+
+        <div class="resource-card">
+
+          <div class="resource-icon">
+            03
+          </div>
+
+          <h3>
+            Polling Unit Information
+          </h3>
+
+          <p>
+            Find official information relating to polling
+            units and voter services through the INEC
+            website.
+          </p>
+
+          <a
+            href="https://inecnigeria.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="resource-link">
+
+            Visit INEC
+            →
+          </a>
+
+        </div>
+
+
+        <!-- CARD 4 -->
+
+        <div class="resource-card">
+
+          <div class="resource-icon">
+            04
+          </div>
+
+          <h3>
+            Election Guidelines
+          </h3>
+
+          <p>
+            Review regulations and guidelines published by
+            INEC concerning the conduct and administration
+            of elections.
+          </p>
+
+          <a
+            href="https://inecnigeria.org/guidelines/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="resource-link">
+
+            View Guidelines
+            →
+          </a>
+
+        </div>
+
+
+        <!-- CARD 5 -->
+
+        <div class="resource-card">
+
+          <div class="resource-icon">
+            05
+          </div>
+
+          <h3>
+            Election Information
+          </h3>
+
+          <p>
+            Access official election-related information,
+            announcements and public notices from INEC.
+          </p>
+
+          <a
+            href="https://inecnigeria.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="resource-link">
+
+            Explore Information
+            →
+          </a>
+
+        </div>
+
+
+        <!-- CARD 6 -->
+
+        <div class="resource-card">
+
+          <div class="resource-icon">
+            06
+          </div>
+
+          <h3>
+            Election Transparency
+          </h3>
+
+          <p>
+            Visit INEC's election results information
+            platform for publicly available election
+            result information.
+          </p>
+
+          <a
+            href="https://irev.inecnigeria.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="resource-link">
+
+            Visit IReV
+            →
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CIVIC INFORMATION -->
+
+  <section class="civic-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          Civic Information
+        </span>
+
+        <h2>
+          Responsible Public Participation
+        </h2>
+
+        <p>
+          Citizens are encouraged to rely on official
+          information and follow applicable electoral rules.
+        </p>
+
+      </div>
+
+
+      <div class="civic-grid">
+
+
+        <div class="civic-card">
+
+          <h3>
+            Voter Information
+          </h3>
+
+          <p>
+            For official voter information, registration
+            services and updates, use INEC's official
+            platforms rather than relying on unverified
+            social-media information.
+          </p>
+
+          <ul class="civic-list">
+
+            <li>
+              Confirm your voter information through official
+              channels.
+            </li>
+
+            <li>
+              Keep your Permanent Voter's Card safe.
+            </li>
+
+            <li>
+              Follow official election instructions.
+            </li>
+
+            <li>
+              Check polling-unit information before election day.
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="civic-card">
+
+          <h3>
+            Peaceful Participation
+          </h3>
+
+          <p>
+            Democratic participation should be peaceful,
+            lawful and respectful of the rights of other
+            citizens.
+          </p>
+
+          <ul class="civic-list">
+
+            <li>
+              Respect electoral laws and regulations.
+            </li>
+
+            <li>
+              Avoid violence, intimidation and disorder.
+            </li>
+
+            <li>
+              Verify claims before sharing them publicly.
+            </li>
+
+            <li>
+              Use appropriate channels for electoral complaints.
+            </li>
+
+          </ul>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- OFFICIAL SOURCE -->
+
+  <section class="official-section">
+
+    <div class="container">
+
+      <div class="official-box">
+
+        <div class="official-content">
+
+          <h2>
+            Official Electoral Information
+          </h2>
+
+          <p>
+            INEC is the official electoral management body
+            responsible for organising and supervising
+            elections in Nigeria. For current election dates,
+            voter services, guidelines and official notices,
+            always check the Commission's website.
+          </p>
+
+        </div>
+
+        <a
+          href="https://inecnigeria.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="official-btn">
+
+          Visit Official INEC Website
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <div class="cta-box">
+
+        <h2>
+          Want to Learn More?
+        </h2>
+
+        <p>
+          Explore the agenda, public updates and other
+          sections of this website to learn more about
+          Engr. John Ibrahim Ocheje's 2027 public engagement
+          platform.
+        </p>
+
+        <a
+          href="agenda.html"
+          class="btn btn-gold">
+
+          View Agenda
+
+        </a>
+
+        <a
+          href="contact.html"
+          class="btn btn-outline">
+
+          Contact Us
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div>
+
+          <div class="footer-brand">
+            JOHN IBRAHIM OCHEJE
+          </div>
+
+          <p>
+            Public information portal for Engr. John Ibrahim
+            Ocheje and the 2027 Idah Federal Constituency
+            aspiration.
+          </p>
+
+          <p style="margin-top:12px;">
+            NDC • Idah Federal Constituency • 2027
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Quick Links
+          </h3>
+
+          <a href="index.html">
+            Home
+          </a>
+
+          <a href="about.html">
+            About
+          </a>
+
+          <a href="agenda.html">
+            Agenda
+          </a>
+
+          <a href="news.html">
+            News
+          </a>
+
+          <a href="gallery.html">
+            Gallery
+          </a>
+
+          <a href="volunteer.html">
+            Volunteer
+          </a>
+
+          <a href="contact.html">
+            Contact
+          </a>
+
+          <a href="support.html">
+            Support Us
+          </a>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Information
+          </h3>
+
+          <a href="support.html">
+            Support Us
+          </a>
+
+          <a href="faq.html">
+            FAQ
+          </a>
+
+          <a href="resources.html">
+            Resources
+          </a>
+
+          <a href="privacy.html">
+            Privacy Policy
+          </a>
+
+          <a href="terms.html">
+            Terms & Conditions
+          </a>
+
+          <a href="sitemap.html">
+            Sitemap
+          </a>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="copyright">
+
+        © 2027 John Ibrahim Ocheje. All rights reserved.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function toggleMenu() {
+
+      const nav =
+        document.getElementById("mainNav");
+
+      nav.classList.toggle("show");
+
+    }
+
+
+    document
+      .querySelectorAll("#mainNav a")
+      .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+          document
+            .getElementById("mainNav")
+            .classList.remove("show");
+
+        });
+
+      });
+
+  </script>
+
+</body>
+</html>
