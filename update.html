@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Public Updates | John Ibrahim Ocheje 2027</title>
+
+  <meta name="description" content="Public updates, announcements and information from the John Ibrahim Ocheje 2027 public information platform.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root {
+      --green: #006b3c;
+      --dark-green: #004f2c;
+      --gold: #f4c400;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e7eb;
+      --shadow: 0 12px 35px rgba(0,0,0,0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 17px;
+      border: 3px solid var(--gold);
+      flex-shrink: 0;
+    }
+
+    .brand-text h1 {
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    .brand-text span {
+      display: block;
+      margin-top: 3px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    nav a {
+      padding: 10px 11px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #344054;
+      border-radius: 8px;
+      transition: 0.25s ease;
+    }
+
+    nav a:hover {
+      color: var(--green);
+      background: #f0f7f3;
+    }
+
+    nav .nav-cta {
+      color: var(--white);
+      background: var(--green);
+      padding: 10px 17px;
+      margin-left: 5px;
+    }
+
+    nav .nav-cta:hover {
+      background: var(--dark-green);
+      color: var(--white);
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 28px;
+      color: var(--green);
+      cursor: pointer;
+    }
+
+
+    /* HERO */
+
+    .hero {
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+
+      background:
+        linear-gradient(
+          rgba(0,79,44,0.92),
+          rgba(0,107,60,0.87)
+        ),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg")
+        center/cover no-repeat;
+
+      color: var(--white);
+    }
+
+    .hero-content {
+      max-width: 800px;
+      padding: 80px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(40px, 6vw, 62px);
+      line-height: 1.08;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      font-size: 17px;
+      color: rgba(255,255,255,0.93);
+    }
+
+
+    /* MAIN */
+
+    .main {
+      padding: 75px 0;
+    }
+
+    .intro {
+      max-width: 820px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin-bottom: 10px;
+    }
+
+    .intro h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      color: var(--muted);
+    }
+
+
+    /* UPDATE CARDS */
+
+    .updates-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .update-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      transition: 0.25s ease;
+    }
+
+    .update-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .update-top {
+      background: var(--green);
+      color: var(--white);
+      padding: 24px;
+    }
+
+    .update-date {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .update-top h4 {
+      font-family: "Playfair Display", serif;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    .update-body {
+      padding: 25px;
+    }
+
+    .update-body p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .read-more {
+      display: inline-block;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .read-more:hover {
+      color: var(--dark-green);
+    }
+
+
+    /* CATEGORIES */
+
+    .categories {
+      background: var(--light);
+      padding: 75px 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 35px;
+    }
+
+    .section-heading h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 13px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .category-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 27px;
+    }
+
+    .category-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: #eaf5ef;
+      color: var(--green);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      margin-bottom: 17px;
+    }
+
+    .category-card h4 {
+      font-size: 17px;
+      margin-bottom: 7px;
+    }
+
+    .category-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+
+    /* NOTICE */
+
+    .notice {
+      padding: 70px 0;
+    }
+
+    .notice-box {
+      max-width: 900px;
+      margin: auto;
+      padding: 32px;
+      border-left: 5px solid var(--gold);
+      background: #fffdf2;
+      border-radius: 12px;
+    }
+
+    .notice-box h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .notice-box p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+
+    /* CTA */
+
+    .cta {
+      padding: 75px 0;
+      background: var(--green);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .cta h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 4vw, 44px);
+      margin-bottom: 13px;
+    }
+
+    .cta p {
+      max-width: 680px;
+      margin: 0 auto 25px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 9px;
+      font-weight: 700;
+      font-size: 14px;
+      margin: 4px;
+      transition: 0.25s ease;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #182000;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.7);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--green);
+    }
+
+
+    /* FOOTER */
+
+    footer {
+      background: var(--footer);
+      color: var(--white);
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+      padding-bottom: 40px;
+    }
+
+    footer h4 {
+      font-size: 16px;
+      margin-bottom: 17px;
+    }
+
+    footer p,
+    footer a {
+      color: #aeb7c2;
+      font-size: 13px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 9px;
+      transition: 0.2s ease;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .footer-brand {
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom p {
+      font-size: 12px;
+      color: #8f9aa7;
+    }
+
+
+    /* MOBILE */
+
+    @media (max-width: 950px) {
+
+      .updates-grid,
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      nav {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 15px 4%;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        width: 100%;
+        padding: 13px;
+      }
+
+      nav .nav-cta {
+        margin: 5px 0 0;
+        text-align: center;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+    }
+
+
+    @media (max-width: 650px) {
+
+      .header-inner {
+        min-height: 70px;
+      }
+
+      .brand-logo {
+        width: 43px;
+        height: 43px;
+      }
+
+      .brand-text h1 {
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 350px;
+      }
+
+      .hero-content {
+        padding: 65px 0;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .updates-grid,
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-heading h3 {
+        font-size: 31px;
+      }
+
+      .notice-box {
+        padding: 27px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+
+        <div class="brand-logo">
+          JO
+        </div>
+
+        <div class="brand-text">
+
+          <h1>
+            JOHN IBRAHIM OCHEJE
+          </h1>
+
+          <span>
+            2027 • IDAH FEDERAL CONSTITUENCY
+          </span>
+
+        </div>
+
+      </a>
+
+
+      <button
+        class="menu-btn"
+        onclick="toggleMenu()"
+        aria-label="Open navigation">
+        ☰
+      </button>
+
+
+      <nav id="mainNav">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="manifesto.html">Manifesto</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="volunteer.html" class="nav-cta">Join Us</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          Public Information
+        </span>
+
+        <h2>
+          Updates & Announcements
+        </h2>
+
+        <p>
+          Follow public updates, announcements, community information
+          and important notices relating to the 2027 Idah Federal
+          Constituency aspiration.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- INTRO -->
+
+  <main class="main">
+
+    <div class="container">
+
+      <div class="intro">
+
+        <div class="section-label">
+          Latest Information
+        </div>
+
+        <h3>
+          Keeping the Public Informed
+        </h3>
+
+        <p>
+          This page provides a dedicated space for public-facing
+          announcements and updates. Information should be read in
+          context and independently verified where necessary.
+        </p>
+
+      </div>
+
+
+
+      <!-- UPDATE CARDS -->
+
+      <div class="updates-grid">
+
+
+        <article class="update-card">
+
+          <div class="update-top">
+
+            <span class="update-date">
+              2027
+            </span>
+
+            <h4>
+              Public Information & Electoral Updates
+            </h4>
+
+          </div>
+
+          <div class="update-body">
+
+            <p>
+              Follow developments relating to the 2027 electoral
+              process and public information relevant to Idah Federal
+              Constituency.
+            </p>
+
+            <a href="resources.html" class="read-more">
+              View Resources →
+            </a>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="update-card">
+
+          <div class="update-top">
+
+            <span class="update-date">
+              Public Engagement
+            </span>
+
+            <h4>
+              Community Engagement & Dialogue
+            </h4>
+
+          </div>
+
+          <div class="update-body">
+
+            <p>
+              Public dialogue provides an opportunity for community
+              members and stakeholders to discuss development priorities
+              and issues of public interest.
+            </p>
+
+            <a href="events.html" class="read-more">
+              View Events →
+            </a>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="update-card">
+
+          <div class="update-top">
+
+            <span class="update-date">
+              Information
+            </span>
+
+            <h4>
+              Verification of Public Information
+            </h4>
+
+          </div>
+
+          <div class="update-body">
+
+            <p>
+              Visitors are encouraged to check dates, sources and
+              context before sharing important political or electoral
+              information.
+            </p>
+
+            <a href="verification.html" class="read-more">
+              Verification Guide →
+            </a>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="update-card">
+
+          <div class="update-top">
+
+            <span class="update-date">
+              Development
+            </span>
+
+            <h4>
+              Development Priorities
+            </h4>
+
+          </div>
+
+          <div class="update-body">
+
+            <p>
+              Review the development themes and policy interests
+              presented around education, infrastructure, youth
+              development, healthcare and economic opportunity.
+            </p>
+
+            <a href="agenda.html" class="read-more">
+              View Agenda →
+            </a>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="update-card">
+
+          <div class="update-top">
+
+            <span class="update-date">
+              Public Statements
+            </span>
+
+            <h4>
+              Speeches & Statements
+            </h4>
+
+          </div>
+
+          <div class="update-body">
+
+            <p>
+              Public statements and remarks can provide additional
+              context on issues, priorities and public engagement.
+            </p>
+
+            <a href="speeches.html" class="read-more">
+              Read Statements →
+            </a>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="update-card">
+
+          <div class="update-top">
+
+            <span class="update-date">
+              News
+            </span>
+
+            <h4>
+              News & Media Reports
+            </h4>
+
+          </div>
+
+          <div class="update-body">
+
+            <p>
+              Browse published news reports and media information
+              relating to John Ibrahim Ocheje and public activities.
+            </p>
+
+            <a href="news.html" class="read-more">
+              View News →
+            </a>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+  <!-- CATEGORIES -->
+
+  <section class="categories">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Update Categories
+        </div>
+
+        <h3>
+          What You Can Find Here
+        </h3>
+
+        <p>
+          Public updates may cover different areas of interest to
+          constituents, stakeholders and visitors to the website.
+        </p>
+
+      </div>
+
+
+
+      <div class="category-grid">
+
+
+        <div class="category-card">
+
+          <div class="category-icon">
+            01
+          </div>
+
+          <h4>
+            Electoral Information
+          </h4>
+
+          <p>
+            General information about the electoral process and
+            relevant public resources.
+          </p>
+
+        </div>
+
+
+
+        <div class="category-card">
+
+          <div class="category-icon">
+            02
+          </div>
+
+          <h4>
+            Community Updates
+          </h4>
+
+          <p>
+            Information relating to public engagement, meetings and
+            community discussions.
+          </p>
+
+        </div>
+
+
+
+        <div class="category-card">
+
+          <div class="category-icon">
+            03
+          </div>
+
+          <h4>
+            Development Issues
+          </h4>
+
+          <p>
+            Updates concerning development priorities and issues
+            affecting communities.
+          </p>
+
+        </div>
+
+
+
+        <div class="category-card">
+
+          <div class="category-icon">
+            04
+          </div>
+
+          <h4>
+            Public Statements
+          </h4>
+
+          <p>
+            Officially published statements, remarks and public
+            communications when available.
+          </p>
+
+        </div>
+
+
+
+        <div class="category-card">
+
+          <div class="category-icon">
+            05
+          </div>
+
+          <h4>
+            Media Reports
+          </h4>
+
+          <p>
+            Selected reports and references from media publications,
+            presented with appropriate context.
+          </p>
+
+        </div>
+
+
+
+        <div class="category-card">
+
+          <div class="category-icon">
+            06
+          </div>
+
+          <h4>
+            Important Notices
+          </h4>
+
+          <p>
+            Notices that may help visitors understand changes,
+            announcements or public information on the platform.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- NOTICE -->
+
+  <section class="notice">
+
+    <div class="container">
+
+      <div class="notice-box">
+
+        <h3>
+          Important Information
+        </h3>
+
+        <p>
+          Information published on this website is intended for public
+          awareness and engagement. Electoral dates, legal requirements,
+          government announcements and other official matters should be
+          confirmed through the relevant official authorities.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h3>
+        Stay Informed and Engaged
+      </h3>
+
+      <p>
+        Explore the website for the latest news, development priorities,
+        public resources and opportunities for constructive engagement.
+      </p>
+
+      <a href="news.html" class="btn btn-gold">
+        Latest News
+      </a>
+
+      <a href="resources.html" class="btn btn-outline">
+        Resources
+      </a>
+
+      <a href="contact.html" class="btn btn-outline">
+        Contact Us
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div>
+
+          <div class="footer-brand">
+            John Ibrahim Ocheje
+          </div>
+
+          <p>
+            Public information platform for the 2027 Idah Federal
+            Constituency aspiration.
+          </p>
+
+          <p style="margin-top:12px;">
+            NDC • Idah Federal Constituency • 2027
+          </p>
+
+        </div>
+
+
+
+        <div>
+
+          <h4>
+            Quick Links
+          </h4>
+
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="agenda.html">Agenda</a>
+          <a href="manifesto.html">Manifesto</a>
+          <a href="news.html">News</a>
+          <a href="events.html">Events</a>
+          <a href="speeches.html">Speeches</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="contact.html">Contact</a>
+
+        </div>
+
+
+
+        <div>
+
+          <h4>
+            Information
+          </h4>
+
+          <a href="support.html">Support Us</a>
+          <a href="partners.html">Partners</a>
+          <a href="media.html">Media Centre</a>
+          <a href="downloads.html">Downloads</a>
+          <a href="faq.html">FAQ</a>
+          <a href="resources.html">Resources</a>
+          <a href="verification.html">Verification Guide</a>
+          <a href="transparency.html">Transparency</a>
+          <a href="updates.html">Public Updates</a>
+          <a href="code-of-conduct.html">Code of Conduct</a>
+          <a href="accessibility.html">Accessibility</a>
+          <a href="security.html">Security</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="legal.html">Legal & Policies</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <p>
+          © 2026 John Ibrahim Ocheje. All rights reserved.
+        </p>
+
+        <p>
+          Information is provided for public awareness and engagement.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function toggleMenu() {
+
+      document
+        .getElementById("mainNav")
+        .classList.toggle("active");
+
+    }
+
+
+    document
+      .querySelectorAll("#mainNav a")
+      .forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+          document
+            .getElementById("mainNav")
+            .classList.remove("active");
+
+        });
+
+      });
+
+  </script>
+
+
+</body>
+</html>
