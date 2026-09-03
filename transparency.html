@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Transparency & Accountability | John Ibrahim Ocheje 2027</title>
+
+  <meta name="description" content="Transparency, accountability and public engagement principles for the John Ibrahim Ocheje 2027 public information website.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #006b3c;
+      --dark-green: #004f2c;
+      --gold: #f4c400;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e7eb;
+      --shadow: 0 12px 35px rgba(0,0,0,0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 17px;
+      border: 3px solid var(--gold);
+      flex-shrink: 0;
+    }
+
+    .brand-text h1 {
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    .brand-text span {
+      display: block;
+      margin-top: 3px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    nav a {
+      padding: 10px 11px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #344054;
+      border-radius: 8px;
+      transition: 0.25s ease;
+    }
+
+    nav a:hover {
+      color: var(--green);
+      background: #f0f7f3;
+    }
+
+    nav .nav-cta {
+      color: var(--white);
+      background: var(--green);
+      padding: 10px 17px;
+      margin-left: 5px;
+    }
+
+    nav .nav-cta:hover {
+      background: var(--dark-green);
+      color: var(--white);
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 28px;
+      color: var(--green);
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(
+          rgba(0,79,44,0.92),
+          rgba(0,107,60,0.87)
+        ),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg")
+        center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .hero-content {
+      max-width: 820px;
+      padding: 80px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 6vw, 62px);
+      line-height: 1.08;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      font-size: 17px;
+      color: rgba(255,255,255,0.93);
+    }
+
+    /* INTRO */
+
+    .main {
+      padding: 75px 0;
+    }
+
+    .intro {
+      max-width: 850px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin-bottom: 10px;
+    }
+
+    .intro h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      color: var(--muted);
+    }
+
+    /* PRINCIPLES */
+
+    .principles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .principle-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      transition: 0.25s ease;
+    }
+
+    .principle-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .number {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #eaf5ef;
+      color: var(--green);
+      font-size: 15px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .principle-card h4 {
+      font-size: 18px;
+      margin-bottom: 9px;
+    }
+
+    .principle-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ACCOUNTABILITY */
+
+    .accountability {
+      background: var(--light);
+      padding: 75px 0;
+    }
+
+    .accountability-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .accountability-text h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .accountability-text p {
+      color: var(--muted);
+      margin-bottom: 15px;
+    }
+
+    .accountability-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .accountability-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 20px;
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .tick {
+      width: 34px;
+      height: 34px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+    }
+
+    .accountability-item h4 {
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .accountability-item p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* PUBLIC ENGAGEMENT */
+
+    .engagement {
+      padding: 75px 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 35px;
+    }
+
+    .section-heading h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 13px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .engagement-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .engagement-card {
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 28px;
+      background: var(--white);
+    }
+
+    .engagement-card h4 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .engagement-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* INFORMATION */
+
+    .information {
+      background: var(--light);
+      padding: 70px 0;
+    }
+
+    .info-box {
+      max-width: 900px;
+      margin: auto;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      padding: 35px;
+      box-shadow: var(--shadow);
+    }
+
+    .info-box h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 31px;
+      margin-bottom: 13px;
+    }
+
+    .info-box p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .info-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 75px 0;
+      background: var(--green);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .cta h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 4vw, 44px);
+      margin-bottom: 13px;
+    }
+
+    .cta p {
+      max-width: 680px;
+      margin: 0 auto 25px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 9px;
+      font-weight: 700;
+      font-size: 14px;
+      margin: 4px;
+      transition: 0.25s ease;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #182000;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.7);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--green);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--footer);
+      color: var(--white);
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+      padding-bottom: 40px;
+    }
+
+    footer h4 {
+      font-size: 16px;
+      margin-bottom: 17px;
+    }
+
+    footer p,
+    footer a {
+      color: #aeb7c2;
+      font-size: 13px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 9px;
+      transition: 0.2s ease;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .footer-brand {
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom p {
+      font-size: 12px;
+      color: #8f9aa7;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 950px) {
+
+      .principles {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .accountability-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 15px 4%;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        width: 100%;
+        padding: 13px;
+      }
+
+      nav .nav-cta {
+        margin: 5px 0 0;
+        text-align: center;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+    }
+
+    @media (max-width: 650px) {
+
+      .header-inner {
+        min-height: 70px;
+      }
+
+      .brand-logo {
+        width: 43px;
+        height: 43px;
+      }
+
+      .brand-text h1 {
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 350px;
+      }
+
+      .hero-content {
+        padding: 65px 0;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .principles,
+      .engagement-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .accountability-text h3,
+      .section-heading h3 {
+        font-size: 31px;
+      }
+
+      .info-box {
+        padding: 27px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+
+        <div class="brand-logo">
+          JO
+        </div>
+
+        <div class="brand-text">
+          <h1>JOHN IBRAHIM OCHEJE</h1>
+          <span>2027 • IDAH FEDERAL CONSTITUENCY</span>
+        </div>
+
+      </a>
+
+      <button
+        class="menu-btn"
+        onclick="toggleMenu()"
+        aria-label="Open navigation">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="manifesto.html">Manifesto</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="volunteer.html" class="nav-cta">Join Us</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          Public Trust & Responsibility
+        </span>
+
+        <h2>
+          Transparency & Accountability
+        </h2>
+
+        <p>
+          Building a culture of openness, responsible communication,
+          public engagement and accountability in service to the people.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO -->
+
+  <main class="main">
+
+    <div class="container">
+
+      <div class="intro">
+
+        <div class="section-label">
+          Our Approach
+        </div>
+
+        <h3>
+          Public Service Should Be Open and Responsible
+        </h3>
+
+        <p>
+          Transparency begins with clear communication, respect for the
+          public and a willingness to explain decisions and priorities.
+          This page outlines the principles that guide the public
+          information presented through this platform.
+        </p>
+
+      </div>
+
+
+      <div class="principles">
+
+        <div class="principle-card">
+
+          <div class="number">
+            01
+          </div>
+
+          <h4>
+            Openness
+          </h4>
+
+          <p>
+            Important public information should be communicated clearly
+            and presented in a way that members of the public can understand.
+          </p>
+
+        </div>
+
+
+        <div class="principle-card">
+
+          <div class="number">
+            02
+          </div>
+
+          <h4>
+            Accountability
+          </h4>
+
+          <p>
+            Public representatives and institutions should remain
+            answerable to the people they serve.
+          </p>
+
+        </div>
+
+
+        <div class="principle-card">
+
+          <div class="number">
+            03
+          </div>
+
+          <h4>
+            Responsible Communication
+          </h4>
+
+          <p>
+            Public statements should aim to inform rather than deliberately
+            mislead, confuse or create unnecessary division.
+          </p>
+
+        </div>
+
+
+        <div class="principle-card">
+
+          <div class="number">
+            04
+          </div>
+
+          <h4>
+            Evidence-Based Information
+          </h4>
+
+          <p>
+            Significant claims should be approached carefully and, where
+            appropriate, supported by identifiable sources or records.
+          </p>
+
+        </div>
+
+
+        <div class="principle-card">
+
+          <div class="number">
+            05
+          </div>
+
+          <h4>
+            Public Engagement
+          </h4>
+
+          <p>
+            Listening to community concerns and creating opportunities for
+            constructive dialogue are important parts of responsible
+            representation.
+          </p>
+
+        </div>
+
+
+        <div class="principle-card">
+
+          <div class="number">
+            06
+          </div>
+
+          <h4>
+            Respect
+          </h4>
+
+          <p>
+            Political and civic discussions should allow room for different
+            opinions while maintaining dignity and respect for others.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- ACCOUNTABILITY -->
+
+  <section class="accountability">
+
+    <div class="container">
+
+      <div class="accountability-grid">
+
+        <div class="accountability-text">
+
+          <div class="section-label">
+            Accountability Framework
+          </div>
+
+          <h3>
+            Keeping Public Interest at the Centre
+          </h3>
+
+          <p>
+            Accountability requires more than making statements. It
+            involves listening, explaining priorities, acknowledging
+            concerns and encouraging constructive public scrutiny.
+          </p>
+
+          <p>
+            The purpose of this website is to provide a clear public
+            information space where visitors can review published
+            information, development priorities and updates.
+          </p>
+
+        </div>
+
+
+        <div class="accountability-list">
+
+          <div class="accountability-item">
+
+            <div class="tick">
+              ✓
+            </div>
+
+            <div>
+
+              <h4>
+                Clear Information
+              </h4>
+
+              <p>
+                Information should be presented in straightforward
+                language wherever possible.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="accountability-item">
+
+            <div class="tick">
+              ✓
+            </div>
+
+            <div>
+
+              <h4>
+                Public Feedback
+              </h4>
+
+              <p>
+                Members of the public should have appropriate opportunities
+                to raise questions and share concerns.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="accountability-item">
+
+            <div class="tick">
+              ✓
+            </div>
+
+            <div>
+
+              <h4>
+                Correcting Information
+              </h4>
+
+              <p>
+                Where an error is identified, relevant information can be
+                reviewed and corrected when appropriate.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="accountability-item">
+
+            <div class="tick">
+              ✓
+            </div>
+
+            <div>
+
+              <h4>
+                Responsible Leadership
+              </h4>
+
+              <p>
+                Leadership should remain focused on public interest,
+                responsible representation and constructive engagement.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PUBLIC ENGAGEMENT -->
+
+  <section class="engagement">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Public Engagement
+        </div>
+
+        <h3>
+          Listening to the People
+        </h3>
+
+        <p>
+          Meaningful representation depends on understanding the concerns,
+          experiences and priorities of the communities being represented.
+        </p>
+
+      </div>
+
+
+      <div class="engagement-grid">
+
+        <div class="engagement-card">
+
+          <h4>
+            Community Dialogue
+          </h4>
+
+          <p>
+            Community meetings and public discussions can provide
+            opportunities for residents to raise issues and contribute
+            ideas.
+          </p>
+
+        </div>
+
+
+        <div class="engagement-card">
+
+          <h4>
+            Youth Participation
+          </h4>
+
+          <p>
+            Young people should have opportunities to participate in
+            discussions about education, employment, enterprise and
+            community development.
+          </p>
+
+        </div>
+
+
+        <div class="engagement-card">
+
+          <h4>
+            Stakeholder Input
+          </h4>
+
+          <p>
+            Traditional, community, professional, business and civic
+            stakeholders can contribute valuable perspectives to public
+            discussions.
+          </p>
+
+        </div>
+
+
+        <div class="engagement-card">
+
+          <h4>
+            Constructive Feedback
+          </h4>
+
+          <p>
+            Criticism and alternative viewpoints can contribute to better
+            public discussions when expressed respectfully and supported
+            by facts where possible.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INFORMATION NOTICE -->
+
+  <section class="information">
+
+    <div class="container">
+
+      <div class="info-box">
+
+        <h3>
+          About Information on This Website
+        </h3>
+
+        <p>
+          This website is intended to serve as a public information
+          platform concerning John Ibrahim Ocheje and information associated
+          with the 2027 Idah Federal Constituency aspiration.
+        </p>
+
+        <p>
+          Published materials should be read in their proper context.
+          Information about elections, government procedures, laws and
+          other official matters should be independently confirmed through
+          the appropriate official authorities.
+        </p>
+
+        <p>
+          Visitors are encouraged to use the
+          <strong>Verification Guide</strong>
+          before sharing important information obtained online.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h3>
+        Stay Informed. Ask Questions. Engage Responsibly.
+      </h3>
+
+      <p>
+        Explore the website to learn more about the published agenda,
+        development priorities, news, resources and opportunities for
+        public engagement.
+      </p>
+
+      <a href="agenda.html" class="btn btn-gold">
+        View Agenda
+      </a>
+
+      <a href="verification.html" class="btn btn-outline">
+        Verify Information
+      </a>
+
+      <a href="contact.html" class="btn btn-outline">
+        Contact Us
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <div class="footer-brand">
+            John Ibrahim Ocheje
+          </div>
+
+          <p>
+            Public information platform for the 2027 Idah Federal
+            Constituency aspiration.
+          </p>
+
+          <p style="margin-top:12px;">
+            NDC • Idah Federal Constituency • 2027
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            Quick Links
+          </h4>
+
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="agenda.html">Agenda</a>
+          <a href="manifesto.html">Manifesto</a>
+          <a href="news.html">News</a>
+          <a href="events.html">Events</a>
+          <a href="speeches.html">Speeches</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            Information
+          </h4>
+
+          <a href="support.html">Support Us</a>
+          <a href="partners.html">Partners</a>
+          <a href="media.html">Media Centre</a>
+          <a href="downloads.html">Downloads</a>
+          <a href="faq.html">FAQ</a>
+          <a href="resources.html">Resources</a>
+          <a href="verification.html">Verification Guide</a>
+          <a href="transparency.html">Transparency</a>
+          <a href="code-of-conduct.html">Code of Conduct</a>
+          <a href="accessibility.html">Accessibility</a>
+          <a href="security.html">Security</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="legal.html">Legal & Policies</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <p>
+          © 2026 John Ibrahim Ocheje. All rights reserved.
+        </p>
+
+        <p>
+          Information is provided for public awareness and engagement.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function toggleMenu() {
+
+      document
+        .getElementById("mainNav")
+        .classList.toggle("active");
+
+    }
+
+
+    document
+      .querySelectorAll("#mainNav a")
+      .forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+          document
+            .getElementById("mainNav")
+            .classList.remove("active");
+
+        });
+
+      });
+
+  </script>
+
+</body>
+</html>
