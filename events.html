@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Events | John Ibrahim Ocheje</title>
+
+  <meta name="description"
+        content="Public events, engagements and scheduled activities relating to John Ibrahim Ocheje and Idah Federal Constituency.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+  <style>
+
+    :root {
+      --green:#006b3c;
+      --dark-green:#004f2c;
+      --gold:#f4c400;
+      --dark:#172033;
+      --muted:#667085;
+      --light:#f6f9f7;
+      --white:#ffffff;
+      --footer:#101820;
+      --border:#e5e7eb;
+      --shadow:0 15px 40px rgba(16,24,40,.08);
+    }
+
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html {
+      scroll-behavior:smooth;
+    }
+
+    body {
+      font-family:"Inter",sans-serif;
+      color:var(--dark);
+      background:var(--white);
+      line-height:1.7;
+    }
+
+    a {
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .container {
+      width:min(1120px,92%);
+      margin:auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(255,255,255,.97);
+      border-bottom:1px solid var(--border);
+      backdrop-filter:blur(10px);
+    }
+
+    .header-inner {
+      min-height:78px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:25px;
+    }
+
+    .brand {
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .brand-logo {
+      width:48px;
+      height:48px;
+      border-radius:50%;
+      background:var(--green);
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+      font-size:18px;
+      border:3px solid var(--gold);
+    }
+
+    .brand-text strong {
+      display:block;
+      font-size:14px;
+      letter-spacing:.3px;
+    }
+
+    .brand-text span {
+      display:block;
+      color:var(--green);
+      font-size:11px;
+      font-weight:700;
+    }
+
+    nav {
+      display:flex;
+      align-items:center;
+      gap:4px;
+    }
+
+    nav a {
+      padding:9px 11px;
+      font-size:13px;
+      font-weight:600;
+      color:#344054;
+      border-radius:7px;
+      transition:.2s;
+    }
+
+    nav a:hover {
+      color:var(--green);
+      background:#f0f8f4;
+    }
+
+    nav .nav-cta {
+      background:var(--green);
+      color:white;
+      margin-left:5px;
+      padding:10px 16px;
+    }
+
+    nav .nav-cta:hover {
+      background:var(--dark-green);
+      color:white;
+    }
+
+    .menu-btn {
+      display:none;
+      border:0;
+      background:var(--green);
+      color:white;
+      padding:9px 12px;
+      border-radius:7px;
+      font-size:20px;
+      cursor:pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height:420px;
+      display:flex;
+      align-items:center;
+      background:
+        linear-gradient(rgba(0,79,44,.86),rgba(0,79,44,.86)),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg")
+        center/cover no-repeat;
+      color:white;
+    }
+
+    .hero-content {
+      max-width:780px;
+      padding:80px 0;
+    }
+
+    .eyebrow {
+      display:inline-block;
+      color:var(--gold);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      margin-bottom:15px;
+    }
+
+    .hero h1 {
+      font-family:"Playfair Display",serif;
+      font-size:clamp(40px,6vw,64px);
+      line-height:1.1;
+      margin-bottom:20px;
+    }
+
+    .hero p {
+      max-width:700px;
+      font-size:17px;
+      color:rgba(255,255,255,.88);
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding:75px 0;
+    }
+
+    .events-section {
+      background:var(--light);
+    }
+
+    .section-heading {
+      max-width:720px;
+      margin-bottom:42px;
+    }
+
+    .label {
+      color:var(--green);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:1.4px;
+      text-transform:uppercase;
+      margin-bottom:10px;
+    }
+
+    .section-heading h2 {
+      font-family:"Playfair Display",serif;
+      font-size:38px;
+      line-height:1.2;
+      margin-bottom:14px;
+    }
+
+    .section-heading p {
+      color:var(--muted);
+    }
+
+    /* EVENTS */
+
+    .events {
+      display:grid;
+      gap:20px;
+    }
+
+    .event-card {
+      background:white;
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:25px;
+      display:grid;
+      grid-template-columns:90px 1fr auto;
+      gap:25px;
+      align-items:center;
+      transition:.25s ease;
+    }
+
+    .event-card:hover {
+      transform:translateY(-3px);
+      box-shadow:var(--shadow);
+    }
+
+    .event-date {
+      border:1px solid var(--border);
+      border-radius:12px;
+      overflow:hidden;
+      text-align:center;
+      background:#fff;
+    }
+
+    .event-date .month {
+      display:block;
+      background:var(--green);
+      color:white;
+      padding:5px;
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
+
+    .event-date .day {
+      display:block;
+      font-size:29px;
+      font-weight:800;
+      padding:8px 5px;
+      color:var(--dark);
+    }
+
+    .event-info h3 {
+      font-size:19px;
+      margin-bottom:7px;
+    }
+
+    .event-info p {
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .event-meta {
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:10px;
+    }
+
+    .meta {
+      font-size:11px;
+      color:var(--green);
+      background:#edf8f2;
+      padding:5px 9px;
+      border-radius:20px;
+      font-weight:700;
+    }
+
+    .event-status {
+      padding:9px 13px;
+      border-radius:7px;
+      background:#fff7d6;
+      color:#765d00;
+      font-size:11px;
+      font-weight:800;
+      white-space:nowrap;
+    }
+
+    /* NOTICE */
+
+    .notice {
+      margin-top:30px;
+      background:white;
+      border:1px solid var(--border);
+      border-left:5px solid var(--gold);
+      border-radius:12px;
+      padding:25px;
+    }
+
+    .notice h3 {
+      font-size:18px;
+      margin-bottom:7px;
+    }
+
+    .notice p {
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    /* EVENT CATEGORIES */
+
+    .categories {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+
+    .category {
+      border:1px solid var(--border);
+      border-radius:15px;
+      padding:27px;
+      background:white;
+    }
+
+    .category-icon {
+      width:50px;
+      height:50px;
+      border-radius:12px;
+      background:#edf8f2;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:23px;
+      margin-bottom:18px;
+    }
+
+    .category h3 {
+      font-size:18px;
+      margin-bottom:8px;
+    }
+
+    .category p {
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    /* CTA */
+
+    .cta {
+      background:var(--green);
+      color:white;
+      text-align:center;
+    }
+
+    .cta h2 {
+      font-family:"Playfair Display",serif;
+      font-size:40px;
+      margin-bottom:12px;
+    }
+
+    .cta p {
+      max-width:680px;
+      margin:0 auto 25px;
+      color:rgba(255,255,255,.85);
+    }
+
+    .btn {
+      display:inline-block;
+      padding:12px 21px;
+      border-radius:8px;
+      font-size:14px;
+      font-weight:700;
+      margin:5px;
+    }
+
+    .btn-light {
+      background:white;
+      color:var(--green);
+    }
+
+    .btn-outline {
+      border:1px solid rgba(255,255,255,.6);
+      color:white;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background:var(--footer);
+      color:#d0d5dd;
+      padding:55px 0 20px;
+    }
+
+    .footer-grid {
+      display:grid;
+      grid-template-columns:1.4fr 1fr 1fr;
+      gap:45px;
+      padding-bottom:35px;
+    }
+
+    footer h3 {
+      color:white;
+      font-size:16px;
+      margin-bottom:15px;
+    }
+
+    footer p {
+      color:#98a2b3;
+      font-size:13px;
+      max-width:420px;
+    }
+
+    .footer-links {
+      display:grid;
+      gap:8px;
+    }
+
+    .footer-links a {
+      color:#98a2b3;
+      font-size:13px;
+    }
+
+    .footer-links a:hover {
+      color:var(--gold);
+    }
+
+    .footer-bottom {
+      border-top:1px solid rgba(255,255,255,.1);
+      padding-top:18px;
+      display:flex;
+      justify-content:space-between;
+      gap:15px;
+      flex-wrap:wrap;
+      color:#98a2b3;
+      font-size:12px;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:900px) {
+
+      .menu-btn {
+        display:block;
+      }
+
+      nav {
+        position:absolute;
+        top:78px;
+        left:0;
+        right:0;
+        background:white;
+        border-bottom:1px solid var(--border);
+        padding:12px 4%;
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      nav.active {
+        display:flex;
+      }
+
+      nav a {
+        width:100%;
+      }
+
+      nav .nav-cta {
+        margin-left:0;
+        text-align:center;
+      }
+
+      .categories {
+        grid-template-columns:1fr 1fr;
+      }
+
+      .event-card {
+        grid-template-columns:80px 1fr;
+      }
+
+      .event-status {
+        grid-column:2;
+        width:max-content;
+      }
+
+      .footer-grid {
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    @media(max-width:600px) {
+
+      .header-inner {
+        min-height:70px;
+      }
+
+      .brand-logo {
+        width:42px;
+        height:42px;
+        font-size:16px;
+      }
+
+      .brand-text strong {
+        font-size:12px;
+      }
+
+      .brand-text span {
+        font-size:9px;
+      }
+
+      .hero {
+        min-height:390px;
+      }
+
+      .hero-content {
+        padding:65px 0;
+      }
+
+      .hero h1 {
+        font-size:40px;
+      }
+
+      section {
+        padding:55px 0;
+      }
+
+      .section-heading h2 {
+        font-size:30px;
+      }
+
+      .categories {
+        grid-template-columns:1fr;
+      }
+
+      .event-card {
+        grid-template-columns:1fr;
+        gap:17px;
+      }
+
+      .event-date {
+        width:80px;
+      }
+
+      .event-status {
+        grid-column:auto;
+      }
+
+      .footer-grid {
+        grid-template-columns:1fr;
+        gap:30px;
+      }
+
+      .cta h2 {
+        font-size:32px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+
+        <div class="brand-logo">
+          JO
+        </div>
+
+        <div class="brand-text">
+
+          <strong>
+            JOHN IBRAHIM OCHEJE
+          </strong>
+
+          <span>
+            2027 • IDAH FEDERAL CONSTITUENCY
+          </span>
+
+        </div>
+
+      </a>
+
+      <button
+        class="menu-btn"
+        onclick="toggleMenu()"
+        aria-label="Open menu">
+
+        ☰
+
+      </button>
+
+      <nav id="mainNav">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="agenda.html">
+          Agenda
+        </a>
+
+        <a href="news.html">
+          News
+        </a>
+
+        <a href="gallery.html">
+          Gallery
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+        <a href="volunteer.html" class="nav-cta">
+          Join Us
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          Public Engagements
+        </span>
+
+        <h1>
+          Events
+        </h1>
+
+        <p>
+          Information about public engagements, meetings,
+          community activities and other scheduled events.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EVENTS -->
+
+  <section class="events-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="label">
+          Event Calendar
+        </div>
+
+        <h2>
+          Upcoming Events
+        </h2>
+
+        <p>
+          Officially confirmed events will be published here
+          with the available date, venue and relevant details.
+        </p>
+
+      </div>
+
+
+      <div class="events">
+
+
+        <!-- EVENT 1 -->
+
+        <div class="event-card">
+
+          <div class="event-date">
+
+            <span class="month">
+              TBD
+            </span>
+
+            <span class="day">
+              —
+            </span>
+
+          </div>
+
+          <div class="event-info">
+
+            <h3>
+              Public Stakeholder Engagement
+            </h3>
+
+            <p>
+              Details of the engagement will be published when
+              the date, venue and programme are officially confirmed.
+            </p>
+
+            <div class="event-meta">
+
+              <span class="meta">
+                Public Engagement
+              </span>
+
+              <span class="meta">
+                Date To Be Confirmed
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="event-status">
+            TO BE CONFIRMED
+          </div>
+
+        </div>
+
+
+        <!-- EVENT 2 -->
+
+        <div class="event-card">
+
+          <div class="event-date">
+
+            <span class="month">
+              TBD
+            </span>
+
+            <span class="day">
+              —
+            </span>
+
+          </div>
+
+          <div class="event-info">
+
+            <h3>
+              Community Interaction
+            </h3>
+
+            <p>
+              Information about future community interactions
+              will be published after official confirmation.
+            </p>
+
+            <div class="event-meta">
+
+              <span class="meta">
+                Community
+              </span>
+
+              <span class="meta">
+                Date To Be Confirmed
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="event-status">
+            TO BE CONFIRMED
+          </div>
+
+        </div>
+
+
+        <!-- EVENT 3 -->
+
+        <div class="event-card">
+
+          <div class="event-date">
+
+            <span class="month">
+              TBD
+            </span>
+
+            <span class="day">
+              —
+            </span>
+
+          </div>
+
+          <div class="event-info">
+
+            <h3>
+              Youth & Development Dialogue
+            </h3>
+
+            <p>
+              Details of any officially scheduled youth and
+              development dialogue will be added here.
+            </p>
+
+            <div class="event-meta">
+
+              <span class="meta">
+                Youth
+              </span>
+
+              <span class="meta">
+                Development
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="event-status">
+            TO BE CONFIRMED
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="notice">
+
+        <h3>
+          Event Information
+        </h3>
+
+        <p>
+          Dates, locations and programmes should be treated as
+          confirmed only when they are officially published.
+          Please check the News, Media Centre or other official
+          website updates for changes or additional information.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EVENT TYPES -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="label">
+          Engagement Areas
+        </div>
+
+        <h2>
+          Types of Public Events
+        </h2>
+
+        <p>
+          The events section can be used to organise public
+          information about different categories of engagement.
+        </p>
+
+      </div>
+
+
+      <div class="categories">
+
+
+        <div class="category">
+
+          <div class="category-icon">
+            🤝
+          </div>
+
+          <h3>
+            Stakeholder Meetings
+          </h3>
+
+          <p>
+            Publicly announced meetings involving community,
+            professional and other relevant stakeholders.
+          </p>
+
+        </div>
+
+
+        <div class="category">
+
+          <div class="category-icon">
+            🏘️
+          </div>
+
+          <h3>
+            Community Engagement
+          </h3>
+
+          <p>
+            Community-focused interactions and public
+            engagements when officially scheduled.
+          </p>
+
+        </div>
+
+
+        <div class="category">
+
+          <div class="category-icon">
+            👥
+          </div>
+
+          <h3>
+            Youth Engagement
+          </h3>
+
+          <p>
+            Forums and discussions focused on youth participation,
+            skills and development.
+          </p>
+
+        </div>
+
+
+        <div class="category">
+
+          <div class="category-icon">
+            🎙️
+          </div>
+
+          <h3>
+            Public Dialogues
+          </h3>
+
+          <p>
+            Public discussions, policy conversations and
+            issue-based dialogues.
+          </p>
+
+        </div>
+
+
+        <div class="category">
+
+          <div class="category-icon">
+            📰
+          </div>
+
+          <h3>
+            Media Events
+          </h3>
+
+          <p>
+            Press briefings, interviews and other publicly
+            announced media engagements.
+          </p>
+
+        </div>
+
+
+        <div class="category">
+
+          <div class="category-icon">
+            📚
+          </div>
+
+          <h3>
+            Civic Programmes
+          </h3>
+
+          <p>
+            Educational and civic activities designed to provide
+            useful public information.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>
+        Stay Informed
+      </h2>
+
+      <p>
+        Check the latest news and media updates for newly
+        published information about public engagements.
+      </p>
+
+      <a
+        href="news.html"
+        class="btn btn-light">
+
+        Latest News
+
+      </a>
+
+      <a
+        href="media.html"
+        class="btn btn-outline">
+
+        Media Centre
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div>
+
+          <h3>
+            JOHN IBRAHIM OCHEJE
+          </h3>
+
+          <p>
+            Public information website for Engr. John Ibrahim
+            Ocheje and information relating to the 2027 Idah
+            Federal Constituency political process.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Quick Links
+          </h3>
+
+          <div class="footer-links">
+
+            <a href="index.html">
+              Home
+            </a>
+
+            <a href="about.html">
+              About
+            </a>
+
+            <a href="agenda.html">
+              Agenda
+            </a>
+
+            <a href="news.html">
+              News
+            </a>
+
+            <a href="events.html">
+              Events
+            </a>
+
+            <a href="gallery.html">
+              Gallery
+            </a>
+
+            <a href="volunteer.html">
+              Volunteer
+            </a>
+
+            <a href="contact.html">
+              Contact
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Information
+          </h3>
+
+          <div class="footer-links">
+
+            <a href="support.html">
+              Support Us
+            </a>
+
+            <a href="partners.html">
+              Partners
+            </a>
+
+            <a href="media.html">
+              Media Centre
+            </a>
+
+            <a href="downloads.html">
+              Downloads
+            </a>
+
+            <a href="faq.html">
+              FAQ
+            </a>
+
+            <a href="resources.html">
+              Resources
+            </a>
+
+            <a href="privacy.html">
+              Privacy Policy
+            </a>
+
+            <a href="terms.html">
+              Terms & Conditions
+            </a>
+
+            <a href="sitemap.html">
+              Sitemap
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <div>
+          © 2027 John Ibrahim Ocheje. All rights reserved.
+        </div>
+
+        <div>
+          NDC • Idah Federal Constituency • 2027
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- MOBILE MENU -->
+
+  <script>
+
+    function toggleMenu() {
+
+      document
+        .getElementById("mainNav")
+        .classList
+        .toggle("active");
+
+    }
+
+    document
+      .querySelectorAll("#mainNav a")
+      .forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+          document
+            .getElementById("mainNav")
+            .classList
+            .remove("active");
+
+        });
+
+      });
+
+  </script>
+
+</body>
+</html>
