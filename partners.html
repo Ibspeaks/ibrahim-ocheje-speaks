@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Partners & Collaborators | John Ibrahim Ocheje</title>
+
+  <meta name="description"
+        content="Partners and collaboration information for the John Ibrahim Ocheje 2027 public information website.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #006b3c;
+      --dark-green: #004f2c;
+      --gold: #f4c400;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e7eb;
+      --shadow: 0 15px 40px rgba(16, 24, 40, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 18px;
+      border: 3px solid var(--gold);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 14px;
+      letter-spacing: .3px;
+    }
+
+    .brand-text span {
+      display: block;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    nav a {
+      padding: 9px 11px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #344054;
+      border-radius: 7px;
+      transition: .2s ease;
+    }
+
+    nav a:hover {
+      color: var(--green);
+      background: #f0f8f4;
+    }
+
+    nav .nav-cta {
+      background: var(--green);
+      color: var(--white);
+      margin-left: 5px;
+      padding: 10px 16px;
+    }
+
+    nav .nav-cta:hover {
+      background: var(--dark-green);
+      color: var(--white);
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: var(--green);
+      color: var(--white);
+      padding: 9px 12px;
+      border-radius: 7px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 430px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      background:
+        linear-gradient(rgba(0,79,44,.82), rgba(0,79,44,.82)),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg")
+        center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .hero-content {
+      max-width: 760px;
+      padding: 80px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      font-size: 17px;
+      color: rgba(255,255,255,.88);
+    }
+
+    /* CONTENT */
+    section {
+      padding: 75px 0;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 42px;
+    }
+
+    .section-heading .label {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 38px;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .intro-text h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 36px;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .intro-text p {
+      color: var(--muted);
+      margin-bottom: 15px;
+    }
+
+    .intro-image {
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .intro-image img {
+      height: 380px;
+      object-fit: cover;
+    }
+
+    /* PARTNER CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 28px;
+      transition: .25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+      border-color: rgba(0,107,60,.25);
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: #edf8f2;
+      color: var(--green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      font-size: 19px;
+      margin-bottom: 9px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* COLLABORATION */
+    .collab {
+      background: var(--light);
+    }
+
+    .collab-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 38px;
+      box-shadow: var(--shadow);
+    }
+
+    .collab-box h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 34px;
+      margin-bottom: 14px;
+    }
+
+    .collab-box p {
+      color: var(--muted);
+      max-width: 850px;
+      margin-bottom: 20px;
+    }
+
+    .checks {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 13px 30px;
+      margin-top: 25px;
+    }
+
+    .check {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 14px;
+      color: #344054;
+    }
+
+    .check span {
+      width: 22px;
+      height: 22px;
+      min-width: 22px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      margin-top: 2px;
+    }
+
+    /* NOTE */
+    .note {
+      margin-top: 30px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--gold);
+      background: #fffbea;
+      color: #475467;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta {
+      background: var(--green);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      max-width: 680px;
+      margin: 0 auto 25px;
+      color: rgba(255,255,255,.85);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 21px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 5px;
+      transition: .2s ease;
+    }
+
+    .btn-light {
+      background: var(--white);
+      color: var(--green);
+    }
+
+    .btn-light:hover {
+      background: #f1f5f3;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,.55);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,.1);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--footer);
+      color: #d0d5dd;
+      padding: 55px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+      padding-bottom: 35px;
+    }
+
+    footer h3 {
+      color: var(--white);
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    footer p {
+      color: #98a2b3;
+      font-size: 13px;
+      max-width: 420px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 8px;
+    }
+
+    .footer-links a {
+      color: #98a2b3;
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+      color: #98a2b3;
+      font-size: 12px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+
+      .menu-btn {
+        display: block;
+      }
+
+      nav {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 12px 4%;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        width: 100%;
+      }
+
+      nav .nav-cta {
+        margin-left: 0;
+        text-align: center;
+      }
+
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .header-inner {
+        min-height: 70px;
+      }
+
+      .brand-text strong {
+        font-size: 12px;
+      }
+
+      .brand-text span {
+        font-size: 9px;
+      }
+
+      .brand-logo {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+      }
+
+      .hero {
+        min-height: 390px;
+      }
+
+      .hero-content {
+        padding: 65px 0;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      section {
+        padding: 55px 0;
+      }
+
+      .section-heading h2,
+      .intro-text h2 {
+        font-size: 30px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .checks {
+        grid-template-columns: 1fr;
+      }
+
+      .collab-box {
+        padding: 25px;
+      }
+
+      .cta h2 {
+        font-size: 32px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+        <div class="brand-logo">JO</div>
+
+        <div class="brand-text">
+          <strong>JOHN IBRAHIM OCHEJE</strong>
+          <span>2027 • IDAH FEDERAL CONSTITUENCY</span>
+        </div>
+      </a>
+
+      <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="volunteer.html" class="nav-cta">Join Us</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">Collaboration & Engagement</span>
+
+        <h1>Partners & Collaborators</h1>
+
+        <p>
+          Building constructive relationships with community organisations,
+          professionals, civil society groups and other stakeholders around
+          issues that matter to Idah Federal Constituency.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- INTRODUCTION -->
+  <section>
+
+    <div class="container">
+
+      <div class="intro-grid">
+
+        <div class="intro-text">
+
+          <span class="eyebrow" style="color:var(--green);">
+            Working Together
+          </span>
+
+          <h2>
+            Collaboration can strengthen community development.
+          </h2>
+
+          <p>
+            Meaningful development requires dialogue, knowledge, community
+            participation and constructive partnerships.
+          </p>
+
+          <p>
+            This page provides information about the types of organisations
+            and stakeholders that may engage with this public information
+            platform.
+          </p>
+
+          <p>
+            No organisation is presented as an official partner unless that
+            relationship has been formally confirmed and authorised for
+            publication.
+          </p>
+
+        </div>
+
+        <div class="intro-image">
+          <img
+            src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+            alt="John Ibrahim Ocheje">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PARTNER CATEGORIES -->
+  <section class="collab">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="label">Potential Areas of Collaboration</div>
+
+        <h2>Who Can Collaborate?</h2>
+
+        <p>
+          Collaboration may involve different stakeholders whose experience,
+          knowledge or community presence can contribute to constructive
+          public engagement.
+        </p>
+
+      </div>
+
+
+      <div class="cards">
+
+        <div class="card">
+
+          <div class="icon">🏘️</div>
+
+          <h3>Community Organisations</h3>
+
+          <p>
+            Community-based organisations and local initiatives working on
+            education, development, welfare and community engagement.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🤝</div>
+
+          <h3>Civil Society</h3>
+
+          <p>
+            Civil society organisations interested in accountability,
+            civic participation, transparency and responsible governance.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🎓</div>
+
+          <h3>Professional Networks</h3>
+
+          <p>
+            Professionals and technical experts who can contribute knowledge,
+            ideas and practical perspectives to development discussions.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">👩‍🎓</div>
+
+          <h3>Youth Organisations</h3>
+
+          <p>
+            Youth groups and initiatives focused on skills, education,
+            entrepreneurship, leadership and civic participation.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🌾</div>
+
+          <h3>Development Groups</h3>
+
+          <p>
+            Organisations working in agriculture, infrastructure,
+            livelihoods, education and sustainable community development.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">💡</div>
+
+          <h3>Knowledge Partners</h3>
+
+          <p>
+            Researchers, institutions and subject-matter experts who can
+            contribute evidence and informed perspectives.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- COLLABORATION PRINCIPLES -->
+  <section>
+
+    <div class="container">
+
+      <div class="collab-box">
+
+        <h2>Principles of Collaboration</h2>
+
+        <p>
+          Any future partnership or collaboration should be guided by
+          transparency, mutual respect, lawful conduct and a shared interest
+          in constructive community engagement.
+        </p>
+
+        <div class="checks">
+
+          <div class="check">
+            <span>✓</span>
+            <div>Respect for communities and stakeholders.</div>
+          </div>
+
+          <div class="check">
+            <span>✓</span>
+            <div>Clear and transparent communication.</div>
+          </div>
+
+          <div class="check">
+            <span>✓</span>
+            <div>Respect for applicable laws and regulations.</div>
+          </div>
+
+          <div class="check">
+            <span>✓</span>
+            <div>Responsible handling of information.</div>
+          </div>
+
+          <div class="check">
+            <span>✓</span>
+            <div>Evidence-based development discussions.</div>
+          </div>
+
+          <div class="check">
+            <span>✓</span>
+            <div>Constructive and peaceful civic engagement.</div>
+          </div>
+
+        </div>
+
+
+        <div class="note">
+          <strong>Important:</strong>
+          Organisations, businesses, NGOs, community groups and individuals
+          should not assume that they are official partners simply because
+          they communicate with this platform. Official partnerships will
+          only be identified after confirmation.
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>Interested in Collaboration?</h2>
+
+      <p>
+        For legitimate enquiries about partnerships, civic engagement,
+        community development or professional collaboration, please use
+        the contact page.
+      </p>
+
+      <a href="contact.html" class="btn btn-light">
+        Contact Us
+      </a>
+
+      <a href="resources.html" class="btn btn-outline">
+        View Resources
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <h3>JOHN IBRAHIM OCHEJE</h3>
+
+          <p>
+            Public information website for Engr. John Ibrahim Ocheje and
+            information relating to the 2027 Idah Federal Constituency
+            political process.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>Quick Links</h3>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="news.html">News</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support Us</a>
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>Information</h3>
+
+          <div class="footer-links">
+            <a href="partners.html">Partners</a>
+            <a href="faq.html">FAQ</a>
+            <a href="resources.html">Resources</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="sitemap.html">Sitemap</a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <div>
+          © 2027 John Ibrahim Ocheje. All rights reserved.
+        </div>
+
+        <div>
+          NDC • Idah Federal Constituency • 2027
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- MOBILE MENU -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("mainNav").classList.toggle("active");
+    }
+
+    document.querySelectorAll("#mainNav a").forEach(function(link) {
+      link.addEventListener("click", function() {
+        document.getElementById("mainNav").classList.remove("active");
+      });
+    });
+  </script>
+
+</body>
+</html>
