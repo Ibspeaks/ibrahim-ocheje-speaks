@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Press Enquiries | John Ibrahim Ocheje 2027</title>
+
+  <meta name="description" content="Press enquiries and media requests for John Ibrahim Ocheje 2027.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #006b3c;
+      --dark-green: #004f2c;
+      --gold: #f4c400;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 12px rgba(0,0,0,.05);
+    }
+
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--green);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 17px;
+      border: 3px solid var(--gold);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 11px;
+      color: var(--green);
+      font-weight: 700;
+      letter-spacing: .5px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    nav a {
+      padding: 10px 11px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #344054;
+      border-radius: 6px;
+    }
+
+    nav a:hover {
+      color: var(--green);
+      background: var(--light);
+    }
+
+    nav .nav-cta {
+      background: var(--green);
+      color: white;
+      margin-left: 5px;
+      padding: 10px 17px;
+    }
+
+    nav .nav-cta:hover {
+      background: var(--dark-green);
+      color: white;
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: var(--green);
+      color: white;
+      width: 44px;
+      height: 42px;
+      border-radius: 7px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      background:
+        linear-gradient(rgba(0,79,44,.91), rgba(0,79,44,.88)),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg")
+        center/cover no-repeat;
+
+      color: white;
+      padding: 105px 0 95px;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-bottom: 17px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(40px, 6vw, 62px);
+      line-height: 1.08;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      color: rgba(255,255,255,.9);
+      max-width: 730px;
+    }
+
+    /* GENERAL */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 40px;
+    }
+
+    .section-heading .eyebrow {
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 4vw, 43px);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    /* INTRO */
+
+    .intro {
+      background: white;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .intro-text h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 39px;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .intro-text p {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .info-box {
+      background: var(--light);
+      border-left: 5px solid var(--green);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .info-box h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .info-box p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ENQUIRY AREA */
+
+    .enquiry-section {
+      background: var(--light);
+    }
+
+    .enquiry-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 35px;
+      align-items: start;
+    }
+
+    .cards {
+      display: grid;
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    .card-number {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* FORM */
+
+    .form-box {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 32px;
+    }
+
+    .form-box h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .form-box > p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      border: 1px solid #d0d5dd;
+      border-radius: 7px;
+      padding: 12px 13px;
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      color: var(--dark);
+      outline: none;
+      background: white;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(0,107,60,.08);
+    }
+
+    .form-group textarea {
+      min-height: 145px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      border: 0;
+      background: var(--green);
+      color: white;
+      padding: 13px 22px;
+      border-radius: 7px;
+      font-weight: 800;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: var(--dark-green);
+    }
+
+    .form-note {
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* RESOURCES */
+
+    .resources {
+      background: white;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .resource {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      transition: .2s ease;
+    }
+
+    .resource:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,.06);
+    }
+
+    .resource-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      background: #e8f4ee;
+      color: var(--green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .resource h3 {
+      font-size: 18px;
+      margin-bottom: 9px;
+    }
+
+    .resource p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .resource a {
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .resource a:hover {
+      color: var(--dark-green);
+    }
+
+    /* NOTICE */
+
+    .notice {
+      margin-top: 35px;
+      padding: 20px 23px;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .notice strong {
+      color: var(--dark);
+    }
+
+    /* CTA */
+
+    .cta {
+      background: var(--green);
+      color: white;
+    }
+
+    .cta-box {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 35px;
+    }
+
+    .cta h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    .cta p {
+      color: rgba(255,255,255,.87);
+      max-width: 700px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--dark);
+      padding: 13px 21px;
+      border-radius: 7px;
+      font-weight: 800;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .btn:hover {
+      opacity: .9;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--footer);
+      color: #d8dee8;
+      padding: 60px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 45px;
+      padding-bottom: 45px;
+    }
+
+    footer h3 {
+      color: white;
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    footer p {
+      color: #98a2b3;
+      font-size: 13px;
+      max-width: 420px;
+    }
+
+    footer a {
+      display: block;
+      color: #aeb7c4;
+      font-size: 13px;
+      margin-bottom: 9px;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: #8993a1;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 15px 4%;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 8px 20px rgba(0,0,0,.08);
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        width: 100%;
+        padding: 13px;
+      }
+
+      nav .nav-cta {
+        margin-left: 0;
+        text-align: center;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .intro-grid,
+      .enquiry-grid,
+      .resource-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-box {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .hero {
+        padding: 80px 0 75px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .intro-text h2 {
+        font-size: 32px;
+      }
+
+      .form-box {
+        padding: 23px;
+      }
+
+      .cta h2 {
+        font-size: 29px;
+      }
+
+      .brand-text strong {
+        font-size: 13px;
+      }
+
+      .brand-text span {
+        font-size: 9px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+
+        <div class="brand-logo">
+          JO
+        </div>
+
+        <div class="brand-text">
+          <strong>JOHN IBRAHIM OCHEJE</strong>
+          <span>2027 • IDAH FEDERAL CONSTITUENCY</span>
+        </div>
+
+      </a>
+
+      <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="manifesto.html">Manifesto</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="volunteer.html" class="nav-cta">Join Us</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">Media Centre</span>
+
+        <h1>Press Enquiries</h1>
+
+        <p>
+          A dedicated channel for journalists, media organisations and
+          other legitimate media enquiries relating to John Ibrahim Ocheje,
+          public statements, development priorities and published information.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO -->
+
+  <section class="intro">
+
+    <div class="container">
+
+      <div class="intro-grid">
+
+        <div class="intro-text">
+
+          <span class="eyebrow">For Journalists & Media</span>
+
+          <h2>Media Enquiries & Requests</h2>
+
+          <p>
+            Journalists and media organisations may use this page to
+            communicate requests for interviews, statements, background
+            information, photographs or clarification of publicly
+            available information.
+          </p>
+
+          <p>
+            Requests should clearly identify the media organisation,
+            subject of the enquiry and any relevant deadline.
+          </p>
+
+        </div>
+
+
+        <div class="info-box">
+
+          <h3>Before Submitting an Enquiry</h3>
+
+          <p>
+            Please provide accurate details and sufficient context.
+            Requests concerning official electoral information,
+            legal matters or government announcements should also be
+            independently verified through the appropriate authorities.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ENQUIRY -->
+
+  <section class="enquiry-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">Submit a Request</span>
+
+        <h2>How Can We Help?</h2>
+
+        <p>
+          Select the type of media enquiry and provide the information
+          required to understand your request.
+        </p>
+
+      </div>
+
+
+      <div class="enquiry-grid">
+
+        <div class="cards">
+
+          <div class="card">
+
+            <div class="card-number">
+              01
+            </div>
+
+            <h3>Interview Request</h3>
+
+            <p>
+              Requests for interviews, conversations or media appearances
+              can be submitted with details of the proposed subject and
+              publication or broadcast.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="card-number">
+              02
+            </div>
+
+            <h3>Statement Request</h3>
+
+            <p>
+              Journalists may request clarification or an official response
+              to a specific public matter.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="card-number">
+              03
+            </div>
+
+            <h3>Media Resources</h3>
+
+            <p>
+              Access the Press Kit, photographs, public statements and
+              other resources available through this website.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="card-number">
+              04
+            </div>
+
+            <h3>Information Verification</h3>
+
+            <p>
+              Requests involving potentially disputed information should
+              identify the claim clearly so that the relevant public
+              information can be reviewed.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- FORM -->
+
+        <div class="form-box">
+
+          <h2>Media Enquiry Form</h2>
+
+          <p>
+            Complete the form below. A working submission system will
+            require a connected website form service or backend.
+          </p>
+
+          <form action="#" method="post">
+
+            <div class="form-group">
+
+              <label for="name">
+                Full Name
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="organisation">
+                Media Organisation
+              </label>
+
+              <input
+                type="text"
+                id="organisation"
+                name="organisation"
+                placeholder="Enter media organisation"
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="role">
+                Role / Position
+              </label>
+
+              <input
+                type="text"
+                id="role"
+                name="role"
+                placeholder="Journalist, Editor, Producer, etc."
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="email">
+                Email Address
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="enquiry">
+                Type of Enquiry
+              </label>
+
+              <select id="enquiry" name="enquiry" required>
+
+                <option value="">
+                  Select enquiry type
+                </option>
+
+                <option value="interview">
+                  Interview Request
+                </option>
+
+                <option value="statement">
+                  Statement Request
+                </option>
+
+                <option value="media-resource">
+                  Media Resource
+                </option>
+
+                <option value="verification">
+                  Information Verification
+                </option>
+
+                <option value="other">
+                  Other Media Enquiry
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="deadline">
+                Publication / Broadcast Deadline
+              </label>
+
+              <input
+                type="text"
+                id="deadline"
+                name="deadline"
+                placeholder="If applicable"
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="message">
+                Enquiry Details
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Please explain your request..."
+                required
+              ></textarea>
+
+            </div>
+
+
+            <button type="submit" class="submit-btn">
+              Submit Media Enquiry
+            </button>
+
+            <p class="form-note">
+              This form is currently a website interface only. Connect it
+              to a secure form service or backend before using it to receive
+              real submissions.
+            </p>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- RESOURCES -->
+
+  <section class="resources">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">Media Resources</span>
+
+        <h2>Useful Information for Journalists</h2>
+
+        <p>
+          Explore the available public information and media resources
+          before submitting an enquiry.
+        </p>
+
+      </div>
+
+
+      <div class="resource-grid">
+
+        <div class="resource">
+
+          <div class="resource-icon">
+            PK
+          </div>
+
+          <h3>Press Kit</h3>
+
+          <p>
+            Background information, basic profile details and available
+            media resources.
+          </p>
+
+          <a href="press-kit.html">
+            Open Press Kit →
+          </a>
+
+        </div>
+
+
+        <div class="resource">
+
+          <div class="resource-icon">
+            PR
+          </div>
+
+          <h3>Press Releases</h3>
+
+          <p>
+            Official statements, announcements and public communications
+            published through the website.
+          </p>
+
+          <a href="press.html">
+            View Press Releases →
+          </a>
+
+        </div>
+
+
+        <div class="resource">
+
+          <div class="resource-icon">
+            PH
+          </div>
+
+          <h3>Photo Gallery</h3>
+
+          <p>
+            View photographs made available for public information and
+            media reference.
+          </p>
+
+          <a href="gallery.html">
+            Open Gallery →
+          </a>
+
+        </div>
+
+
+        <div class="resource">
+
+          <div class="resource-icon">
+            SP
+          </div>
+
+          <h3>Speeches & Statements</h3>
+
+          <p>
+            Public speeches, remarks and statements available on the
+            website.
+          </p>
+
+          <a href="speeches.html">
+            View Statements →
+          </a>
+
+        </div>
+
+
+        <div class="resource">
+
+          <div class="resource-icon">
+            NW
+          </div>
+
+          <h3>News & Updates</h3>
+
+          <p>
+            Published reports, public updates and information relevant
+            to ongoing activities.
+          </p>
+
+          <a href="news.html">
+            View News →
+          </a>
+
+        </div>
+
+
+        <div class="resource">
+
+          <div class="resource-icon">
+            VR
+          </div>
+
+          <h3>Verification Guide</h3>
+
+          <p>
+            Practical guidance for checking dates, sources and context
+            before publishing information.
+          </p>
+
+          <a href="verification.html">
+            Verify Information →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="notice">
+
+        <strong>Accuracy and attribution:</strong>
+        Media organisations are encouraged to verify names, dates,
+        quotations and official information before publication.
+        Information from this website should not automatically be
+        treated as an official government announcement.
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <div class="cta-box">
+
+        <div>
+
+          <h2>Need General Information?</h2>
+
+          <p>
+            For enquiries that are not specifically media-related,
+            please use the general contact page.
+          </p>
+
+        </div>
+
+        <a href="contact.html" class="btn">
+          Contact Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <h3>John Ibrahim Ocheje</h3>
+
+          <p>
+            Public information website for John Ibrahim Ocheje and his
+            2027 public aspiration for Idah Federal Constituency.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>Quick Links</h3>
+
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="agenda.html">Agenda</a>
+          <a href="manifesto.html">Manifesto</a>
+          <a href="news.html">News</a>
+          <a href="events.html">Events</a>
+          <a href="speeches.html">Speeches</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="team.html">Team</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div>
+
+          <h3>Information</h3>
+
+          <a href="support.html">Support Us</a>
+          <a href="partners.html">Partners</a>
+          <a href="media.html">Media Centre</a>
+          <a href="press-kit.html">Press Kit</a>
+          <a href="press.html">Press Releases</a>
+          <a href="press-enquiries.html">Press Enquiries</a>
+          <a href="downloads.html">Downloads</a>
+          <a href="faq.html">FAQ</a>
+          <a href="resources.html">Resources</a>
+          <a href="verification.html">Verification Guide</a>
+          <a href="transparency.html">Transparency</a>
+          <a href="updates.html">Public Updates</a>
+          <a href="results.html">Public Record</a>
+          <a href="code-of-conduct.html">Code of Conduct</a>
+          <a href="accessibility.html">Accessibility</a>
+          <a href="security.html">Security</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="legal.html">Legal & Policies</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 John Ibrahim Ocheje. All rights reserved.
+        </span>
+
+        <span>
+          NDC • Idah Federal Constituency • 2027
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+
+    function toggleMenu() {
+      document.getElementById("mainNav").classList.toggle("active");
+    }
+
+    document.querySelectorAll("#mainNav a").forEach(function(link) {
+
+      link.addEventListener("click", function() {
+
+        document.getElementById("mainNav").classList.remove("active");
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
