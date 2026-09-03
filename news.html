@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>News & Updates | John Ibrahim Ocheje</title>
+
+  <meta name="description" content="News, public updates and information concerning Engr. John Ibrahim Ocheje and Idah Federal Constituency.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #006b3c;
+      --dark-green: #004f2c;
+      --gold: #f4c400;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e7eb;
+      --shadow: 0 12px 35px rgba(0,0,0,.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 18px;
+      border: 3px solid var(--gold);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: .3px;
+    }
+
+    .brand-text span {
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    nav a {
+      font-size: 13px;
+      font-weight: 600;
+      transition: .25s;
+    }
+
+    nav a:hover {
+      color: var(--green);
+    }
+
+    .nav-cta {
+      background: var(--green);
+      color: var(--white) !important;
+      padding: 10px 17px;
+      border-radius: 7px;
+    }
+
+    .menu-btn {
+      display: none;
+      border: none;
+      background: var(--green);
+      color: var(--white);
+      width: 42px;
+      height: 42px;
+      border-radius: 7px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 390px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(0,79,44,.88), rgba(0,79,44,.90)),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg")
+        center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .hero-content {
+      max-width: 780px;
+      padding: 70px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(42px, 6vw, 64px);
+      line-height: 1.08;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: rgba(255,255,255,.88);
+      font-size: 17px;
+    }
+
+    /* NEWS */
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      max-width: 700px;
+      margin: 0 auto 45px;
+      text-align: center;
+    }
+
+    .section-header h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .section-header p {
+      color: var(--muted);
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .news-card {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      transition: .25s;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .news-image {
+      height: 210px;
+      overflow: hidden;
+      background: var(--light);
+    }
+
+    .news-image img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .news-content {
+      padding: 25px;
+    }
+
+    .news-date {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      margin-bottom: 10px;
+    }
+
+    .news-content h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 22px;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .news-content p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .read-more {
+      color: var(--green);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .read-more:hover {
+      color: var(--dark-green);
+    }
+
+    /* FEATURED */
+
+    .featured {
+      background: var(--light);
+    }
+
+    .featured-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .featured-image {
+      min-height: 420px;
+    }
+
+    .featured-image img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .featured-content {
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .featured-content h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 34px;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .featured-content p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .info-note {
+      padding: 18px;
+      border-left: 4px solid var(--gold);
+      background: #fffdf0;
+      color: #5f5700;
+      font-size: 13px;
+      margin-top: 5px;
+    }
+
+    /* NEWSLETTER / UPDATES */
+
+    .updates {
+      padding: 70px 0;
+      background: var(--dark-green);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .updates h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 35px;
+      margin-bottom: 12px;
+    }
+
+    .updates p {
+      max-width: 680px;
+      margin: auto;
+      color: rgba(255,255,255,.82);
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 70px 0;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 35px;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0 auto 25px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 21px;
+      border-radius: 7px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--green);
+      color: var(--green);
+    }
+
+    .btn-primary:hover {
+      background: var(--dark-green);
+    }
+
+    .btn-secondary:hover {
+      background: var(--green);
+      color: var(--white);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--footer);
+      color: var(--white);
+      padding: 60px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+      margin-bottom: 45px;
+    }
+
+    footer h3 {
+      font-size: 16px;
+      margin-bottom: 17px;
+    }
+
+    .footer-brand p {
+      color: #aab3bd;
+      font-size: 14px;
+      max-width: 380px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 9px;
+    }
+
+    .footer-links a {
+      color: #aab3bd;
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      color: #89939e;
+      font-size: 12px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        padding: 13px 5px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .nav-cta {
+        text-align: center;
+        margin-top: 10px;
+        border: none !important;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .featured-box {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-image {
+        min-height: 300px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .nav {
+        min-height: 70px;
+      }
+
+      .brand-logo {
+        width: 43px;
+        height: 43px;
+      }
+
+      .brand-text strong {
+        font-size: 13px;
+      }
+
+      .brand-text span {
+        font-size: 9px;
+      }
+
+      nav {
+        top: 70px;
+      }
+
+      .hero {
+        min-height: 330px;
+      }
+
+      .hero-content {
+        padding: 55px 0;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      .section-header h2 {
+        font-size: 31px;
+      }
+
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-content {
+        padding: 30px 25px;
+      }
+
+      .featured-content h2 {
+        font-size: 29px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container nav">
+
+      <a href="index.html" class="brand">
+
+        <div class="brand-logo">JO</div>
+
+        <div class="brand-text">
+          <strong>JOHN IBRAHIM OCHEJE</strong>
+          <span>2027 • IDAH FEDERAL CONSTITUENCY</span>
+        </div>
+
+      </a>
+
+      <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="volunteer.html" class="nav-cta">Join Us</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">News & Updates</span>
+
+        <h1>News & Updates</h1>
+
+        <p>
+          Follow public updates, announcements and published information
+          relating to Engr. John Ibrahim Ocheje and Idah Federal Constituency.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LATEST NEWS -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <span class="eyebrow" style="color: var(--green);">
+          Latest Information
+        </span>
+
+        <h2>News & Public Updates</h2>
+
+        <p>
+          This section provides a place for announcements, public statements,
+          activities and other relevant updates.
+        </p>
+
+      </div>
+
+
+      <div class="news-grid">
+
+
+        <!-- NEWS 1 -->
+
+        <article class="news-card">
+
+          <div class="news-image">
+
+            <img
+              src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+              alt="John Ibrahim Ocheje"
+            >
+
+          </div>
+
+          <div class="news-content">
+
+            <div class="news-date">
+              2027 • Public Update
+            </div>
+
+            <h3>
+              John Ibrahim Ocheje and the 2027 Idah Federal Constituency Race
+            </h3>
+
+            <p>
+              Information published online identifies Engr. John Ibrahim
+              Ocheje as a prospective candidate for the 2027 House of
+              Representatives election in Idah Federal Constituency.
+            </p>
+
+            <a href="about.html" class="read-more">
+              Read Profile →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- NEWS 2 -->
+
+        <article class="news-card">
+
+          <div class="news-image">
+
+            <img
+              src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+              alt="Public engagement"
+            >
+
+          </div>
+
+          <div class="news-content">
+
+            <div class="news-date">
+              2022 • Published Report
+            </div>
+
+            <h3>
+              Ocheje Emerged as PDP Candidate for Idah Federal Constituency
+            </h3>
+
+            <p>
+              Kogi Reports reported in May 2022 that John Ibrahim Ocheje
+              emerged as the Peoples Democratic Party candidate for the
+              constituency ahead of the 2023 general election.
+            </p>
+
+            <a
+              href="https://kogireports.com/idah-reps-race-engr-john-ibrahim-ocheje-emerges-pdp-candidate/"
+              target="_blank"
+              rel="noopener"
+              class="read-more"
+            >
+              View Published Report →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- NEWS 3 -->
+
+        <article class="news-card">
+
+          <div class="news-image">
+
+            <img
+              src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+              alt="Community and public engagement"
+            >
+
+          </div>
+
+          <div class="news-content">
+
+            <div class="news-date">
+              2022 • Published Report
+            </div>
+
+            <h3>
+              Appeal Court Reported to Have Affirmed Ocheje's Candidacy
+            </h3>
+
+            <p>
+              Published reports from November 2022 stated that the Court of
+              Appeal in Abuja affirmed Ocheje's candidacy as the PDP
+              flagbearer for the constituency.
+            </p>
+
+            <a
+              href="https://kogireports.com/tag/john-ibrahim-ocheje/"
+              target="_blank"
+              rel="noopener"
+              class="read-more"
+            >
+              View News Archive →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- NEWS 4 -->
+
+        <article class="news-card">
+
+          <div class="news-image">
+
+            <img
+              src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+              alt="Constituency update"
+            >
+
+          </div>
+
+          <div class="news-content">
+
+            <div class="news-date">
+              2023 • Published Report
+            </div>
+
+            <h3>
+              Ocheje Congratulated Constituency Representatives
+            </h3>
+
+            <p>
+              Kogi Reports published a February 2023 report stating that
+              Engr. John Ibrahim Ocheje congratulated Senator Jibrin Isah
+              Echocho and Hon. David Zachariah on their reported victories.
+            </p>
+
+            <a
+              href="https://kogireports.com/tag/john-ibrahim-ocheje/"
+              target="_blank"
+              rel="noopener"
+              class="read-more"
+            >
+              View Archive →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- NEWS 5 -->
+
+        <article class="news-card">
+
+          <div class="news-image">
+
+            <img
+              src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+              alt="Public message"
+            >
+
+          </div>
+
+          <div class="news-content">
+
+            <div class="news-date">
+              2022 • Public Statement
+            </div>
+
+            <h3>
+              Call for Issue-Based Public Debate
+            </h3>
+
+            <p>
+              A September 2022 published report stated that Ocheje called
+              for a debate among candidates contesting for the Idah Federal
+              Constituency seat.
+            </p>
+
+            <a
+              href="https://kogireports.com/tag/john-ibrahim-ocheje/"
+              target="_blank"
+              rel="noopener"
+              class="read-more"
+            >
+              View Archive →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- NEWS 6 -->
+
+        <article class="news-card">
+
+          <div class="news-image">
+
+            <img
+              src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+              alt="2027 public information"
+            >
+
+          </div>
+
+          <div class="news-content">
+
+            <div class="news-date">
+              2027 • Information
+            </div>
+
+            <h3>
+              Public Information for Constituents
+            </h3>
+
+            <p>
+              This website provides a central place for public information,
+              announcements, published statements, resources and updates
+              connected with the 2027 political process.
+            </p>
+
+            <a href="resources.html" class="read-more">
+              View Resources →
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEATURED -->
+
+  <section class="section featured">
+
+    <div class="container">
+
+      <div class="featured-box">
+
+        <div class="featured-image">
+
+          <img
+            src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+            alt="John Ibrahim Ocheje"
+          >
+
+        </div>
+
+        <div class="featured-content">
+
+          <span class="eyebrow" style="color: var(--green);">
+            Public Information
+          </span>
+
+          <h2>
+            Stay Informed Through Verified Information
+          </h2>
+
+          <p>
+            News and public information on this website should be understood
+            as published material and updates. Where an item comes from an
+            external publication, visitors can follow the source link for
+            the original report.
+          </p>
+
+          <div class="info-note">
+            This website does not replace official election information.
+            For electoral information, voters should consult the appropriate
+            official authorities and electoral resources.
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- UPDATES -->
+
+  <section class="updates">
+
+    <div class="container">
+
+      <h2>Public Updates</h2>
+
+      <p>
+        New announcements, public statements, activities and relevant
+        information can be added to this page as they become available.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>Explore More</h2>
+
+      <p>
+        Learn more about the candidate, published public priorities,
+        resources and ways to make contact.
+      </p>
+
+      <div class="buttons">
+
+        <a href="about.html" class="btn btn-primary">
+          About John Ibrahim Ocheje
+        </a>
+
+        <a href="agenda.html" class="btn btn-secondary">
+          View Agenda
+        </a>
+
+        <a href="contact.html" class="btn btn-secondary">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div class="footer-brand">
+
+          <h3>JOHN IBRAHIM OCHEJE</h3>
+
+          <p>
+            Information and public engagement website for the 2027
+            Idah Federal Constituency.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>Quick Links</h3>
+
+          <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="news.html">News</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support Us</a>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>Information</h3>
+
+          <div class="footer-links">
+
+            <a href="faq.html">FAQ</a>
+            <a href="resources.html">Resources</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="sitemap.html">Sitemap</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 John Ibrahim Ocheje. All rights reserved.
+        </span>
+
+        <span>
+          NDC • Idah Federal Constituency • 2027
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- MOBILE MENU -->
+
+  <script>
+
+    function toggleMenu() {
+      document.getElementById("mainNav").classList.toggle("active");
+    }
+
+    document.querySelectorAll("#mainNav a").forEach(function(link) {
+
+      link.addEventListener("click", function() {
+        document.getElementById("mainNav").classList.remove("active");
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
