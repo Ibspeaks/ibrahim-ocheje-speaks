@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Agenda | Engr. John Ibrahim Ocheje</title>
+
+  <meta name="description"
+        content="Published six-point agenda of Engr. John Ibrahim Ocheje for Idah Federal Constituency, 2027.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #006b3c;
+      --green-dark: #004d2c;
+      --gold: #f4c400;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e9e7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      line-height: 1.7;
+      background: white;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 4px 20px rgba(0,0,0,.05);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--green);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      border: 3px solid var(--gold);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 15px;
+      letter-spacing: .4px;
+    }
+
+    .brand-text span {
+      display: block;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .6px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--green);
+    }
+
+    .join-btn {
+      background: var(--green);
+      color: white !important;
+      padding: 11px 18px;
+      border-radius: 7px;
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    .hero {
+      background:
+        linear-gradient(135deg, rgba(0,107,60,.98), rgba(0,77,44,.94));
+      color: white;
+      padding: 90px 0;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero-label {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(42px, 6vw, 68px);
+      line-height: 1.08;
+      margin: 15px 0 20px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      color: rgba(255,255,255,.88);
+      max-width: 720px;
+    }
+
+    /* INTRO */
+    section {
+      padding: 85px 0;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .section-heading {
+      max-width: 750px;
+      margin: 0 auto 50px;
+    }
+
+    .eyebrow {
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.15;
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    /* AGENDA */
+    .agenda-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .agenda-card {
+      position: relative;
+      padding: 34px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: white;
+      box-shadow: 0 8px 25px rgba(0,0,0,.05);
+      transition: .25s;
+      overflow: hidden;
+    }
+
+    .agenda-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 40px rgba(0,0,0,.09);
+    }
+
+    .agenda-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: var(--green);
+    }
+
+    .agenda-number {
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--gold);
+      color: #1a1a1a;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .agenda-card h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .agenda-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* HIGHLIGHT */
+    .highlight {
+      background: var(--light);
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .highlight-box {
+      background: var(--green);
+      color: white;
+      border-radius: 18px;
+      padding: 45px;
+    }
+
+    .highlight-box h2 {
+      margin-bottom: 20px;
+    }
+
+    .highlight-box p {
+      color: rgba(255,255,255,.84);
+    }
+
+    .points {
+      display: grid;
+      gap: 15px;
+    }
+
+    .point {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+      padding: 20px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .check {
+      width: 28px;
+      height: 28px;
+      min-width: 28px;
+      border-radius: 50%;
+      background: var(--gold);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      color: #222;
+    }
+
+    .point strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .point span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta {
+      text-align: center;
+      background: linear-gradient(135deg, #f6f9f7, #eef5f0);
+    }
+
+    .cta-inner {
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .cta p {
+      color: var(--muted);
+      margin: 15px 0 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 23px;
+      border-radius: 7px;
+      font-weight: 700;
+      margin: 5px;
+    }
+
+    .btn-primary {
+      background: var(--green);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--green-dark);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--green);
+      color: var(--green);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--footer);
+      color: white;
+      padding: 60px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+      padding-bottom: 40px;
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer a {
+      color: rgba(255,255,255,.68);
+      font-size: 14px;
+    }
+
+    footer a {
+      display: block;
+      margin: 8px 0;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.12);
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+
+      .nav-links {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: white;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px 6%;
+        box-shadow: 0 15px 30px rgba(0,0,0,.08);
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 10px 0;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .highlight-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .agenda-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      section {
+        padding: 65px 0;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .highlight-box {
+        padding: 30px;
+      }
+
+      .brand-text strong {
+        font-size: 13px;
+      }
+
+      .brand-text span {
+        font-size: 9px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a href="index.html" class="brand">
+      <div class="logo">JO</div>
+
+      <div class="brand-text">
+        <strong>JOHN IBRAHIM OCHEJE</strong>
+        <span>2027 • IDAH FEDERAL CONSTITUENCY</span>
+      </div>
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav class="nav-links" id="zqomwt">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="agenda.html" class="active">Agenda</a>
+      <a href="news.html">News</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="volunteer.html" class="join-btn">Join Us</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="container">
+
+    <div class="hero-content">
+
+      <span class="hero-label">
+        2027 HOUSE OF REPRESENTATIVES ASPIRATION
+      </span>
+
+      <h1>Six-Point Agenda</h1>
+
+      <p>
+        An overview of the six areas identified in the published agenda
+        associated with Engr. John Ibrahim Ocheje and Idah Federal
+        Constituency.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro">
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">Published Agenda</div>
+
+      <h2>Six Areas of Focus</h2>
+
+      <p>
+        The following points are presented as the key areas of focus displayed
+        in the campaign material.
+      </p>
+
+    </div>
+
+
+    <div class="agenda-grid">
+
+      <!-- 1 -->
+
+      <article class="agenda-card">
+
+        <div class="agenda-number">01</div>
+
+        <h3>
+          Transparency & Accountability
+        </h3>
+
+        <p>
+          A focus on transparent engagement, accountability and responsible
+          handling of constituency projects and public representation.
+        </p>
+
+      </article>
+
+
+      <!-- 2 -->
+
+      <article class="agenda-card">
+
+        <div class="agenda-number">02</div>
+
+        <h3>
+          Gas & Oil Opportunities
+        </h3>
+
+        <p>
+          Exploring opportunities connected with gas and oil resources and
+          leveraging relevant experience and partnerships.
+        </p>
+
+      </article>
+
+
+      <!-- 3 -->
+
+      <article class="agenda-card">
+
+        <div class="agenda-number">03</div>
+
+        <h3>
+          Quality Representation
+        </h3>
+
+        <p>
+          Emphasis on thorough engagement and knowledge-based representation
+          of constituency interests and concerns.
+        </p>
+
+      </article>
+
+
+      <!-- 4 -->
+
+      <article class="agenda-card">
+
+        <div class="agenda-number">04</div>
+
+        <h3>
+          Infrastructure Partnerships
+        </h3>
+
+        <p>
+          Working with appropriate organisations and partners to identify
+          opportunities for addressing infrastructure needs.
+        </p>
+
+      </article>
+
+
+      <!-- 5 -->
+
+      <article class="agenda-card">
+
+        <div class="agenda-number">05</div>
+
+        <h3>
+          Expand Current Windows Programme
+        </h3>
+
+        <p>
+          Expansion of the existing windows programme as part of the stated
+          development priorities.
+        </p>
+
+      </article>
+
+
+      <!-- 6 -->
+
+      <article class="agenda-card">
+
+        <div class="agenda-number">06</div>
+
+        <h3>
+          Youth Development
+        </h3>
+
+        <p>
+          Youth-focused development initiatives, including attention to
+          opportunities for less-privileged communities.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- HIGHLIGHT -->
+
+<section class="highlight">
+
+  <div class="container highlight-grid">
+
+    <div class="highlight-box">
+
+      <div class="eyebrow" style="color:#f4c400;">
+        Agenda Overview
+      </div>
+
+      <h2>
+        Areas Identified for Representation
+      </h2>
+
+      <p>
+        The agenda brings together governance, economic opportunity,
+        representation, infrastructure, existing programmes and youth
+        development as its six principal areas.
+      </p>
+
+    </div>
+
+
+    <div class="points">
+
+      <div class="point">
+
+        <div class="check">✓</div>
+
+        <div>
+          <strong>Governance</strong>
+          <span>
+            Transparency and accountability.
+          </span>
+        </div>
+
+      </div>
+
+
+      <div class="point">
+
+        <div class="check">✓</div>
+
+        <div>
+          <strong>Economic Opportunities</strong>
+          <span>
+            Gas and oil-related opportunities.
+          </span>
+        </div>
+
+      </div>
+
+
+      <div class="point">
+
+        <div class="check">✓</div>
+
+        <div>
+          <strong>Representation</strong>
+          <span>
+            Quality and informed representation.
+          </span>
+        </div>
+
+      </div>
+
+
+      <div class="point">
+
+        <div class="check">✓</div>
+
+        <div>
+          <strong>Infrastructure</strong>
+          <span>
+            Partnership opportunities for development.
+          </span>
+        </div>
+
+      </div>
+
+
+      <div class="point">
+
+        <div class="check">✓</div>
+
+        <div>
+          <strong>Programmes</strong>
+          <span>
+            Expansion of existing programme windows.
+          </span>
+        </div>
+
+      </div>
+
+
+      <div class="point">
+
+        <div class="check">✓</div>
+
+        <div>
+          <strong>Youth Development</strong>
+          <span>
+            Development initiatives for young people and communities.
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+  <div class="container cta-inner">
+
+    <div class="eyebrow">
+      Continue Exploring
+    </div>
+
+    <h2>
+      Explore More Information
+    </h2>
+
+    <p>
+      Visit the other sections of the website for candidate information,
+      campaign updates, photographs and contact details.
+    </p>
+
+    <a href="about.html" class="btn btn-primary">
+      About John Ocheje
+    </a>
+
+    <a href="news.html" class="btn btn-outline">
+      Latest News
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+
+        <h3>
+          John Ibrahim Ocheje
+        </h3>
+
+        <p>
+          Information website for the 2027 House of Representatives
+          aspiration associated with Idah Federal Constituency.
+        </p>
+
+        <p style="margin-top:15px;">
+          NDC • Idah Federal Constituency • 2027
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Quick Links
+        </h3>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Information
+        </h3>
+
+        <a href="support.html">Support Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="resources.html">Resources</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="sitemap.html">Sitemap</a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2027 John Ibrahim Ocheje. All rights reserved.
+      </p>
+
+      <p>
+        Idah Federal Constituency
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+  function toggleMenu() {
+    document.getElementById("zqomwt").classList.toggle("show");
+  }
+
+  document.querySelectorAll("#zqomwt a").forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+      document.getElementById("zqomwt").classList.remove("show");
+
+    });
+
+  });
+
+</script>
+
+</body>
+</html>
+```1
