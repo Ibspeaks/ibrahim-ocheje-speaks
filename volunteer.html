@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Get Involved | Engr. John Ibrahim Ocheje</title>
+
+  <meta name="description" content="Get involved with public activities and volunteer opportunities associated with Engr. John Ibrahim Ocheje and Idah Federal Constituency.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root {
+      --green: #006b3c;
+      --green-dark: #004f2c;
+      --gold: #f4c400;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e7eb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      background: white;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font-family: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--green);
+      color: white;
+      border: 3px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 14px;
+      letter-spacing: .4px;
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+    }
+
+    nav a {
+      font-size: 13px;
+      font-weight: 600;
+      color: #344054;
+      transition: .2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--green);
+    }
+
+    .nav-cta {
+      background: var(--green);
+      color: white !important;
+      padding: 11px 17px;
+      border-radius: 8px;
+    }
+
+    .nav-cta:hover {
+      background: var(--green-dark);
+    }
+
+    .menu-btn {
+      display: none;
+      border: none;
+      background: transparent;
+      font-size: 28px;
+      cursor: pointer;
+      color: var(--dark);
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .page-hero {
+      background:
+        linear-gradient(
+          135deg,
+          rgba(0,107,60,.96),
+          rgba(0,79,44,.94)
+        ),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg");
+
+      background-size: cover;
+      background-position: center;
+
+      color: white;
+      padding: 90px 0;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .page-hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(42px, 6vw, 65px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .page-hero p {
+      color: rgba(255,255,255,.9);
+      font-size: 17px;
+      max-width: 720px;
+    }
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-heading {
+      max-width: 730px;
+      margin-bottom: 38px;
+    }
+
+    .section-heading .eyebrow {
+      color: var(--green);
+    }
+
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(31px, 5vw, 46px);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    /* =========================
+       INTRO CARDS
+    ========================= */
+
+    .involvement-section {
+      background: var(--light);
+    }
+
+    .involvement-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .involvement-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 30px;
+      transition: .25s;
+    }
+
+    .involvement-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(16,24,40,.08);
+    }
+
+    .card-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      background: #e9f5ef;
+      color: var(--green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 18px;
+      font-weight: 800;
+    }
+
+    .involvement-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .involvement-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       FORM SECTION
+    ========================= */
+
+    .form-layout {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 45px;
+      align-items: start;
+    }
+
+    .form-info h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 17px;
+    }
+
+    .form-info p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .info-list {
+      margin-top: 25px;
+    }
+
+    .info-item {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .info-number {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--green);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .info-item strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+
+    .info-item span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .form-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 35px;
+      box-shadow: 0 15px 40px rgba(16,24,40,.06);
+    }
+
+    .form-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .form-card > p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .form-group {
+      margin-bottom: 17px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 7px;
+      color: #344054;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      border: 1px solid #d0d5dd;
+      border-radius: 8px;
+      padding: 12px 13px;
+      outline: none;
+      font-size: 13px;
+      color: var(--dark);
+      background: white;
+      transition: .2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(0,107,60,.08);
+    }
+
+    .form-group textarea {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .checkbox {
+      display: flex;
+      gap: 9px;
+      align-items: flex-start;
+      margin: 5px 0 20px;
+    }
+
+    .checkbox input {
+      margin-top: 5px;
+      accent-color: var(--green);
+    }
+
+    .checkbox label {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .submit-btn {
+      width: 100%;
+      border: none;
+      background: var(--green);
+      color: white;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .submit-btn:hover {
+      background: var(--green-dark);
+    }
+
+    .form-note {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    /* =========================
+       FAQ NOTE
+    ========================= */
+
+    .note-section {
+      background: var(--light);
+    }
+
+    .note-box {
+      border-left: 5px solid var(--gold);
+      background: white;
+      border-radius: 10px;
+      padding: 25px 28px;
+      border-top: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .note-box h3 {
+      margin-bottom: 7px;
+      font-size: 17px;
+    }
+
+    .note-box p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      padding: 70px 0;
+      background: white;
+    }
+
+    .cta-box {
+      background:
+        linear-gradient(
+          110deg,
+          rgba(0,107,60,.97),
+          rgba(0,79,44,.94)
+        ),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg");
+
+      background-size: cover;
+      background-position: center;
+
+      border-radius: 22px;
+      padding: 55px;
+      color: white;
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      max-width: 680px;
+      margin: auto auto 25px;
+      color: rgba(255,255,255,.86);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 5px;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #111;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,.7);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--green);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: var(--footer);
+      color: white;
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+      margin-bottom: 40px;
+    }
+
+    footer h3 {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer a {
+      color: #aeb8c4;
+      font-size: 13px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .footer-brand {
+      color: white;
+      font-weight: 800;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 20px;
+      text-align: center;
+      color: #8793a1;
+      font-size: 12px;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 950px) {
+
+      nav {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+
+        background: white;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 20px;
+
+        border-bottom: 1px solid var(--border);
+
+        box-shadow: 0 15px 30px rgba(0,0,0,.08);
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      nav a {
+        padding: 12px 5px;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .involvement-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .form-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+    }
+
+    @media (max-width: 650px) {
+
+      section {
+        padding: 60px 0;
+      }
+
+      .page-hero {
+        padding: 70px 0;
+      }
+
+      .involvement-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .form-card {
+        padding: 25px 20px;
+      }
+
+      .form-info h2 {
+        font-size: 32px;
+      }
+
+      .cta-box {
+        padding: 38px 22px;
+      }
+
+      .cta-box h2 {
+        font-size: 31px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+  <!-- =========================
+       HEADER
+  ========================= -->
+
+  <header>
+
+    <div class="container nav">
+
+      <a href="index.html" class="brand">
+
+        <div class="logo">
+          JO
+        </div>
+
+        <div class="brand-text">
+
+          <strong>
+            JOHN IBRAHIM OCHEJE
+          </strong>
+
+          <span>
+            2027 • IDAH FEDERAL CONSTITUENCY
+          </span>
+
+        </div>
+
+      </a>
+
+
+      <button
+        class="menu-btn"
+        onclick="toggleMenu()"
+        aria-label="Open navigation menu">
+
+        ☰
+
+      </button>
+
+
+      <nav id="mainNav">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="agenda.html">
+          Agenda
+        </a>
+
+        <a href="news.html">
+          News
+        </a>
+
+        <a href="gallery.html">
+          Gallery
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+        <a href="volunteer.html" class="nav-cta active">
+          Join Us
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <section class="page-hero">
+
+    <div class="container hero-content">
+
+      <span class="eyebrow">
+        Get Involved
+      </span>
+
+      <h1>
+        Participate in Public Engagement
+      </h1>
+
+      <p>
+        Register your interest in volunteering, community activities,
+        public information initiatives and other activities associated
+        with the 2027 Idah Federal Constituency engagement.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       WAYS TO GET INVOLVED
+  ========================= -->
+
+  <section class="involvement-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          Opportunities
+        </span>
+
+        <h2>
+          Ways to Get Involved
+        </h2>
+
+        <p>
+          Individuals can indicate areas where they would like to
+          contribute their time, skills or ideas.
+        </p>
+
+      </div>
+
+
+      <div class="involvement-grid">
+
+
+        <div class="involvement-card">
+
+          <div class="card-icon">
+            01
+          </div>
+
+          <h3>
+            Community Engagement
+          </h3>
+
+          <p>
+            Participate in community-focused activities, listening
+            sessions and public engagement initiatives.
+          </p>
+
+        </div>
+
+
+        <div class="involvement-card">
+
+          <div class="card-icon">
+            02
+          </div>
+
+          <h3>
+            Communications
+          </h3>
+
+          <p>
+            Assist with sharing verified public information, updates,
+            event information and community notices.
+          </p>
+
+        </div>
+
+
+        <div class="involvement-card">
+
+          <div class="card-icon">
+            03
+          </div>
+
+          <h3>
+            Research & Ideas
+          </h3>
+
+          <p>
+            Contribute research, policy ideas and community observations
+            relevant to the constituency.
+          </p>
+
+        </div>
+
+
+        <div class="involvement-card">
+
+          <div class="card-icon">
+            04
+          </div>
+
+          <h3>
+            Event Support
+          </h3>
+
+          <p>
+            Assist with the organisation and coordination of public
+            meetings, outreach activities and events.
+          </p>
+
+        </div>
+
+
+        <div class="involvement-card">
+
+          <div class="card-icon">
+            05
+          </div>
+
+          <h3>
+            Digital Support
+          </h3>
+
+          <p>
+            Help with digital communications, website content,
+            photography, graphics or other technical activities.
+          </p>
+
+        </div>
+
+
+        <div class="involvement-card">
+
+          <div class="card-icon">
+            06
+          </div>
+
+          <h3>
+            Community Ideas
+          </h3>
+
+          <p>
+            Share constructive ideas about infrastructure, youth
+            development, representation and community priorities.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       VOLUNTEER FORM
+  ========================= -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="form-layout">
+
+
+        <!-- LEFT -->
+
+        <div class="form-info">
+
+          <span class="eyebrow">
+            Registration
+          </span>
+
+          <h2>
+            Register Your Interest
+          </h2>
+
+          <p>
+            Complete the form to indicate your preferred area of
+            involvement. Your information can be used by the website
+            administrator to follow up on your enquiry.
+          </p>
+
+          <div class="info-list">
+
+
+            <div class="info-item">
+
+              <div class="info-number">
+                1
+              </div>
+
+              <div>
+
+                <strong>
+                  Choose an area
+                </strong>
+
+                <span>
+                  Select the type of activity that interests you.
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="info-item">
+
+              <div class="info-number">
+                2
+              </div>
+
+              <div>
+
+                <strong>
+                  Provide your details
+                </strong>
+
+                <span>
+                  Enter accurate information so your enquiry can be
+                  followed up appropriately.
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="info-item">
+
+              <div class="info-number">
+                3
+              </div>
+
+              <div>
+
+                <strong>
+                  Submit your interest
+                </strong>
+
+                <span>
+                  Your form can be connected to your preferred
+                  form-processing service later.
+                </span>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+        <!-- FORM -->
+
+        <div class="form-card">
+
+          <h3>
+            Volunteer / Get Involved
+          </h3>
+
+          <p>
+            Please complete the form below.
+          </p>
+
+
+          <form
+            id="volunteerForm"
+            onsubmit="submitVolunteer(event)">
+
+
+            <div class="form-row">
+
+
+              <div class="form-group">
+
+                <label for="firstName">
+                  First Name
+                </label>
+
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="Enter first name"
+                  required>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="lastName">
+                  Last Name
+                </label>
+
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Enter last name"
+                  required>
+
+              </div>
+
+
+            </div>
+
+
+            <div class="form-row">
+
+
+              <div class="form-group">
+
+                <label for="email">
+                  Email Address
+                </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter email address"
+                  required>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="phone">
+                  Phone Number
+                </label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter phone number">
+
+              </div>
+
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="interest">
+                Area of Interest
+              </label>
+
+              <select
+                id="interest"
+                name="interest"
+                required>
+
+                <option value="">
+                  Select an option
+                </option>
+
+                <option value="community">
+                  Community Engagement
+                </option>
+
+                <option value="communications">
+                  Communications
+                </option>
+
+                <option value="research">
+                  Research & Ideas
+                </option>
+
+                <option value="events">
+                  Event Support
+                </option>
+
+                <option value="digital">
+                  Digital Support
+                </option>
+
+                <option value="community-ideas">
+                  Community Ideas
+                </option>
+
+                <option value="other">
+                  Other
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="location">
+                Local Government / Area
+              </label>
+
+              <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Enter your area">
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="message">
+                Message
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell us how you would like to contribute..."></textarea>
+
+            </div>
+
+
+            <div class="checkbox">
+
+              <input
+                type="checkbox"
+                id="consent"
+                required>
+
+              <label for="consent">
+
+                I understand that the information submitted through
+                this form may be used to respond to my enquiry.
+
+              </label>
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="submit-btn">
+
+              Submit Interest
+
+            </button>
+
+
+            <div
+              class="form-note"
+              id="formMessage">
+
+              Please do not submit sensitive personal information.
+
+            </div>
+
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       INFORMATION NOTE
+  ========================= -->
+
+  <section class="note-section">
+
+    <div class="container">
+
+      <div class="note-box">
+
+        <h3>
+          Important Information
+        </h3>
+
+        <p>
+          This page is intended for registering interest in public
+          engagement and volunteer activities. Submission of this form
+          does not guarantee selection for any particular activity.
+          Any future volunteer communication should contain verified
+          details about the relevant activity, date and location.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CTA
+  ========================= -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <div class="cta-box">
+
+        <h2>
+          Learn More About the Platform
+        </h2>
+
+        <p>
+          Explore the biography, agenda, latest public updates and
+          photo gallery for more information.
+        </p>
+
+        <a
+          href="about.html"
+          class="btn btn-gold">
+          About
+        </a>
+
+        <a
+          href="agenda.html"
+          class="btn btn-outline">
+          Agenda
+        </a>
+
+        <a
+          href="contact.html"
+          class="btn btn-outline">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div>
+
+          <div class="footer-brand">
+            JOHN IBRAHIM OCHEJE
+          </div>
+
+          <p>
+            Public information portal for Engr. John Ibrahim Ocheje,
+            House of Representatives aspirant for Idah Federal Constituency.
+          </p>
+
+          <p style="margin-top:12px;">
+            NDC • Idah Federal Constituency • 2027
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Quick Links
+          </h3>
+
+          <a href="index.html">
+            Home
+          </a>
+
+          <a href="about.html">
+            About
+          </a>
+
+          <a href="agenda.html">
+            Agenda
+          </a>
+
+          <a href="news.html">
+            News
+          </a>
+
+          <a href="gallery.html">
+            Gallery
+          </a>
+
+          <a href="volunteer.html">
+            Volunteer
+          </a>
+
+          <a href="contact.html">
+            Contact
+          </a>
+
+          <a href="support.html">
+            Support Us
+          </a>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Information
+          </h3>
+
+          <a href="support.html">
+            Support Us
+          </a>
+
+          <a href="faq.html">
+            FAQ
+          </a>
+
+          <a href="resources.html">
+            Resources
+          </a>
+
+          <a href="privacy.html">
+            Privacy Policy
+          </a>
+
+          <a href="terms.html">
+            Terms & Conditions
+          </a>
+
+          <a href="sitemap.html">
+            Sitemap
+          </a>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="copyright">
+
+        © 2027 John Ibrahim Ocheje. All rights reserved.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
+
+  <script>
+
+    /* MOBILE MENU */
+
+    function toggleMenu() {
+
+      const nav =
+        document.getElementById("mainNav");
+
+      nav.classList.toggle("show");
+
+    }
+
+
+    document
+      .querySelectorAll("#mainNav a")
+      .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+          document
+            .getElementById("mainNav")
+            .classList.remove("show");
+
+        });
+
+      });
+
+
+    /* FORM */
+
+    function submitVolunteer(event) {
+
+      event.preventDefault();
+
+
+      const message =
+        document.getElementById("formMessage");
+
+
+      message.textContent =
+        "Thank you. Your interest has been recorded on this page. Connect this form to your preferred form-processing service to receive submissions.";
+
+
+      message.style.color =
+        "#006b3c";
+
+
+      document
+        .getElementById("volunteerForm")
+        .reset();
+
+    }
+
+  </script>
+
+</body>
+</html>
