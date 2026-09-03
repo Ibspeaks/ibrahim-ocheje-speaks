@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Media Centre | John Ibrahim Ocheje</title>
+
+  <meta name="description"
+        content="Media Centre for John Ibrahim Ocheje, featuring public statements, press information and media resources.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+  <style>
+    :root {
+      --green:#006b3c;
+      --dark-green:#004f2c;
+      --gold:#f4c400;
+      --dark:#172033;
+      --muted:#667085;
+      --light:#f6f9f7;
+      --white:#ffffff;
+      --footer:#101820;
+      --border:#e5e7eb;
+      --shadow:0 15px 40px rgba(16,24,40,.08);
+    }
+
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html {
+      scroll-behavior:smooth;
+    }
+
+    body {
+      font-family:"Inter",sans-serif;
+      color:var(--dark);
+      line-height:1.7;
+      background:var(--white);
+    }
+
+    a {
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .container {
+      width:min(1120px,92%);
+      margin:auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(255,255,255,.97);
+      border-bottom:1px solid var(--border);
+      backdrop-filter:blur(10px);
+    }
+
+    .header-inner {
+      min-height:78px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:25px;
+    }
+
+    .brand {
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .brand-logo {
+      width:48px;
+      height:48px;
+      border-radius:50%;
+      background:var(--green);
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+      border:3px solid var(--gold);
+    }
+
+    .brand-text strong {
+      display:block;
+      font-size:14px;
+    }
+
+    .brand-text span {
+      display:block;
+      color:var(--green);
+      font-size:11px;
+      font-weight:700;
+    }
+
+    nav {
+      display:flex;
+      align-items:center;
+      gap:4px;
+    }
+
+    nav a {
+      padding:9px 11px;
+      font-size:13px;
+      font-weight:600;
+      color:#344054;
+      border-radius:7px;
+    }
+
+    nav a:hover {
+      color:var(--green);
+      background:#f0f8f4;
+    }
+
+    nav .nav-cta {
+      background:var(--green);
+      color:white;
+      padding:10px 16px;
+      margin-left:5px;
+    }
+
+    nav .nav-cta:hover {
+      background:var(--dark-green);
+      color:white;
+    }
+
+    .menu-btn {
+      display:none;
+      border:0;
+      background:var(--green);
+      color:white;
+      padding:9px 12px;
+      border-radius:7px;
+      font-size:20px;
+      cursor:pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height:420px;
+      display:flex;
+      align-items:center;
+      background:
+        linear-gradient(rgba(0,79,44,.84),rgba(0,79,44,.84)),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg")
+        center/cover no-repeat;
+      color:white;
+    }
+
+    .hero-content {
+      max-width:780px;
+      padding:80px 0;
+    }
+
+    .eyebrow {
+      display:inline-block;
+      color:var(--gold);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      margin-bottom:15px;
+    }
+
+    .hero h1 {
+      font-family:"Playfair Display",serif;
+      font-size:clamp(40px,6vw,64px);
+      line-height:1.1;
+      margin-bottom:20px;
+    }
+
+    .hero p {
+      font-size:17px;
+      color:rgba(255,255,255,.88);
+      max-width:700px;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding:75px 0;
+    }
+
+    .section-heading {
+      max-width:720px;
+      margin-bottom:40px;
+    }
+
+    .label {
+      color:var(--green);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:1.4px;
+      text-transform:uppercase;
+      margin-bottom:10px;
+    }
+
+    .section-heading h2 {
+      font-family:"Playfair Display",serif;
+      font-size:38px;
+      line-height:1.2;
+      margin-bottom:14px;
+    }
+
+    .section-heading p {
+      color:var(--muted);
+    }
+
+    /* FEATURE */
+
+    .feature {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .feature-image {
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+
+    .feature-image img {
+      width:100%;
+      height:380px;
+      object-fit:cover;
+    }
+
+    .feature-content h2 {
+      font-family:"Playfair Display",serif;
+      font-size:35px;
+      line-height:1.2;
+      margin-bottom:15px;
+    }
+
+    .feature-content p {
+      color:var(--muted);
+      margin-bottom:15px;
+    }
+
+    /* MEDIA CARDS */
+
+    .media-section {
+      background:var(--light);
+    }
+
+    .cards {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+
+    .card {
+      background:white;
+      border:1px solid var(--border);
+      border-radius:15px;
+      padding:28px;
+      transition:.25s ease;
+    }
+
+    .card:hover {
+      transform:translateY(-4px);
+      box-shadow:var(--shadow);
+    }
+
+    .icon {
+      width:50px;
+      height:50px;
+      border-radius:12px;
+      background:#edf8f2;
+      color:var(--green);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:23px;
+      margin-bottom:18px;
+    }
+
+    .card h3 {
+      font-size:19px;
+      margin-bottom:9px;
+    }
+
+    .card p {
+      color:var(--muted);
+      font-size:14px;
+      margin-bottom:18px;
+    }
+
+    .card a {
+      color:var(--green);
+      font-size:13px;
+      font-weight:800;
+    }
+
+    .card a:hover {
+      color:var(--dark-green);
+    }
+
+    /* PRESS NOTE */
+
+    .press-box {
+      background:white;
+      border:1px solid var(--border);
+      border-left:5px solid var(--green);
+      border-radius:12px;
+      padding:28px;
+      margin-top:30px;
+    }
+
+    .press-box h3 {
+      margin-bottom:10px;
+    }
+
+    .press-box p {
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    /* CTA */
+
+    .cta {
+      background:var(--green);
+      color:white;
+      text-align:center;
+    }
+
+    .cta h2 {
+      font-family:"Playfair Display",serif;
+      font-size:40px;
+      margin-bottom:12px;
+    }
+
+    .cta p {
+      max-width:680px;
+      margin:0 auto 25px;
+      color:rgba(255,255,255,.85);
+    }
+
+    .btn {
+      display:inline-block;
+      padding:12px 21px;
+      border-radius:8px;
+      font-size:14px;
+      font-weight:700;
+      margin:5px;
+    }
+
+    .btn-light {
+      background:white;
+      color:var(--green);
+    }
+
+    .btn-outline {
+      border:1px solid rgba(255,255,255,.6);
+      color:white;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background:var(--footer);
+      color:#d0d5dd;
+      padding:55px 0 20px;
+    }
+
+    .footer-grid {
+      display:grid;
+      grid-template-columns:1.4fr 1fr 1fr;
+      gap:45px;
+      padding-bottom:35px;
+    }
+
+    footer h3 {
+      color:white;
+      font-size:16px;
+      margin-bottom:15px;
+    }
+
+    footer p {
+      color:#98a2b3;
+      font-size:13px;
+      max-width:420px;
+    }
+
+    .footer-links {
+      display:grid;
+      gap:8px;
+    }
+
+    .footer-links a {
+      color:#98a2b3;
+      font-size:13px;
+    }
+
+    .footer-links a:hover {
+      color:var(--gold);
+    }
+
+    .footer-bottom {
+      border-top:1px solid rgba(255,255,255,.1);
+      padding-top:18px;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:15px;
+      color:#98a2b3;
+      font-size:12px;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:900px) {
+
+      .menu-btn {
+        display:block;
+      }
+
+      nav {
+        position:absolute;
+        top:78px;
+        left:0;
+        right:0;
+        background:white;
+        border-bottom:1px solid var(--border);
+        padding:12px 4%;
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      nav.active {
+        display:flex;
+      }
+
+      nav a {
+        width:100%;
+      }
+
+      nav .nav-cta {
+        margin-left:0;
+        text-align:center;
+      }
+
+      .feature {
+        grid-template-columns:1fr;
+      }
+
+      .cards {
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    @media(max-width:600px) {
+
+      .header-inner {
+        min-height:70px;
+      }
+
+      .brand-logo {
+        width:42px;
+        height:42px;
+      }
+
+      .brand-text strong {
+        font-size:12px;
+      }
+
+      .brand-text span {
+        font-size:9px;
+      }
+
+      .hero {
+        min-height:390px;
+      }
+
+      .hero-content {
+        padding:65px 0;
+      }
+
+      .hero h1 {
+        font-size:40px;
+      }
+
+      section {
+        padding:55px 0;
+      }
+
+      .section-heading h2,
+      .feature-content h2 {
+        font-size:30px;
+      }
+
+      .cards {
+        grid-template-columns:1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns:1fr;
+        gap:30px;
+      }
+
+      .cta h2 {
+        font-size:32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+        <div class="brand-logo">JO</div>
+
+        <div class="brand-text">
+          <strong>JOHN IBRAHIM OCHEJE</strong>
+          <span>2027 • IDAH FEDERAL CONSTITUENCY</span>
+        </div>
+      </a>
+
+      <button class="menu-btn"
+              onclick="toggleMenu()"
+              aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="volunteer.html" class="nav-cta">Join Us</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">Media & Public Information</span>
+
+        <h1>Media Centre</h1>
+
+        <p>
+          A central place for public statements, press information,
+          interviews, media materials and other verified information
+          relating to John Ibrahim Ocheje.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEATURE -->
+  <section>
+
+    <div class="container">
+
+      <div class="feature">
+
+        <div class="feature-image">
+          <img
+            src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+            alt="John Ibrahim Ocheje">
+        </div>
+
+        <div class="feature-content">
+
+          <span class="eyebrow" style="color:var(--green);">
+            Public Information
+          </span>
+
+          <h2>
+            Information for journalists, researchers and the public.
+          </h2>
+
+          <p>
+            The Media Centre is designed to make publicly available
+            information easier to find and reference.
+          </p>
+
+          <p>
+            Historical reports, public statements and other materials
+            should be checked against their original sources before being
+            treated as authoritative.
+          </p>
+
+          <div class="press-box">
+
+            <h3>Media Enquiries</h3>
+
+            <p>
+              For enquiries, interviews or requests for additional
+              information, please use the Contact page.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MEDIA RESOURCES -->
+  <section class="media-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="label">Media Resources</div>
+
+        <h2>Explore Public Information</h2>
+
+        <p>
+          Browse the available sections of the website for information
+          relating to news, statements, images and public resources.
+        </p>
+
+      </div>
+
+
+      <div class="cards">
+
+        <div class="card">
+
+          <div class="icon">📰</div>
+
+          <h3>News & Updates</h3>
+
+          <p>
+            Read published updates and historical reports included on
+            the website.
+          </p>
+
+          <a href="news.html">View News →</a>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📷</div>
+
+          <h3>Photo Gallery</h3>
+
+          <p>
+            View photographs and visual materials made available through
+            the website.
+          </p>
+
+          <a href="gallery.html">View Gallery →</a>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📄</div>
+
+          <h3>Resources</h3>
+
+          <p>
+            Access useful public, civic and electoral information from
+            relevant sources.
+          </p>
+
+          <a href="resources.html">View Resources →</a>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📢</div>
+
+          <h3>Public Statements</h3>
+
+          <p>
+            A section for public statements and announcements that are
+            formally published on the website.
+          </p>
+
+          <a href="news.html">View Updates →</a>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🎙️</div>
+
+          <h3>Interviews</h3>
+
+          <p>
+            Interviews and media appearances can be added here when
+            verified links or recordings are available.
+          </p>
+
+          <a href="contact.html">Media Enquiries →</a>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📬</div>
+
+          <h3>Press Enquiries</h3>
+
+          <p>
+            Journalists and media organisations can use the contact page
+            for legitimate enquiries.
+          </p>
+
+          <a href="contact.html">Contact Us →</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SOURCE NOTE -->
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="label">Verification</div>
+
+        <h2>Use Original Sources</h2>
+
+        <p>
+          Media information should be presented accurately and with
+          appropriate attribution.
+        </p>
+
+      </div>
+
+      <div class="press-box">
+
+        <h3>Important Information</h3>
+
+        <p>
+          Historical reports about Ocheje's previous political activities
+          have appeared in Nigerian media, including reports concerning
+          the 2022 PDP primary and subsequent legal proceedings.
+          Where historical reports are referenced, this website should
+          identify them as published reports rather than presenting
+          media claims as independent verification.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>Need More Information?</h2>
+
+      <p>
+        Visit the contact page for general enquiries or explore the
+        website's resources and news sections.
+      </p>
+
+      <a href="contact.html" class="btn btn-light">
+        Contact Us
+      </a>
+
+      <a href="news.html" class="btn btn-outline">
+        View News
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <h3>JOHN IBRAHIM OCHEJE</h3>
+
+          <p>
+            Public information website for Engr. John Ibrahim Ocheje and
+            information relating to the 2027 Idah Federal Constituency
+            political process.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>Quick Links</h3>
+
+          <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="news.html">News</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support Us</a>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>Information</h3>
+
+          <div class="footer-links">
+
+            <a href="partners.html">Partners</a>
+            <a href="media.html">Media Centre</a>
+            <a href="faq.html">FAQ</a>
+            <a href="resources.html">Resources</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="sitemap.html">Sitemap</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <div>
+          © 2027 John Ibrahim Ocheje. All rights reserved.
+        </div>
+
+        <div>
+          NDC • Idah Federal Constituency • 2027
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- MOBILE MENU -->
+  <script>
+
+    function toggleMenu() {
+      document.getElementById("mainNav").classList.toggle("active");
+    }
+
+    document.querySelectorAll("#mainNav a").forEach(function(link) {
+
+      link.addEventListener("click", function() {
+
+        document.getElementById("mainNav").classList.remove("active");
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
