@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Manifesto | John Ibrahim Ocheje</title>
+
+  <meta name="description"
+        content="Public policy priorities and development themes associated with Engr. John Ibrahim Ocheje and his 2027 public service aspiration for Idah Federal Constituency.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #006b3c;
+      --dark-green: #004f2c;
+      --gold: #f4c400;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e7eb;
+      --shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1150px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 18px;
+      border: 3px solid var(--gold);
+    }
+
+    .brand-text h1 {
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 800;
+      letter-spacing: .3px;
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 11px;
+      color: var(--green);
+      font-weight: 700;
+      margin-top: 4px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    nav a {
+      padding: 9px 11px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #344054;
+      border-radius: 7px;
+      transition: .2s ease;
+    }
+
+    nav a:hover {
+      color: var(--green);
+      background: #f0f7f3;
+    }
+
+    nav .nav-cta {
+      background: var(--green);
+      color: var(--white);
+      padding: 10px 16px;
+      margin-left: 5px;
+    }
+
+    nav .nav-cta:hover {
+      background: var(--dark-green);
+      color: var(--white);
+    }
+
+    .menu-btn {
+      display: none;
+      border: none;
+      background: var(--green);
+      color: white;
+      width: 44px;
+      height: 42px;
+      border-radius: 7px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+      min-height: 390px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(0,79,44,.94), rgba(0,107,60,.72)),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg") center/cover;
+    }
+
+    .hero-content {
+      color: white;
+      max-width: 760px;
+      padding: 75px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      max-width: 680px;
+      color: rgba(255,255,255,.9);
+    }
+
+    /* SECTION */
+
+    section {
+      padding: 75px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 45px;
+    }
+
+    .section-heading .label {
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 800;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    .section-heading h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 36px;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    /* INTRO */
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .intro-image {
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .intro-image img {
+      height: 440px;
+      object-fit: cover;
+    }
+
+    .intro-content h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 38px;
+      margin-bottom: 18px;
+    }
+
+    .intro-content p {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .note {
+      border-left: 4px solid var(--gold);
+      background: #fffdf0;
+      padding: 18px 20px;
+      margin-top: 22px;
+      color: #475467;
+      border-radius: 0 10px 10px 0;
+      font-size: 14px;
+    }
+
+    /* PRIORITIES */
+
+    .priorities {
+      background: var(--light);
+    }
+
+    .priority-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .priority-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 28px;
+      transition: .25s ease;
+    }
+
+    .priority-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .priority-number {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--green);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .priority-card h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .priority-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* DETAILS */
+
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .detail-card {
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 30px;
+      background: white;
+    }
+
+    .detail-card h4 {
+      color: var(--green);
+      font-size: 21px;
+      margin-bottom: 12px;
+    }
+
+    .detail-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .detail-card ul {
+      padding-left: 20px;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .detail-card li {
+      margin-bottom: 7px;
+    }
+
+    /* PRINCIPLES */
+
+    .principles {
+      background: var(--dark-green);
+      color: white;
+    }
+
+    .principles .section-heading .label {
+      color: var(--gold);
+    }
+
+    .principles .section-heading h3 {
+      color: white;
+    }
+
+    .principles .section-heading p {
+      color: rgba(255,255,255,.78);
+    }
+
+    .principle-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .principle {
+      border: 1px solid rgba(255,255,255,.15);
+      padding: 25px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.05);
+    }
+
+    .principle strong {
+      display: block;
+      color: var(--gold);
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .principle p {
+      color: rgba(255,255,255,.78);
+      font-size: 13px;
+    }
+
+    /* CTA */
+
+    .cta {
+      background: var(--light);
+      text-align: center;
+    }
+
+    .cta-box {
+      max-width: 850px;
+      margin: auto;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 45px 25px;
+      box-shadow: var(--shadow);
+    }
+
+    .cta h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0 auto 25px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 21px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      background: var(--green);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--dark-green);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--green);
+      color: var(--green);
+    }
+
+    .btn-outline:hover {
+      background: #eef8f3;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--footer);
+      color: white;
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 45px;
+      margin-bottom: 35px;
+    }
+
+    footer h4 {
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    footer p,
+    footer a {
+      color: #aab4c0;
+      font-size: 13px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .footer-brand {
+      font-family: "Playfair Display", serif;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 20px;
+      text-align: center;
+      color: #8f9aa7;
+      font-size: 12px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+
+      nav {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        background: white;
+        border-bottom: 1px solid var(--border);
+        padding: 12px 4%;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        padding: 13px;
+      }
+
+      nav .nav-cta {
+        margin-left: 0;
+        text-align: center;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .intro-grid,
+      .details-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .priority-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .principle-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      section {
+        padding: 55px 0;
+      }
+
+      .hero {
+        min-height: 350px;
+      }
+
+      .hero-content {
+        padding: 60px 0;
+      }
+
+      .hero h2 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .section-heading h3 {
+        font-size: 30px;
+      }
+
+      .intro-content h3 {
+        font-size: 31px;
+      }
+
+      .intro-image img {
+        height: 350px;
+      }
+
+      .priority-grid,
+      .principle-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .brand-text h1 {
+        font-size: 13px;
+      }
+
+      .brand-logo {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+        <div class="brand-logo">JO</div>
+
+        <div class="brand-text">
+          <h1>JOHN IBRAHIM OCHEJE</h1>
+          <span>2027 • IDAH FEDERAL CONSTITUENCY</span>
+        </div>
+      </a>
+
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="manifesto.html">Manifesto</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="volunteer.html" class="nav-cta">Join Us</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+
+        <span class="eyebrow">2027 Public Service Vision</span>
+
+        <h2>Manifesto & Development Priorities</h2>
+
+        <p>
+          A public outline of policy interests, development themes and
+          representation priorities associated with Engr. John Ibrahim Ocheje's
+          aspiration to represent Idah Federal Constituency.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- INTRO -->
+  <section>
+    <div class="container">
+
+      <div class="intro-grid">
+
+        <div class="intro-image">
+          <img
+            src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+            alt="Engr. John Ibrahim Ocheje">
+        </div>
+
+        <div class="intro-content">
+
+          <span class="eyebrow" style="color:#006b3c;">
+            A Development Framework
+          </span>
+
+          <h3>Representation Focused on People and Results</h3>
+
+          <p>
+            Effective legislative representation requires listening to
+            constituents, understanding local challenges and using the
+            responsibilities of the National Assembly to pursue practical
+            solutions.
+          </p>
+
+          <p>
+            The priorities presented on this page are organised around
+            development, opportunity, accountability, education, infrastructure
+            and inclusive representation.
+          </p>
+
+          <div class="note">
+            <strong>Important:</strong>
+            This page presents policy themes for public information. Specific
+            programmes, funding commitments and implementation timelines should
+            only be treated as official when formally published and confirmed.
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PRIORITIES -->
+  <section class="priorities">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="label">Core Priorities</div>
+
+        <h3>Areas of Development</h3>
+
+        <p>
+          Key areas that can support stronger representation and sustainable
+          development within Idah Federal Constituency.
+        </p>
+
+      </div>
+
+
+      <div class="priority-grid">
+
+        <div class="priority-card">
+          <div class="priority-number">01</div>
+          <h4>Education</h4>
+          <p>
+            Support initiatives that improve access to quality education,
+            skills development, learning opportunities and youth capacity
+            building.
+          </p>
+        </div>
+
+
+        <div class="priority-card">
+          <div class="priority-number">02</div>
+          <h4>Healthcare</h4>
+          <p>
+            Encourage stronger attention to accessible healthcare services,
+            public health awareness and community-level health infrastructure.
+          </p>
+        </div>
+
+
+        <div class="priority-card">
+          <div class="priority-number">03</div>
+          <h4>Infrastructure</h4>
+          <p>
+            Promote attention to roads, water, electricity, public facilities
+            and other infrastructure that directly affects communities.
+          </p>
+        </div>
+
+
+        <div class="priority-card">
+          <div class="priority-number">04</div>
+          <h4>Youth Development</h4>
+          <p>
+            Promote skills, entrepreneurship, employment opportunities and
+            constructive participation of young people in development.
+          </p>
+        </div>
+
+
+        <div class="priority-card">
+          <div class="priority-number">05</div>
+          <h4>Economic Opportunity</h4>
+          <p>
+            Encourage policies and initiatives that can strengthen small
+            businesses, agriculture, enterprise and local economic activity.
+          </p>
+        </div>
+
+
+        <div class="priority-card">
+          <div class="priority-number">06</div>
+          <h4>Accountability</h4>
+          <p>
+            Encourage transparent representation, responsible use of public
+            resources and regular communication with constituents.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- POLICY DETAILS -->
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="label">Policy Themes</div>
+
+        <h3>What the Vision Covers</h3>
+
+        <p>
+          A practical framework for understanding the areas that may receive
+          attention through legislative representation.
+        </p>
+
+      </div>
+
+
+      <div class="details-grid">
+
+        <div class="detail-card">
+
+          <h4>Human Capital Development</h4>
+
+          <p>
+            Human capital is central to long-term community development.
+            Attention may include:
+          </p>
+
+          <ul>
+            <li>Skills acquisition</li>
+            <li>Vocational development</li>
+            <li>Education support</li>
+            <li>Youth capacity building</li>
+            <li>Professional development</li>
+          </ul>
+
+        </div>
+
+
+        <div class="detail-card">
+
+          <h4>Community Infrastructure</h4>
+
+          <p>
+            Legislative representation can help draw attention to local
+            infrastructure needs and advocate for appropriate interventions.
+          </p>
+
+          <ul>
+            <li>Road infrastructure</li>
+            <li>Water supply</li>
+            <li>Electricity</li>
+            <li>Schools and public facilities</li>
+            <li>Community development projects</li>
+          </ul>
+
+        </div>
+
+
+        <div class="detail-card">
+
+          <h4>Agriculture & Enterprise</h4>
+
+          <p>
+            Supporting productive economic activity can help strengthen
+            household income and community resilience.
+          </p>
+
+          <ul>
+            <li>Small businesses</li>
+            <li>Agricultural development</li>
+            <li>Entrepreneurship</li>
+            <li>Skills and enterprise support</li>
+            <li>Local economic opportunities</li>
+          </ul>
+
+        </div>
+
+
+        <div class="detail-card">
+
+          <h4>Effective Representation</h4>
+
+          <p>
+            Representation should maintain a strong connection between
+            constituents and their elected representative.
+          </p>
+
+          <ul>
+            <li>Constituency engagement</li>
+            <li>Public communication</li>
+            <li>Issue-based advocacy</li>
+            <li>Legislative oversight</li>
+            <li>Regular public updates</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRINCIPLES -->
+  <section class="principles">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="label">Guiding Principles</div>
+
+        <h3>How Representation Should Work</h3>
+
+        <p>
+          The framework places emphasis on responsible leadership and
+          constructive public engagement.
+        </p>
+
+      </div>
+
+
+      <div class="principle-grid">
+
+        <div class="principle">
+          <strong>Listening</strong>
+          <p>
+            Constituency concerns should inform public representation and
+            legislative priorities.
+          </p>
+        </div>
+
+
+        <div class="principle">
+          <strong>Accountability</strong>
+          <p>
+            Public office should be accompanied by responsible communication
+            and transparency.
+          </p>
+        </div>
+
+
+        <div class="principle">
+          <strong>Inclusion</strong>
+          <p>
+            Women, youth, communities and different interest groups should have
+            opportunities to participate in development conversations.
+          </p>
+        </div>
+
+
+        <div class="principle">
+          <strong>Results</strong>
+          <p>
+            Public discussion should focus on practical needs, measurable
+            progress and sustainable development.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta">
+
+    <div class="container">
+
+      <div class="cta-box">
+
+        <h3>Explore the Full Public Information Platform</h3>
+
+        <p>
+          Read more about the background, agenda, public updates, events,
+          speeches and resources available on this website.
+        </p>
+
+        <div class="buttons">
+
+          <a href="agenda.html" class="btn btn-primary">
+            View Agenda
+          </a>
+
+          <a href="about.html" class="btn btn-outline">
+            About John Ibrahim Ocheje
+          </a>
+
+          <a href="contact.html" class="btn btn-outline">
+            Contact
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <div class="footer-brand">
+            JOHN IBRAHIM OCHEJE
+          </div>
+
+          <p>
+            Public information platform for the 2027 aspiration for
+            Idah Federal Constituency.
+          </p>
+
+          <p style="margin-top:12px;">
+            NDC • Idah Federal Constituency • 2027
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h4>Quick Links</h4>
+
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="agenda.html">Agenda</a>
+          <a href="manifesto.html">Manifesto</a>
+          <a href="news.html">News</a>
+          <a href="events.html">Events</a>
+          <a href="speeches.html">Speeches</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div>
+
+          <h4>Information</h4>
+
+          <a href="support.html">Support Us</a>
+          <a href="partners.html">Partners</a>
+          <a href="media.html">Media Centre</a>
+          <a href="downloads.html">Downloads</a>
+          <a href="faq.html">FAQ</a>
+          <a href="resources.html">Resources</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        © 2027 John Ibrahim Ocheje. All rights reserved.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mainNav").classList.toggle("active");
+    }
+
+    document.querySelectorAll("#mainNav a").forEach(function(link) {
+      link.addEventListener("click", function() {
+        document.getElementById("mainNav").classList.remove("active");
+      });
+    });
+  </script>
+
+</body>
+</html>
