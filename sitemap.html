@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sitemap | John Ibrahim Ocheje 2027</title>
+
+  <meta name="description" content="Website sitemap for Engr. John Ibrahim Ocheje, 2027 Idah Federal Constituency.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #006b3c;
+      --dark-green: #004f2c;
+      --gold: #f4c400;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e7eb;
+      --shadow: 0 12px 35px rgba(0,0,0,.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 18px;
+      border: 3px solid var(--gold);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: .3px;
+    }
+
+    .brand-text span {
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    nav a {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--dark);
+      transition: .25s;
+    }
+
+    nav a:hover {
+      color: var(--green);
+    }
+
+    .nav-cta {
+      background: var(--green);
+      color: var(--white) !important;
+      padding: 10px 17px;
+      border-radius: 7px;
+    }
+
+    .menu-btn {
+      display: none;
+      border: none;
+      background: var(--green);
+      color: var(--white);
+      width: 42px;
+      height: 42px;
+      border-radius: 7px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+      min-height: 390px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(0,79,44,.88), rgba(0,79,44,.9)),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg")
+        center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .hero-content {
+      max-width: 760px;
+      padding: 70px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(40px, 6vw, 64px);
+      line-height: 1.08;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      color: rgba(255,255,255,.88);
+      font-size: 17px;
+    }
+
+    /* CONTENT */
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 45px;
+    }
+
+    .section-header h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .section-header p {
+      color: var(--muted);
+    }
+
+    .sitemap-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .site-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .site-card h3 {
+      font-size: 20px;
+      color: var(--green);
+      margin-bottom: 18px;
+    }
+
+    .site-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .site-links {
+      display: grid;
+      gap: 10px;
+    }
+
+    .site-links a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 15px;
+      border-radius: 8px;
+      background: var(--light);
+      color: var(--dark);
+      font-size: 14px;
+      font-weight: 600;
+      transition: .25s;
+    }
+
+    .site-links a span {
+      color: var(--green);
+      font-size: 18px;
+    }
+
+    .site-links a:hover {
+      background: var(--green);
+      color: var(--white);
+      transform: translateX(4px);
+    }
+
+    .site-links a:hover span {
+      color: var(--gold);
+    }
+
+    /* QUICK NAVIGATION */
+
+    .quick-nav {
+      background: var(--light);
+    }
+
+    .quick-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 35px;
+      box-shadow: var(--shadow);
+    }
+
+    .quick-box h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .quick-box p {
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .quick-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .quick-list a {
+      padding: 13px 15px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      background: var(--white);
+      transition: .25s;
+    }
+
+    .quick-list a:hover {
+      border-color: var(--green);
+      color: var(--green);
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 70px 0;
+      background: var(--dark-green);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: rgba(255,255,255,.82);
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 21px;
+      border-radius: 7px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,.35);
+      color: var(--white);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--footer);
+      color: var(--white);
+      padding: 60px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+      margin-bottom: 45px;
+    }
+
+    footer h3 {
+      font-size: 16px;
+      margin-bottom: 17px;
+    }
+
+    .footer-brand p {
+      color: #aab3bd;
+      font-size: 14px;
+      max-width: 380px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 9px;
+    }
+
+    .footer-links a {
+      color: #aab3bd;
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      color: #89939e;
+      font-size: 12px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        padding: 13px 5px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .nav-cta {
+        text-align: center;
+        margin-top: 10px;
+        border: none !important;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .sitemap-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .nav {
+        min-height: 70px;
+      }
+
+      .brand-logo {
+        width: 43px;
+        height: 43px;
+      }
+
+      .brand-text strong {
+        font-size: 13px;
+      }
+
+      .brand-text span {
+        font-size: 9px;
+      }
+
+      .hero {
+        min-height: 330px;
+      }
+
+      .hero-content {
+        padding: 55px 0;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      .section-header h2 {
+        font-size: 31px;
+      }
+
+      .site-card {
+        padding: 23px;
+      }
+
+      .quick-list {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-box {
+        padding: 25px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="container nav">
+
+      <a href="index.html" class="brand">
+        <div class="brand-logo">JO</div>
+
+        <div class="brand-text">
+          <strong>JOHN IBRAHIM OCHEJE</strong>
+          <span>2027 • IDAH FEDERAL CONSTITUENCY</span>
+        </div>
+      </a>
+
+      <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="volunteer.html" class="nav-cta">Join Us</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">Website Navigation</span>
+
+        <h1>Sitemap</h1>
+
+        <p>
+          A simple guide to the pages and sections available on this website.
+          Use the links below to find information about John Ibrahim Ocheje,
+          public priorities, news, resources and ways to get in touch.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SITEMAP -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <span class="eyebrow" style="color: var(--green);">
+          Explore The Website
+        </span>
+
+        <h2>Find What You Need</h2>
+
+        <p>
+          Browse the main sections of the website using the links below.
+        </p>
+
+      </div>
+
+
+      <div class="sitemap-grid">
+
+        <!-- MAIN PAGES -->
+
+        <div class="site-card">
+
+          <h3>1. Main Pages</h3>
+
+          <p>
+            Start here to learn about the website, the candidate and the
+            information published about the 2027 Idah Federal Constituency
+            project.
+          </p>
+
+          <div class="site-links">
+
+            <a href="index.html">
+              Home
+              <span>→</span>
+            </a>
+
+            <a href="about.html">
+              About
+              <span>→</span>
+            </a>
+
+            <a href="agenda.html">
+              Agenda
+              <span>→</span>
+            </a>
+
+            <a href="news.html">
+              News
+              <span>→</span>
+            </a>
+
+            <a href="gallery.html">
+              Gallery
+              <span>→</span>
+            </a>
+
+            <a href="contact.html">
+              Contact
+              <span>→</span>
+            </a>
+
+            <a href="volunteer.html">
+              Join Us / Volunteer
+              <span>→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- INFORMATION -->
+
+        <div class="site-card">
+
+          <h3>2. Information</h3>
+
+          <p>
+            Additional pages containing frequently requested information,
+            public resources and website support information.
+          </p>
+
+          <div class="site-links">
+
+            <a href="support.html">
+              Support Us
+              <span>→</span>
+            </a>
+
+            <a href="faq.html">
+              Frequently Asked Questions
+              <span>→</span>
+            </a>
+
+            <a href="resources.html">
+              Civic & Public Resources
+              <span>→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- POLICIES -->
+
+        <div class="site-card">
+
+          <h3>3. Policies & Legal</h3>
+
+          <p>
+            Read the website policies governing privacy, use of content and
+            access to information published on this website.
+          </p>
+
+          <div class="site-links">
+
+            <a href="privacy.html">
+              Privacy Policy
+              <span>→</span>
+            </a>
+
+            <a href="terms.html">
+              Terms & Conditions
+              <span>→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- OTHER -->
+
+        <div class="site-card">
+
+          <h3>4. Other Website Pages</h3>
+
+          <p>
+            Pages that help visitors navigate the website when a requested
+            page cannot be found or when additional navigation is required.
+          </p>
+
+          <div class="site-links">
+
+            <a href="404.html">
+              404 — Page Not Found
+              <span>→</span>
+            </a>
+
+            <a href="sitemap.html">
+              Sitemap
+              <span>→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- QUICK NAVIGATION -->
+
+  <section class="section quick-nav">
+
+    <div class="container">
+
+      <div class="quick-box">
+
+        <h2>Quick Navigation</h2>
+
+        <p>
+          Use these shortcuts to move directly to some of the most important
+          sections of the website.
+        </p>
+
+        <div class="quick-list">
+
+          <a href="index.html">Home</a>
+
+          <a href="about.html">About John Ibrahim Ocheje</a>
+
+          <a href="agenda.html">Public Agenda</a>
+
+          <a href="news.html">Latest News</a>
+
+          <a href="gallery.html">Photo Gallery</a>
+
+          <a href="contact.html">Contact</a>
+
+          <a href="volunteer.html">Volunteer</a>
+
+          <a href="support.html">Support Us</a>
+
+          <a href="faq.html">FAQ</a>
+
+          <a href="resources.html">Resources</a>
+
+          <a href="privacy.html">Privacy Policy</a>
+
+          <a href="terms.html">Terms & Conditions</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>Want to Learn More?</h2>
+
+      <p>
+        Explore the website to learn more about John Ibrahim Ocheje,
+        published information, public priorities and available resources.
+      </p>
+
+      <div class="cta-buttons">
+
+        <a href="about.html" class="btn btn-primary">
+          Read About
+        </a>
+
+        <a href="contact.html" class="btn btn-secondary">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+
+          <h3>JOHN IBRAHIM OCHEJE</h3>
+
+          <p>
+            Information and public engagement website for the 2027
+            Idah Federal Constituency.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>Quick Links</h3>
+
+          <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="news.html">News</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support Us</a>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>Information</h3>
+
+          <div class="footer-links">
+
+            <a href="faq.html">FAQ</a>
+            <a href="resources.html">Resources</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="sitemap.html">Sitemap</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 John Ibrahim Ocheje. All rights reserved.
+        </span>
+
+        <span>
+          NDC • Idah Federal Constituency • 2027
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- MOBILE MENU -->
+
+  <script>
+
+    function toggleMenu() {
+      document.getElementById("mainNav").classList.toggle("active");
+    }
+
+    document.querySelectorAll("#mainNav a").forEach(function(link) {
+      link.addEventListener("click", function() {
+        document.getElementById("mainNav").classList.remove("active");
+      });
+    });
+
+  </script>
+
+</body>
+</html>
