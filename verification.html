@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Information Verification | John Ibrahim Ocheje 2027</title>
+
+  <meta name="description" content="Information verification and responsible communication guide for the John Ibrahim Ocheje 2027 public information website.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #006b3c;
+      --dark-green: #004f2c;
+      --gold: #f4c400;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e7eb;
+      --shadow: 0 12px 35px rgba(0,0,0,0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 17px;
+      border: 3px solid var(--gold);
+      flex-shrink: 0;
+    }
+
+    .brand-text h1 {
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    .brand-text span {
+      display: block;
+      margin-top: 3px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    nav a {
+      padding: 10px 11px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #344054;
+      border-radius: 8px;
+      transition: 0.25s ease;
+    }
+
+    nav a:hover {
+      color: var(--green);
+      background: #f0f7f3;
+    }
+
+    nav .nav-cta {
+      color: var(--white);
+      background: var(--green);
+      padding: 10px 17px;
+      margin-left: 5px;
+    }
+
+    nav .nav-cta:hover {
+      background: var(--dark-green);
+      color: var(--white);
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 28px;
+      color: var(--green);
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 390px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(
+          rgba(0,79,44,0.91),
+          rgba(0,107,60,0.86)
+        ),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg")
+        center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .hero-content {
+      max-width: 820px;
+      padding: 80px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 6vw, 62px);
+      line-height: 1.08;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      font-size: 17px;
+      color: rgba(255,255,255,0.92);
+    }
+
+    /* INTRO */
+
+    .main {
+      padding: 75px 0;
+    }
+
+    .intro {
+      max-width: 850px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin-bottom: 10px;
+    }
+
+    .intro h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      color: var(--muted);
+    }
+
+    /* CARDS */
+
+    .verify-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .verify-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 30px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      transition: 0.25s ease;
+    }
+
+    .verify-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .verify-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #eaf5ef;
+      color: var(--green);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+
+    .verify-card h4 {
+      font-size: 18px;
+      margin-bottom: 9px;
+    }
+
+    .verify-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* CHECKLIST */
+
+    .check-section {
+      background: var(--light);
+      padding: 75px 0;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 50px;
+      align-items: start;
+    }
+
+    .check-title h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 39px;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .check-title p {
+      color: var(--muted);
+    }
+
+    .check-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .check-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 20px;
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .check-number {
+      width: 38px;
+      height: 38px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .check-item h4 {
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .check-item p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* OFFICIAL SOURCES */
+
+    .sources {
+      padding: 75px 0;
+    }
+
+    .sources-header {
+      max-width: 760px;
+      margin-bottom: 35px;
+    }
+
+    .sources-header h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 38px;
+      line-height: 1.2;
+      margin-bottom: 13px;
+    }
+
+    .sources-header p {
+      color: var(--muted);
+    }
+
+    .source-box {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 18px;
+      background: var(--white);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    }
+
+    .source-box h4 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .source-box p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .source-link {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: #edf7f1;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .source-link:hover {
+      background: var(--green);
+      color: var(--white);
+    }
+
+    /* WARNING */
+
+    .warning-section {
+      background: var(--light);
+      padding: 65px 0;
+    }
+
+    .warning {
+      max-width: 900px;
+      margin: auto;
+      border-left: 5px solid var(--gold);
+      border-top: 1px solid #ead99a;
+      border-right: 1px solid #ead99a;
+      border-bottom: 1px solid #ead99a;
+      border-radius: 14px;
+      background: var(--white);
+      padding: 32px;
+    }
+
+    .warning h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 29px;
+      margin-bottom: 12px;
+    }
+
+    .warning p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .warning p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 75px 0;
+      background: var(--green);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .cta h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 4vw, 44px);
+      margin-bottom: 13px;
+    }
+
+    .cta p {
+      max-width: 680px;
+      margin: 0 auto 25px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 9px;
+      font-weight: 700;
+      font-size: 14px;
+      margin: 4px;
+      transition: 0.25s ease;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #182000;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.7);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--green);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--footer);
+      color: var(--white);
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+      padding-bottom: 40px;
+    }
+
+    footer h4 {
+      font-size: 16px;
+      margin-bottom: 17px;
+    }
+
+    footer p,
+    footer a {
+      color: #aeb7c2;
+      font-size: 13px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 9px;
+      transition: 0.2s ease;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .footer-brand {
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom p {
+      font-size: 12px;
+      color: #8f9aa7;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 950px) {
+
+      .verify-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .check-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 15px 4%;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        width: 100%;
+        padding: 13px;
+      }
+
+      nav .nav-cta {
+        margin: 5px 0 0;
+        text-align: center;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+    }
+
+    @media (max-width: 650px) {
+
+      .header-inner {
+        min-height: 70px;
+      }
+
+      .brand-logo {
+        width: 43px;
+        height: 43px;
+      }
+
+      .brand-text h1 {
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 340px;
+      }
+
+      .hero-content {
+        padding: 65px 0;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .verify-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .check-title h3,
+      .sources-header h3 {
+        font-size: 31px;
+      }
+
+      .warning {
+        padding: 26px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+
+        <div class="brand-logo">
+          JO
+        </div>
+
+        <div class="brand-text">
+          <h1>JOHN IBRAHIM OCHEJE</h1>
+          <span>2027 • IDAH FEDERAL CONSTITUENCY</span>
+        </div>
+
+      </a>
+
+      <button
+        class="menu-btn"
+        onclick="toggleMenu()"
+        aria-label="Open navigation">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="manifesto.html">Manifesto</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="volunteer.html" class="nav-cta">Join Us</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          Information Integrity
+        </span>
+
+        <h2>
+          Verify Before You Share
+        </h2>
+
+        <p>
+          A simple guide to checking public information, identifying
+          reliable sources and avoiding misinformation or impersonation.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO -->
+
+  <main class="main">
+
+    <div class="container">
+
+      <div class="intro">
+
+        <div class="section-label">
+          Verification Guide
+        </div>
+
+        <h3>
+          Information Should Be Checked Carefully
+        </h3>
+
+        <p>
+          Public information can change quickly. Before sharing a claim,
+          announcement, quotation, event information or electoral
+          information, visitors are encouraged to check the source and
+          confirm that the information is current.
+        </p>
+
+      </div>
+
+
+      <div class="verify-grid">
+
+        <div class="verify-card">
+
+          <div class="verify-icon">
+            01
+          </div>
+
+          <h4>
+            Check the Source
+          </h4>
+
+          <p>
+            Identify where the information came from and whether the
+            source is an official institution, recognized publication or
+            clearly identified public-information channel.
+          </p>
+
+        </div>
+
+
+        <div class="verify-card">
+
+          <div class="verify-icon">
+            02
+          </div>
+
+          <h4>
+            Check the Date
+          </h4>
+
+          <p>
+            An old report can sometimes be presented as a new development.
+            Always check when information was originally published or
+            updated.
+          </p>
+
+        </div>
+
+
+        <div class="verify-card">
+
+          <div class="verify-icon">
+            03
+          </div>
+
+          <h4>
+            Check the Context
+          </h4>
+
+          <p>
+            Headlines, screenshots and short quotations may not provide
+            the complete context. Read the full material whenever possible.
+          </p>
+
+        </div>
+
+
+        <div class="verify-card">
+
+          <div class="verify-icon">
+            04
+          </div>
+
+          <h4>
+            Compare Sources
+          </h4>
+
+          <p>
+            Important claims should, where possible, be compared against
+            independent and reliable sources before being treated as
+            confirmed.
+          </p>
+
+        </div>
+
+
+        <div class="verify-card">
+
+          <div class="verify-icon">
+            05
+          </div>
+
+          <h4>
+            Watch for Impersonation
+          </h4>
+
+          <p>
+            Be cautious of accounts, messages or websites that claim to
+            represent a person or organization without clear confirmation.
+          </p>
+
+        </div>
+
+
+        <div class="verify-card">
+
+          <div class="verify-icon">
+            06
+          </div>
+
+          <h4>
+            Verify Official Matters
+          </h4>
+
+          <p>
+            Election dates, procedures, registration information and other
+            official matters should be confirmed through the appropriate
+            government or electoral authority.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- CHECKLIST -->
+
+  <section class="check-section">
+
+    <div class="container">
+
+      <div class="check-grid">
+
+        <div class="check-title">
+
+          <div class="section-label">
+            Before Sharing
+          </div>
+
+          <h3>
+            Five Questions to Ask
+          </h3>
+
+          <p>
+            Taking a few moments to check information can help reduce the
+            spread of inaccurate or misleading claims.
+          </p>
+
+        </div>
+
+
+        <div class="check-list">
+
+          <div class="check-item">
+
+            <div class="check-number">
+              1
+            </div>
+
+            <div>
+
+              <h4>
+                Who published it?
+              </h4>
+
+              <p>
+                Identify the person, organization or publication behind
+                the information.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="check-item">
+
+            <div class="check-number">
+              2
+            </div>
+
+            <div>
+
+              <h4>
+                When was it published?
+              </h4>
+
+              <p>
+                Check whether the information is recent or relates to an
+                earlier event.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="check-item">
+
+            <div class="check-number">
+              3
+            </div>
+
+            <div>
+
+              <h4>
+                Is there supporting evidence?
+              </h4>
+
+              <p>
+                Look for documents, official announcements or credible
+                reporting supporting the claim.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="check-item">
+
+            <div class="check-number">
+              4
+            </div>
+
+            <div>
+
+              <h4>
+                Does another reliable source confirm it?
+              </h4>
+
+              <p>
+                Compare significant claims with independent reliable
+                sources where practical.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="check-item">
+
+            <div class="check-number">
+              5
+            </div>
+
+            <div>
+
+              <h4>
+                Am I certain before sharing?
+              </h4>
+
+              <p>
+                If important information cannot be confirmed, consider
+                waiting until reliable evidence becomes available.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SOURCES -->
+
+  <section class="sources">
+
+    <div class="container">
+
+      <div class="sources-header">
+
+        <div class="section-label">
+          Reliable Information
+        </div>
+
+        <h3>
+          Use Appropriate Official Sources
+        </h3>
+
+        <p>
+          For electoral and government-related information, visitors
+          should rely on the relevant official institutions and their
+          published materials.
+        </p>
+
+      </div>
+
+
+      <div class="source-box">
+
+        <h4>
+          Independent National Electoral Commission
+        </h4>
+
+        <p>
+          For official electoral information, procedures, election
+          information and other matters under its responsibility, consult
+          INEC's official communication channels.
+        </p>
+
+        <a
+          href="https://inecnigeria.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="source-link">
+          Visit INEC
+        </a>
+
+      </div>
+
+
+      <div class="source-box">
+
+        <h4>
+          Website Resources
+        </h4>
+
+        <p>
+          Explore the resources section of this website for links and
+          publicly available materials relevant to civic and electoral
+          information.
+        </p>
+
+        <a href="resources.html" class="source-link">
+          View Resources
+        </a>
+
+      </div>
+
+
+      <div class="source-box">
+
+        <h4>
+          News & Public Updates
+        </h4>
+
+        <p>
+          Visit the news section for published updates and information
+          presented through this public information platform.
+        </p>
+
+        <a href="news.html" class="source-link">
+          View News
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WARNING -->
+
+  <section class="warning-section">
+
+    <div class="container">
+
+      <div class="warning">
+
+        <h3>
+          Important Notice
+        </h3>
+
+        <p>
+          The appearance of information on this website does not by itself
+          make every statement an official government announcement.
+        </p>
+
+        <p>
+          Information concerning elections, laws, government procedures or
+          other official matters should be verified with the appropriate
+          official authority.
+        </p>
+
+        <p>
+          Visitors should also be cautious about screenshots, forwarded
+          messages, anonymous social-media posts and unofficial websites
+          claiming to represent individuals or organizations.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h3>
+        Found Information That Needs Clarification?
+      </h3>
+
+      <p>
+        If you encounter a questionable statement, suspected impersonation
+        or information that appears misleading, you can contact the website
+        through the available contact page.
+      </p>
+
+      <a href="contact.html" class="btn btn-gold">
+        Contact Us
+      </a>
+
+      <a href="security.html" class="btn btn-outline">
+        Website Security
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <div class="footer-brand">
+            John Ibrahim Ocheje
+          </div>
+
+          <p>
+            Public information platform for the 2027 Idah Federal
+            Constituency aspiration.
+          </p>
+
+          <p style="margin-top:12px;">
+            NDC • Idah Federal Constituency • 2027
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            Quick Links
+          </h4>
+
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="agenda.html">Agenda</a>
+          <a href="manifesto.html">Manifesto</a>
+          <a href="news.html">News</a>
+          <a href="events.html">Events</a>
+          <a href="speeches.html">Speeches</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            Information
+          </h4>
+
+          <a href="support.html">Support Us</a>
+          <a href="partners.html">Partners</a>
+          <a href="media.html">Media Centre</a>
+          <a href="downloads.html">Downloads</a>
+          <a href="faq.html">FAQ</a>
+          <a href="resources.html">Resources</a>
+          <a href="verification.html">Verification Guide</a>
+          <a href="code-of-conduct.html">Code of Conduct</a>
+          <a href="accessibility.html">Accessibility</a>
+          <a href="security.html">Security</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="legal.html">Legal & Policies</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <p>
+          © 2026 John Ibrahim Ocheje. All rights reserved.
+        </p>
+
+        <p>
+          Information is provided for public awareness and engagement.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function toggleMenu() {
+
+      document
+        .getElementById("mainNav")
+        .classList.toggle("active");
+
+    }
+
+
+    document
+      .querySelectorAll("#mainNav a")
+      .forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+          document
+            .getElementById("mainNav")
+            .classList.remove("active");
+
+        });
+
+      });
+
+  </script>
+
+</body>
+</html>
