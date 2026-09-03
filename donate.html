@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Support Us | John Ibrahim Ocheje</title>
+
+  <meta name="description"
+        content="Support and public engagement information for the 2027 aspiration of Engr. John Ibrahim Ocheje for Idah Federal Constituency.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+  <style>
+    :root {
+      --green:#006b3c;
+      --dark-green:#004f2c;
+      --gold:#f4c400;
+      --dark:#172033;
+      --muted:#667085;
+      --light:#f6f9f7;
+      --white:#fff;
+      --footer:#101820;
+      --border:#e5e7eb;
+      --shadow:0 15px 40px rgba(0,0,0,.08);
+    }
+
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html {
+      scroll-behavior:smooth;
+    }
+
+    body {
+      font-family:"Inter",sans-serif;
+      color:var(--dark);
+      line-height:1.7;
+      background:#fff;
+    }
+
+    a {
+      text-decoration:none;
+      color:inherit;
+    }
+
+    img {
+      width:100%;
+      display:block;
+    }
+
+    .container {
+      width:min(1150px,92%);
+      margin:auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(255,255,255,.97);
+      border-bottom:1px solid var(--border);
+      backdrop-filter:blur(10px);
+    }
+
+    .header-inner {
+      min-height:78px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    .brand {
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .brand-logo {
+      width:50px;
+      height:50px;
+      border-radius:50%;
+      background:var(--green);
+      color:#fff;
+      border:3px solid var(--gold);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+    }
+
+    .brand-text h1 {
+      font-size:15px;
+      line-height:1.2;
+      font-weight:800;
+    }
+
+    .brand-text span {
+      display:block;
+      font-size:11px;
+      color:var(--green);
+      font-weight:700;
+      margin-top:4px;
+    }
+
+    nav {
+      display:flex;
+      align-items:center;
+      gap:5px;
+    }
+
+    nav a {
+      padding:9px 11px;
+      font-size:13px;
+      font-weight:600;
+      color:#344054;
+      border-radius:7px;
+    }
+
+    nav a:hover {
+      background:#f0f7f3;
+      color:var(--green);
+    }
+
+    nav .nav-cta {
+      background:var(--green);
+      color:#fff;
+      padding:10px 16px;
+      margin-left:5px;
+    }
+
+    nav .nav-cta:hover {
+      background:var(--dark-green);
+      color:#fff;
+    }
+
+    .menu-btn {
+      display:none;
+      border:0;
+      background:var(--green);
+      color:#fff;
+      width:44px;
+      height:42px;
+      border-radius:7px;
+      font-size:22px;
+      cursor:pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height:390px;
+      display:flex;
+      align-items:center;
+      position:relative;
+      overflow:hidden;
+      background:
+        linear-gradient(90deg,rgba(0,79,44,.95),rgba(0,107,60,.72)),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg")
+        center/cover;
+    }
+
+    .hero-content {
+      color:#fff;
+      max-width:750px;
+      padding:75px 0;
+    }
+
+    .eyebrow {
+      display:inline-block;
+      color:var(--gold);
+      text-transform:uppercase;
+      letter-spacing:1.2px;
+      font-size:13px;
+      font-weight:800;
+      margin-bottom:15px;
+    }
+
+    .hero h2 {
+      font-family:"Playfair Display",serif;
+      font-size:clamp(40px,6vw,64px);
+      line-height:1.05;
+      margin-bottom:20px;
+    }
+
+    .hero p {
+      color:rgba(255,255,255,.9);
+      font-size:17px;
+      max-width:680px;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding:75px 0;
+    }
+
+    .section-heading {
+      text-align:center;
+      max-width:750px;
+      margin:0 auto 45px;
+    }
+
+    .section-heading .label {
+      color:var(--green);
+      text-transform:uppercase;
+      letter-spacing:1px;
+      font-size:12px;
+      font-weight:800;
+      margin-bottom:8px;
+    }
+
+    .section-heading h3 {
+      font-family:"Playfair Display",serif;
+      font-size:36px;
+      line-height:1.2;
+      margin-bottom:14px;
+    }
+
+    .section-heading p {
+      color:var(--muted);
+    }
+
+    /* SUPPORT INTRO */
+
+    .support-grid {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:45px;
+      align-items:center;
+    }
+
+    .support-image {
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+
+    .support-image img {
+      height:430px;
+      object-fit:cover;
+    }
+
+    .support-content h3 {
+      font-family:"Playfair Display",serif;
+      font-size:38px;
+      line-height:1.2;
+      margin-bottom:18px;
+    }
+
+    .support-content p {
+      color:var(--muted);
+      margin-bottom:16px;
+    }
+
+    /* SUPPORT OPTIONS */
+
+    .options {
+      background:var(--light);
+    }
+
+    .option-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+
+    .option-card {
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:15px;
+      padding:30px;
+      transition:.25s ease;
+    }
+
+    .option-card:hover {
+      transform:translateY(-5px);
+      box-shadow:var(--shadow);
+    }
+
+    .option-icon {
+      width:52px;
+      height:52px;
+      border-radius:50%;
+      background:var(--green);
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:21px;
+      font-weight:800;
+      margin-bottom:18px;
+    }
+
+    .option-card h4 {
+      font-size:20px;
+      margin-bottom:10px;
+    }
+
+    .option-card p {
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    /* NOTICE */
+
+    .notice-section {
+      background:#fff;
+    }
+
+    .notice {
+      max-width:900px;
+      margin:auto;
+      border-left:5px solid var(--gold);
+      background:#fffdf0;
+      padding:28px;
+      border-radius:0 12px 12px 0;
+    }
+
+    .notice h3 {
+      margin-bottom:10px;
+      font-size:21px;
+    }
+
+    .notice p {
+      color:#475467;
+      font-size:14px;
+    }
+
+    /* TRANSPARENCY */
+
+    .transparency {
+      background:var(--dark-green);
+      color:#fff;
+    }
+
+    .transparency .section-heading .label {
+      color:var(--gold);
+    }
+
+    .transparency .section-heading h3 {
+      color:#fff;
+    }
+
+    .transparency .section-heading p {
+      color:rgba(255,255,255,.78);
+    }
+
+    .transparency-grid {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+    }
+
+    .transparency-card {
+      padding:25px;
+      border:1px solid rgba(255,255,255,.15);
+      border-radius:14px;
+      background:rgba(255,255,255,.05);
+    }
+
+    .transparency-card strong {
+      display:block;
+      color:var(--gold);
+      margin-bottom:8px;
+      font-size:17px;
+    }
+
+    .transparency-card p {
+      color:rgba(255,255,255,.78);
+      font-size:13px;
+    }
+
+    /* CTA */
+
+    .cta {
+      background:var(--light);
+      text-align:center;
+    }
+
+    .cta-box {
+      max-width:850px;
+      margin:auto;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:45px 25px;
+      box-shadow:var(--shadow);
+    }
+
+    .cta h3 {
+      font-family:"Playfair Display",serif;
+      font-size:34px;
+      margin-bottom:12px;
+    }
+
+    .cta p {
+      color:var(--muted);
+      max-width:650px;
+      margin:0 auto 25px;
+    }
+
+    .buttons {
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .btn {
+      display:inline-block;
+      padding:12px 21px;
+      border-radius:8px;
+      font-size:14px;
+      font-weight:700;
+    }
+
+    .btn-primary {
+      background:var(--green);
+      color:#fff;
+    }
+
+    .btn-primary:hover {
+      background:var(--dark-green);
+    }
+
+    .btn-outline {
+      border:1px solid var(--green);
+      color:var(--green);
+    }
+
+    .btn-outline:hover {
+      background:#eef8f3;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background:var(--footer);
+      color:#fff;
+      padding:55px 0 25px;
+    }
+
+    .footer-grid {
+      display:grid;
+      grid-template-columns:1.5fr 1fr 1fr;
+      gap:45px;
+      margin-bottom:35px;
+    }
+
+    footer h4 {
+      margin-bottom:16px;
+      font-size:16px;
+    }
+
+    footer p,
+    footer a {
+      color:#aab4c0;
+      font-size:13px;
+    }
+
+    footer a {
+      display:block;
+      margin-bottom:8px;
+    }
+
+    footer a:hover {
+      color:#fff;
+    }
+
+    .footer-brand {
+      font-family:"Playfair Display",serif;
+      font-size:25px;
+      margin-bottom:10px;
+    }
+
+    .footer-bottom {
+      border-top:1px solid rgba(255,255,255,.1);
+      padding-top:20px;
+      text-align:center;
+      color:#8f9aa7;
+      font-size:12px;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:900px) {
+
+      nav {
+        position:absolute;
+        top:78px;
+        left:0;
+        right:0;
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+        background:#fff;
+        border-bottom:1px solid var(--border);
+        padding:12px 4%;
+      }
+
+      nav.active {
+        display:flex;
+      }
+
+      nav a {
+        padding:13px;
+      }
+
+      nav .nav-cta {
+        margin-left:0;
+        text-align:center;
+      }
+
+      .menu-btn {
+        display:block;
+      }
+
+      .support-grid {
+        grid-template-columns:1fr;
+      }
+
+      .option-grid {
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .transparency-grid {
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    @media(max-width:600px) {
+
+      section {
+        padding:55px 0;
+      }
+
+      .hero {
+        min-height:350px;
+      }
+
+      .hero-content {
+        padding:60px 0;
+      }
+
+      .hero h2 {
+        font-size:42px;
+      }
+
+      .hero p {
+        font-size:15px;
+      }
+
+      .section-heading h3 {
+        font-size:30px;
+      }
+
+      .support-content h3 {
+        font-size:31px;
+      }
+
+      .support-image img {
+        height:350px;
+      }
+
+      .option-grid,
+      .transparency-grid,
+      .footer-grid {
+        grid-template-columns:1fr;
+      }
+
+      .brand-text h1 {
+        font-size:13px;
+      }
+
+      .brand-logo {
+        width:45px;
+        height:45px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+
+        <div class="brand-logo">
+          JO
+        </div>
+
+        <div class="brand-text">
+          <h1>JOHN IBRAHIM OCHEJE</h1>
+          <span>2027 • IDAH FEDERAL CONSTITUENCY</span>
+        </div>
+
+      </a>
+
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="manifesto.html">Manifesto</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="volunteer.html" class="nav-cta">Join Us</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          Public Participation
+        </span>
+
+        <h2>
+          Support Us
+        </h2>
+
+        <p>
+          Learn how members of the public can contribute their time, ideas,
+          skills and constructive participation to public engagement around
+          the 2027 aspiration.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO -->
+  <section>
+
+    <div class="container">
+
+      <div class="support-grid">
+
+        <div class="support-image">
+
+          <img
+            src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+            alt="Engr. John Ibrahim Ocheje">
+
+        </div>
+
+
+        <div class="support-content">
+
+          <span class="eyebrow" style="color:#006b3c;">
+            Get Involved
+          </span>
+
+          <h3>
+            Every Contribution to Public Dialogue Matters
+          </h3>
+
+          <p>
+            Building a stronger constituency begins with informed citizens,
+            constructive conversations and people who are willing to contribute
+            positively to their communities.
+          </p>
+
+          <p>
+            Support does not necessarily mean financial contributions. People
+            can participate by sharing ideas, attending public engagements,
+            volunteering skills and helping make reliable information
+            accessible.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- OPTIONS -->
+  <section class="options">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="label">
+          Ways to Participate
+        </div>
+
+        <h3>
+          How You Can Support
+        </h3>
+
+        <p>
+          Choose a form of participation that is appropriate and lawful for
+          you.
+        </p>
+
+      </div>
+
+
+      <div class="option-grid">
+
+        <div class="option-card">
+
+          <div class="option-icon">
+            01
+          </div>
+
+          <h4>
+            Volunteer
+          </h4>
+
+          <p>
+            Offer your time, professional skills or community knowledge to
+            support public engagement and information activities.
+          </p>
+
+        </div>
+
+
+        <div class="option-card">
+
+          <div class="option-icon">
+            02
+          </div>
+
+          <h4>
+            Share Ideas
+          </h4>
+
+          <p>
+            Share constructive suggestions about education, infrastructure,
+            youth development, healthcare and other constituency issues.
+          </p>
+
+        </div>
+
+
+        <div class="option-card">
+
+          <div class="option-icon">
+            03
+          </div>
+
+          <h4>
+            Attend Events
+          </h4>
+
+          <p>
+            Participate in officially announced stakeholder meetings,
+            community engagements and public dialogues.
+          </p>
+
+        </div>
+
+
+        <div class="option-card">
+
+          <div class="option-icon">
+            04
+          </div>
+
+          <h4>
+            Share Information
+          </h4>
+
+          <p>
+            Help direct people to verified public information, official
+            announcements and reliable civic resources.
+          </p>
+
+        </div>
+
+
+        <div class="option-card">
+
+          <div class="option-icon">
+            05
+          </div>
+
+          <h4>
+            Community Engagement
+          </h4>
+
+          <p>
+            Encourage respectful discussions about local development needs
+            and issues affecting constituents.
+          </p>
+
+        </div>
+
+
+        <div class="option-card">
+
+          <div class="option-icon">
+            06
+          </div>
+
+          <h4>
+            Professional Support
+          </h4>
+
+          <p>
+            Professionals and organisations may contribute expertise where
+            appropriate and formally requested.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FINANCIAL NOTICE -->
+  <section class="notice-section">
+
+    <div class="container">
+
+      <div class="notice">
+
+        <h3>
+          Financial Contributions
+        </h3>
+
+        <p>
+          No bank account, payment number or financial contribution channel is
+          published on this page because official payment details have not
+          been provided. Do not send money to any account or individual claiming
+          to represent this platform unless the information has been formally
+          verified and published through an authorised channel.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TRANSPARENCY -->
+  <section class="transparency">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="label">
+          Our Approach
+        </div>
+
+        <h3>
+          Responsible Public Engagement
+        </h3>
+
+        <p>
+          Public participation should be based on respect, accurate information
+          and responsible conduct.
+        </p>
+
+      </div>
+
+
+      <div class="transparency-grid">
+
+        <div class="transparency-card">
+
+          <strong>
+            Transparency
+          </strong>
+
+          <p>
+            Information about activities should be communicated clearly and
+            responsibly.
+          </p>
+
+        </div>
+
+
+        <div class="transparency-card">
+
+          <strong>
+            Accountability
+          </strong>
+
+          <p>
+            Public engagement should respect the responsibilities associated
+            with public service.
+          </p>
+
+        </div>
+
+
+        <div class="transparency-card">
+
+          <strong>
+            Respect
+          </strong>
+
+          <p>
+            Different views should be treated with civility and constructive
+            dialogue.
+          </p>
+
+        </div>
+
+
+        <div class="transparency-card">
+
+          <strong>
+            Verification
+          </strong>
+
+          <p>
+            Important announcements and information should be verified before
+            being shared publicly.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta">
+
+    <div class="container">
+
+      <div class="cta-box">
+
+        <h3>
+          Ready to Get Involved?
+        </h3>
+
+        <p>
+          Visit the volunteer page or contact the platform for information
+          about public engagement opportunities.
+        </p>
+
+        <div class="buttons">
+
+          <a href="volunteer.html" class="btn btn-primary">
+            Become a Volunteer
+          </a>
+
+          <a href="contact.html" class="btn btn-outline">
+            Contact Us
+          </a>
+
+          <a href="resources.html" class="btn btn-outline">
+            Civic Resources
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <div class="footer-brand">
+            JOHN IBRAHIM OCHEJE
+          </div>
+
+          <p>
+            Public information platform for the 2027 aspiration for
+            Idah Federal Constituency.
+          </p>
+
+          <p style="margin-top:12px;">
+            NDC • Idah Federal Constituency • 2027
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            Quick Links
+          </h4>
+
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="agenda.html">Agenda</a>
+          <a href="manifesto.html">Manifesto</a>
+          <a href="news.html">News</a>
+          <a href="events.html">Events</a>
+          <a href="speeches.html">Speeches</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            Information
+          </h4>
+
+          <a href="support.html">Support Us</a>
+          <a href="partners.html">Partners</a>
+          <a href="media.html">Media Centre</a>
+          <a href="downloads.html">Downloads</a>
+          <a href="faq.html">FAQ</a>
+          <a href="resources.html">Resources</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        © 2027 John Ibrahim Ocheje. All rights reserved.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mainNav").classList.toggle("active");
+    }
+
+    document.querySelectorAll("#mainNav a").forEach(function(link) {
+      link.addEventListener("click", function() {
+        document.getElementById("mainNav").classList.remove("active");
+      });
+    });
+  </script>
+
+</body>
+</html>
