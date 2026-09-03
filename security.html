@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Website Security | John Ibrahim Ocheje 2027</title>
+
+  <meta name="description" content="Website security information for the John Ibrahim Ocheje 2027 public information website.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #006b3c;
+      --dark-green: #004f2c;
+      --gold: #f4c400;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e7eb;
+      --shadow: 0 12px 35px rgba(0,0,0,0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 17px;
+      border: 3px solid var(--gold);
+      flex-shrink: 0;
+    }
+
+    .brand-text h1 {
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    .brand-text span {
+      display: block;
+      margin-top: 3px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    nav a {
+      padding: 10px 11px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #344054;
+      border-radius: 8px;
+      transition: 0.25s ease;
+    }
+
+    nav a:hover {
+      color: var(--green);
+      background: #f0f7f3;
+    }
+
+    nav .nav-cta {
+      color: var(--white);
+      background: var(--green);
+      padding: 10px 17px;
+      margin-left: 5px;
+    }
+
+    nav .nav-cta:hover {
+      background: var(--dark-green);
+      color: var(--white);
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 28px;
+      color: var(--green);
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 390px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(
+          rgba(0,79,44,0.90),
+          rgba(0,107,60,0.84)
+        ),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg")
+        center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .hero-content {
+      max-width: 800px;
+      padding: 80px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.08;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      font-size: 17px;
+      color: rgba(255,255,255,0.92);
+    }
+
+    /* MAIN */
+
+    .main {
+      padding: 75px 0;
+    }
+
+    .intro {
+      max-width: 850px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin-bottom: 10px;
+    }
+
+    .intro h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      color: var(--muted);
+    }
+
+    /* SECURITY CARDS */
+
+    .security-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .security-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+      transition: 0.25s ease;
+    }
+
+    .security-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .security-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #eaf5ef;
+      color: var(--green);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+
+    .security-card h4 {
+      font-size: 19px;
+      margin-bottom: 9px;
+    }
+
+    .security-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* SECURITY PRACTICES */
+
+    .practices {
+      background: var(--light);
+      padding: 75px 0;
+    }
+
+    .practices-header {
+      max-width: 760px;
+      margin-bottom: 35px;
+    }
+
+    .practices-header h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 38px;
+      line-height: 1.2;
+      margin-bottom: 13px;
+    }
+
+    .practices-header p {
+      color: var(--muted);
+    }
+
+    .practice-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .practice {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 23px 25px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .practice-number {
+      min-width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .practice h4 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .practice p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* USER SAFETY */
+
+    .safety {
+      padding: 75px 0;
+    }
+
+    .safety-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .safety h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 38px;
+      line-height: 1.2;
+      margin-bottom: 17px;
+    }
+
+    .safety p {
+      color: var(--muted);
+      margin-bottom: 17px;
+    }
+
+    .safety-list {
+      list-style: none;
+      display: grid;
+      gap: 13px;
+    }
+
+    .safety-list li {
+      display: flex;
+      gap: 11px;
+      align-items: flex-start;
+      font-size: 14px;
+    }
+
+    .safety-list li::before {
+      content: "✓";
+      width: 23px;
+      height: 23px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #e8f5ee;
+      color: var(--green);
+      font-weight: 800;
+    }
+
+    .security-box {
+      background: var(--green);
+      color: var(--white);
+      border-radius: 18px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+    }
+
+    .security-box h4 {
+      font-family: "Playfair Display", serif;
+      font-size: 29px;
+      margin-bottom: 14px;
+    }
+
+    .security-box p {
+      color: rgba(255,255,255,0.9);
+      font-size: 14px;
+    }
+
+    /* NOTICE */
+
+    .notice-section {
+      background: var(--light);
+      padding: 65px 0;
+    }
+
+    .notice {
+      max-width: 900px;
+      margin: auto;
+      background: var(--white);
+      border-left: 5px solid var(--gold);
+      border-top: 1px solid #ead99a;
+      border-right: 1px solid #ead99a;
+      border-bottom: 1px solid #ead99a;
+      border-radius: 14px;
+      padding: 32px;
+    }
+
+    .notice h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 29px;
+      margin-bottom: 12px;
+    }
+
+    .notice p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .notice p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 75px 0;
+      background: var(--green);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .cta h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 4vw, 44px);
+      margin-bottom: 13px;
+    }
+
+    .cta p {
+      max-width: 680px;
+      margin: 0 auto 25px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 9px;
+      font-weight: 700;
+      font-size: 14px;
+      margin: 4px;
+      transition: 0.25s ease;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #182000;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.7);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--green);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--footer);
+      color: var(--white);
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+      padding-bottom: 40px;
+    }
+
+    footer h4 {
+      font-size: 16px;
+      margin-bottom: 17px;
+    }
+
+    footer p,
+    footer a {
+      color: #aeb7c2;
+      font-size: 13px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 9px;
+      transition: 0.2s ease;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .footer-brand {
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom p {
+      font-size: 12px;
+      color: #8f9aa7;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+
+      nav {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 15px 4%;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        width: 100%;
+        padding: 13px;
+      }
+
+      nav .nav-cta {
+        margin: 5px 0 0;
+        text-align: center;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .safety-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+
+      .header-inner {
+        min-height: 70px;
+      }
+
+      .brand-logo {
+        width: 43px;
+        height: 43px;
+      }
+
+      .brand-text h1 {
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 340px;
+      }
+
+      .hero-content {
+        padding: 65px 0;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .security-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .practices-header h3,
+      .safety h3 {
+        font-size: 31px;
+      }
+
+      .notice {
+        padding: 26px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+
+        <div class="brand-logo">
+          JO
+        </div>
+
+        <div class="brand-text">
+          <h1>JOHN IBRAHIM OCHEJE</h1>
+          <span>2027 • IDAH FEDERAL CONSTITUENCY</span>
+        </div>
+
+      </a>
+
+      <button
+        class="menu-btn"
+        onclick="toggleMenu()"
+        aria-label="Open navigation">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="manifesto.html">Manifesto</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="volunteer.html" class="nav-cta">Join Us</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          Website Protection
+        </span>
+
+        <h2>
+          Website Security
+        </h2>
+
+        <p>
+          Information about responsible website use, online safety and
+          protecting visitors and website information.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO -->
+
+  <main class="main">
+
+    <div class="container">
+
+      <div class="intro">
+
+        <div class="section-label">
+          Security Information
+        </div>
+
+        <h3>
+          Protecting a Safe Online Experience
+        </h3>
+
+        <p>
+          We aim to maintain a responsible and secure online environment
+          for visitors accessing information about John Ibrahim Ocheje,
+          public activities, policy interests, news, resources and
+          engagement opportunities.
+        </p>
+
+      </div>
+
+
+      <div class="security-grid">
+
+        <div class="security-card">
+
+          <div class="security-icon">
+            🔒
+          </div>
+
+          <h4>
+            Responsible Website Use
+          </h4>
+
+          <p>
+            Visitors are expected to use this website lawfully and
+            responsibly and should not attempt to interfere with its
+            operation or security.
+          </p>
+
+        </div>
+
+
+        <div class="security-card">
+
+          <div class="security-icon">
+            🛡
+          </div>
+
+          <h4>
+            Information Protection
+          </h4>
+
+          <p>
+            Information submitted through available website channels
+            should be treated responsibly and handled in accordance with
+            the applicable privacy information published on this website.
+          </p>
+
+        </div>
+
+
+        <div class="security-card">
+
+          <div class="security-icon">
+            ✓
+          </div>
+
+          <h4>
+            Safe Browsing
+          </h4>
+
+          <p>
+            Visitors should exercise care when opening external websites,
+            downloading files or providing information through third-party
+            services.
+          </p>
+
+        </div>
+
+
+        <div class="security-card">
+
+          <div class="security-icon">
+            !
+          </div>
+
+          <h4>
+            Suspicious Activity
+          </h4>
+
+          <p>
+            Suspected impersonation, fraudulent activity or attempts to
+            misuse this website should be treated seriously and reported
+            through the available contact channel.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- SECURITY PRACTICES -->
+
+  <section class="practices">
+
+    <div class="container">
+
+      <div class="practices-header">
+
+        <div class="section-label">
+          Security Practices
+        </div>
+
+        <h3>
+          Principles for a Safer Website
+        </h3>
+
+        <p>
+          Good website security involves both responsible website
+          administration and responsible visitor behaviour.
+        </p>
+
+      </div>
+
+
+      <div class="practice-list">
+
+        <div class="practice">
+
+          <div class="practice-number">
+            01
+          </div>
+
+          <div>
+
+            <h4>
+              Protect Your Personal Information
+            </h4>
+
+            <p>
+              Avoid submitting passwords, banking information, private
+              identification numbers or other sensitive information through
+              an inappropriate website channel.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="practice">
+
+          <div class="practice-number">
+            02
+          </div>
+
+          <div>
+
+            <h4>
+              Verify Official Information
+            </h4>
+
+            <p>
+              Information concerning elections, government procedures,
+              laws and official announcements should be confirmed through
+              the appropriate official authority.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="practice">
+
+          <div class="practice-number">
+            03
+          </div>
+
+          <div>
+
+            <h4>
+              Beware of Impersonation
+            </h4>
+
+            <p>
+              Be cautious of individuals or accounts claiming to represent
+              this website or its associated activities without appropriate
+              confirmation.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="practice">
+
+          <div class="practice-number">
+            04
+          </div>
+
+          <div>
+
+            <h4>
+              Use Secure Devices
+            </h4>
+
+            <p>
+              Visitors should keep their phones, computers, browsers and
+              operating systems reasonably updated and protected.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="practice">
+
+          <div class="practice-number">
+            05
+          </div>
+
+          <div>
+
+            <h4>
+              Do Not Attempt Unauthorized Access
+            </h4>
+
+            <p>
+              Attempts to gain unauthorized access to website systems,
+              interfere with website operations or bypass security measures
+              are not permitted.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- USER SAFETY -->
+
+  <section class="safety">
+
+    <div class="container">
+
+      <div class="safety-grid">
+
+        <div>
+
+          <div class="section-label">
+            Online Safety
+          </div>
+
+          <h3>
+            Stay Alert Online
+          </h3>
+
+          <p>
+            Political and public-interest websites can sometimes be
+            imitated by fraudulent pages or accounts. Visitors should
+            carefully verify information before acting on requests for
+            money, personal information or account credentials.
+          </p>
+
+          <ul class="safety-list">
+
+            <li>
+              Verify the website address before submitting information.
+            </li>
+
+            <li>
+              Be cautious of unexpected payment requests.
+            </li>
+
+            <li>
+              Do not share passwords or security codes.
+            </li>
+
+            <li>
+              Verify suspicious claims through reliable sources.
+            </li>
+
+            <li>
+              Report suspected impersonation or fraudulent activity.
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="security-box">
+
+          <h4>
+            Your Security Matters
+          </h4>
+
+          <p>
+            This website will not ask visitors to disclose passwords,
+            banking PINs, security codes or other confidential credentials
+            through ordinary public communication channels.
+          </p>
+
+          <p>
+            If you receive a suspicious message claiming to represent this
+            website, verify the information independently before taking
+            action.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- NOTICE -->
+
+  <section class="notice-section">
+
+    <div class="container">
+
+      <div class="notice">
+
+        <h3>
+          Important Security Notice
+        </h3>
+
+        <p>
+          No online environment can be guaranteed to be completely free
+          from security risks. Visitors should take reasonable precautions
+          when browsing websites, following external links or submitting
+          information online.
+        </p>
+
+        <p>
+          This security page provides general information and does not
+          replace professional cybersecurity advice or applicable law.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h3>
+        Have a Security Concern?
+      </h3>
+
+      <p>
+        If you notice suspicious activity, misleading information or a
+        possible impersonation connected with this website, please use
+        the contact page to provide relevant information.
+      </p>
+
+      <a href="contact.html" class="btn btn-gold">
+        Contact Us
+      </a>
+
+      <a href="privacy.html" class="btn btn-outline">
+        Privacy Policy
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <div class="footer-brand">
+            John Ibrahim Ocheje
+          </div>
+
+          <p>
+            Public information platform for the 2027 Idah Federal
+            Constituency aspiration.
+          </p>
+
+          <p style="margin-top:12px;">
+            NDC • Idah Federal Constituency • 2027
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            Quick Links
+          </h4>
+
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="agenda.html">Agenda</a>
+          <a href="manifesto.html">Manifesto</a>
+          <a href="news.html">News</a>
+          <a href="events.html">Events</a>
+          <a href="speeches.html">Speeches</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            Information
+          </h4>
+
+          <a href="support.html">Support Us</a>
+          <a href="partners.html">Partners</a>
+          <a href="media.html">Media Centre</a>
+          <a href="downloads.html">Downloads</a>
+          <a href="faq.html">FAQ</a>
+          <a href="resources.html">Resources</a>
+          <a href="code-of-conduct.html">Code of Conduct</a>
+          <a href="accessibility.html">Accessibility</a>
+          <a href="security.html">Security</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="legal.html">Legal & Policies</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <p>
+          © 2026 John Ibrahim Ocheje. All rights reserved.
+        </p>
+
+        <p>
+          Information is provided for public awareness and engagement.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function toggleMenu() {
+
+      document
+        .getElementById("mainNav")
+        .classList.toggle("active");
+
+    }
+
+
+    document
+      .querySelectorAll("#mainNav a")
+      .forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+          document
+            .getElementById("mainNav")
+            .classList.remove("active");
+
+        });
+
+      });
+
+  </script>
+
+</body>
+</html>
