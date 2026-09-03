@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ibaji TV Channel | John Ibrahim Ocheje</title>
+
+  <meta name="description" content="Ibaji TV Channel - Community News, Interviews, Events and Public Information.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #006b3c;
+      --dark-green: #004f2c;
+      --gold: #f4c400;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e7eb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* ================= HEADER ================= */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.98);
+      border-bottom: 1px solid var(--border);
+      z-index: 1000;
+    }
+
+    .header-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 230px;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 16px;
+      border: 3px solid var(--gold);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .4px;
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 10px;
+      color: var(--green);
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    nav a {
+      padding: 9px 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--dark);
+      border-radius: 6px;
+      transition: .2s ease;
+    }
+
+    nav a:hover {
+      color: var(--green);
+      background: #f0f7f3;
+    }
+
+    nav a.active {
+      color: var(--green);
+      background: #edf7f1;
+    }
+
+    nav .nav-cta {
+      background: var(--green);
+      color: var(--white);
+      padding: 10px 16px;
+      margin-left: 5px;
+    }
+
+    nav .nav-cta:hover {
+      background: var(--dark-green);
+      color: var(--white);
+    }
+
+    .menu-btn {
+      display: none;
+      background: none;
+      border: 0;
+      font-size: 28px;
+      color: var(--green);
+      cursor: pointer;
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+      margin-top: 76px;
+      min-height: 480px;
+      background:
+        linear-gradient(90deg, rgba(0,79,44,.96), rgba(0,107,60,.80)),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg") center/cover;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      padding: 80px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: rgba(244,196,0,.16);
+      color: var(--gold);
+      border: 1px solid rgba(244,196,0,.45);
+      padding: 7px 13px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      max-width: 680px;
+      font-size: 17px;
+      color: rgba(255,255,255,.9);
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 7px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: .2s ease;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #111;
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,.55);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--green);
+    }
+
+    /* ================= INTRO ================= */
+
+    .intro {
+      padding: 70px 0;
+      background: var(--white);
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 45px;
+    }
+
+    .section-heading .small {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 36px;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* ================= MEDIA GRID ================= */
+
+    .media-section {
+      padding: 75px 0;
+      background: var(--light);
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .media-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: .25s ease;
+    }
+
+    .media-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,.08);
+    }
+
+    .media-image {
+      height: 210px;
+      position: relative;
+      overflow: hidden;
+      background: #e9efeb;
+    }
+
+    .media-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .play-icon {
+      position: absolute;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: rgba(0,107,60,.95);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      border: 3px solid rgba(255,255,255,.85);
+    }
+
+    .media-body {
+      padding: 22px;
+    }
+
+    .media-label {
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      margin-bottom: 8px;
+    }
+
+    .media-body h3 {
+      font-size: 19px;
+      line-height: 1.35;
+      margin-bottom: 10px;
+    }
+
+    .media-body p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* ================= FEATURE ================= */
+
+    .feature {
+      padding: 80px 0;
+      background: var(--white);
+    }
+
+    .feature-box {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .feature-image {
+      min-height: 360px;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #e9efeb;
+    }
+
+    .feature-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+    }
+
+    .feature-content .small {
+      color: var(--green);
+      font-weight: 800;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .feature-content h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 38px;
+      line-height: 1.2;
+      margin: 10px 0 17px;
+    }
+
+    .feature-content p {
+      color: var(--muted);
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin: 20px 0 25px;
+    }
+
+    .feature-list li {
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    .feature-list li::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: 800;
+      margin-right: 10px;
+    }
+
+    /* ================= ABOUT ================= */
+
+    .about-tv {
+      padding: 75px 0;
+      background: var(--light);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .info-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 30px;
+    }
+
+    .info-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      background: #e9f5ee;
+      color: var(--green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 17px;
+    }
+
+    .info-card h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .info-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ================= CHANNELS ================= */
+
+    .channels {
+      padding: 75px 0;
+      background: var(--white);
+    }
+
+    .channel-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .channel-card {
+      padding: 30px 25px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .channel-card .channel-icon {
+      font-size: 35px;
+      margin-bottom: 13px;
+    }
+
+    .channel-card h3 {
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+
+    .channel-card p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+
+    .channel-btn {
+      display: inline-block;
+      border: 1px solid var(--green);
+      color: var(--green);
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .channel-btn:hover {
+      background: var(--green);
+      color: var(--white);
+    }
+
+    /* ================= NOTICE ================= */
+
+    .notice {
+      padding: 35px 0;
+      background: #fff9df;
+      border-top: 1px solid #f1df91;
+      border-bottom: 1px solid #f1df91;
+    }
+
+    .notice-box {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .notice-icon {
+      font-size: 24px;
+    }
+
+    .notice h3 {
+      font-size: 17px;
+      margin-bottom: 5px;
+    }
+
+    .notice p {
+      color: #665b2d;
+      font-size: 13px;
+    }
+
+    /* ================= CTA ================= */
+
+    .cta {
+      padding: 80px 0;
+      background: var(--dark-green);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: rgba(255,255,255,.82);
+      font-size: 15px;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      background: var(--footer);
+      color: var(--white);
+      padding: 55px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 35px;
+    }
+
+    footer h3 {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    .footer-brand {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      color: #aeb7c2;
+      font-size: 13px;
+      max-width: 380px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin: 8px 0;
+    }
+
+    footer a {
+      color: #c8ced6;
+      font-size: 13px;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 18px;
+      color: #8d98a5;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    /* ================= MOBILE ================= */
+
+    @media (max-width: 950px) {
+
+      .menu-btn {
+        display: block;
+      }
+
+      nav {
+        position: absolute;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px 4%;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        padding: 13px 10px;
+      }
+
+      nav .nav-cta {
+        margin: 5px 0;
+        text-align: center;
+      }
+
+      .media-grid,
+      .channel-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .feature-box {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+
+      .brand {
+        min-width: auto;
+      }
+
+      .brand-text strong {
+        font-size: 12px;
+      }
+
+      .brand-text span {
+        font-size: 9px;
+      }
+
+      .brand-logo {
+        width: 43px;
+        height: 43px;
+      }
+
+      .hero {
+        min-height: 500px;
+      }
+
+      .hero-content {
+        padding: 65px 0;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .section-heading h2,
+      .feature-content h2,
+      .cta h2 {
+        font-size: 30px;
+      }
+
+      .media-grid,
+      .channel-grid,
+      .about-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .media-image {
+        height: 230px;
+      }
+
+      .notice-box {
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header>
+
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+
+        <div class="brand-logo">
+          JO
+        </div>
+
+        <div class="brand-text">
+          <strong>JOHN IBRAHIM OCHEJE</strong>
+          <span>2027 • IDAH FEDERAL CONSTITUENCY</span>
+        </div>
+
+      </a>
+
+      <button class="menu-btn" onclick="toggleMenu()" aria-label="Open Menu">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="agenda.html">Agenda</a>
+
+        <a href="manifesto.html">Manifesto</a>
+
+        <a href="ibaji-tv.html" class="active">Ibaji TV</a>
+
+        <a href="news.html">News</a>
+
+        <a href="gallery.html">Gallery</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="volunteer.html" class="nav-cta">
+          Join Us
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          Community Media & Public Information
+        </span>
+
+        <h1>
+          Ibaji <span>TV</span> Channel
+        </h1>
+
+        <p>
+          A community-focused media space for news, interviews,
+          conversations, events and public information relating to
+          Ibaji and surrounding communities.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#featured" class="btn btn-gold">
+            Featured Content
+          </a>
+
+          <a href="#channels" class="btn btn-outline">
+            Watch & Follow
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= INTRO ================= -->
+
+  <section class="intro">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="small">
+          IBAJI TV
+        </div>
+
+        <h2>
+          Connecting Communities Through Information
+        </h2>
+
+        <p>
+          Ibaji TV provides a dedicated space for community stories,
+          public conversations, interviews, events and informative
+          media content.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FEATURED ================= -->
+
+  <section class="feature" id="featured">
+
+    <div class="container">
+
+      <div class="feature-box">
+
+        <div class="feature-image">
+
+          <img
+            src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+            alt="Ibaji TV featured community media"
+          >
+
+        </div>
+
+        <div class="feature-content">
+
+          <span class="small">
+            Featured Media
+          </span>
+
+          <h2>
+            Community Stories That Matter
+          </h2>
+
+          <p>
+            This section can be used to highlight the latest
+            Ibaji TV video, interview, documentary, community
+            story or important public information.
+          </p>
+
+          <ul class="feature-list">
+
+            <li>
+              Community news and updates
+            </li>
+
+            <li>
+              Interviews and public conversations
+            </li>
+
+            <li>
+              Community events and activities
+            </li>
+
+            <li>
+              Educational and public-interest content
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-gold"
+             onclick="alert('Video link will be added here.'); return false;">
+            Watch Featured Video
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= MEDIA CARDS ================= -->
+
+  <section class="media-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="small">
+          Media Categories
+        </div>
+
+        <h2>
+          Explore Ibaji TV
+        </h2>
+
+        <p>
+          Different content areas can be added here as the channel
+          grows.
+        </p>
+
+      </div>
+
+
+      <div class="media-grid">
+
+        <!-- CARD 1 -->
+
+        <article class="media-card">
+
+          <div class="media-image">
+
+            <img
+              src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+              alt="Community News"
+            >
+
+          </div>
+
+          <div class="media-body">
+
+            <div class="media-label">
+              News
+            </div>
+
+            <h3>
+              Community News
+            </h3>
+
+            <p>
+              A dedicated section for verified community news,
+              public announcements and important updates.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- CARD 2 -->
+
+        <article class="media-card">
+
+          <div class="media-image">
+
+            <img
+              src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+              alt="Interviews and Conversations"
+            >
+
+            <div class="play-icon">
+              ▶
+            </div>
+
+          </div>
+
+          <div class="media-body">
+
+            <div class="media-label">
+              Interviews
+            </div>
+
+            <h3>
+              Interviews & Conversations
+            </h3>
+
+            <p>
+              Conversations with community members, professionals,
+              leaders and other relevant voices.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- CARD 3 -->
+
+        <article class="media-card">
+
+          <div class="media-image">
+
+            <img
+              src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+              alt="Community Events"
+            >
+
+          </div>
+
+          <div class="media-body">
+
+            <div class="media-label">
+              Events
+            </div>
+
+            <h3>
+              Events & Community Moments
+            </h3>
+
+            <p>
+              Coverage of community gatherings, public events,
+              cultural activities and other notable occasions.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- CARD 4 -->
+
+        <article class="media-card">
+
+          <div class="media-image">
+
+            <img
+              src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+              alt="Public Information"
+            >
+
+          </div>
+
+          <div class="media-body">
+
+            <div class="media-label">
+              Information
+            </div>
+
+            <h3>
+              Public Information
+            </h3>
+
+            <p>
+              Useful information intended to help residents stay
+              informed about matters affecting their communities.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- CARD 5 -->
+
+        <article class="media-card">
+
+          <div class="media-image">
+
+            <img
+              src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+              alt="Special Features"
+            >
+
+          </div>
+
+          <div class="media-body">
+
+            <div class="media-label">
+              Features
+            </div>
+
+            <h3>
+              Special Features
+            </h3>
+
+            <p>
+              Longer-form community stories, documentaries,
+              profiles and special reports.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- CARD 6 -->
+
+        <article class="media-card">
+
+          <div class="media-image">
+
+            <img
+              src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+              alt="Photo and Media Gallery"
+            >
+
+          </div>
+
+          <div class="media-body">
+
+            <div class="media-label">
+              Gallery
+            </div>
+
+            <h3>
+              Photo & Media Gallery
+            </h3>
+
+            <p>
+              A visual collection of selected community activities,
+              events and media moments.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= ABOUT IBAJI TV ================= -->
+
+  <section class="about-tv">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="small">
+          About The Channel
+        </div>
+
+        <h2>
+          About Ibaji TV
+        </h2>
+
+        <p>
+          A digital community media platform designed to make
+          information easier to access and share.
+        </p>
+
+      </div>
+
+
+      <div class="about-grid">
+
+        <div class="info-card">
+
+          <div class="info-icon">
+            📺
+          </div>
+
+          <h3>
+            Community Media
+          </h3>
+
+          <p>
+            Ibaji TV can serve as a digital platform for presenting
+            community stories, interviews, events and public-interest
+            information.
+          </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+          <div class="info-icon">
+            🎙️
+          </div>
+
+          <h3>
+            Conversations
+          </h3>
+
+          <p>
+            The channel can feature interviews and conversations
+            covering issues, experiences and developments of interest
+            to the community.
+          </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+          <div class="info-icon">
+            📰
+          </div>
+
+          <h3>
+            Responsible Information
+          </h3>
+
+          <p>
+            Published information should be checked and presented
+            responsibly, especially where reports concern people,
+            public institutions or important community matters.
+          </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+          <div class="info-icon">
+            🌍
+          </div>
+
+          <h3>
+            Community Connection
+          </h3>
+
+          <p>
+            The platform can help connect residents, visitors,
+            community organisations and other stakeholders through
+            accessible digital media.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= WATCH & FOLLOW ================= -->
+
+  <section class="channels" id="channels">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="small">
+          Watch & Follow
+        </div>
+
+        <h2>
+          Ibaji TV Online
+        </h2>
+
+        <p>
+          Add the official social-media and video links here when
+          the channel's accounts are available.
+        </p>
+
+      </div>
+
+
+      <div class="channel-grid">
+
+        <div class="channel-card">
+
+          <div class="channel-icon">
+            ▶️
+          </div>
+
+          <h3>
+            YouTube
+          </h3>
+
+          <p>
+            Official Ibaji TV video channel.
+          </p>
+
+          <a href="#"
+             class="channel-btn"
+             onclick="alert('YouTube link will be added here.'); return false;">
+            Add Link
+          </a>
+
+        </div>
+
+
+        <div class="channel-card">
+
+          <div class="channel-icon">
+            f
+          </div>
+
+          <h3>
+            Facebook
+          </h3>
+
+          <p>
+            Follow Ibaji TV community updates.
+          </p>
+
+          <a href="#"
+             class="channel-btn"
+             onclick="alert('Facebook link will be added here.'); return false;">
+            Add Link
+          </a>
+
+        </div>
+
+
+        <div class="channel-card">
+
+          <div class="channel-icon">
+            💬
+          </div>
+
+          <h3>
+            WhatsApp
+          </h3>
+
+          <p>
+            Community information and updates.
+          </p>
+
+          <a href="#"
+             class="channel-btn"
+             onclick="alert('WhatsApp link will be added here.'); return false;">
+            Add Link
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= NOTICE ================= -->
+
+  <section class="notice">
+
+    <div class="container">
+
+      <div class="notice-box">
+
+        <div class="notice-icon">
+          ⚠️
+        </div>
+
+        <div>
+
+          <h3>
+            Public Information Notice
+          </h3>
+
+          <p>
+            Ibaji TV content should be presented as community media
+            and public information. News, claims and reports should
+            be independently verified before being treated as factual.
+            This page does not by itself establish that Ibaji TV is an
+            officially licensed broadcast station or an official media
+            arm of any political organisation.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CTA ================= -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>
+        Stay Connected With Community Information
+      </h2>
+
+      <p>
+        Explore the website for public information, programmes,
+        news, gallery updates and other resources.
+      </p>
+
+      <a href="news.html" class="btn btn-gold">
+        Visit News
+      </a>
+
+      <a href="gallery.html" class="btn btn-outline">
+        View Gallery
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <div class="footer-brand">
+            JOHN IBRAHIM OCHEJE
+          </div>
+
+          <p>
+            2027 • Idah Federal Constituency
+          </p>
+
+          <p style="margin-top:10px;">
+            Public information, community engagement and
+            digital media resources.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Quick Links
+          </h3>
+
+          <ul>
+
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="agenda.html">Agenda</a>
+            </li>
+
+            <li>
+              <a href="manifesto.html">Manifesto</a>
+            </li>
+
+            <li>
+              <a href="ibaji-tv.html">Ibaji TV</a>
+            </li>
+
+            <li>
+              <a href="news.html">News</a>
+            </li>
+
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Information
+          </h3>
+
+          <ul>
+
+            <li>
+              <a href="events.html">Events</a>
+            </li>
+
+            <li>
+              <a href="speeches.html">Speeches</a>
+            </li>
+
+            <li>
+              <a href="resources.html">Resources</a>
+            </li>
+
+            <li>
+              <a href="press.html">Press Releases</a>
+            </li>
+
+            <li>
+              <a href="privacy.html">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="terms.html">Terms & Conditions</a>
+            </li>
+
+            <li>
+              <a href="sitemap.html">Sitemap</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <div class="copyright">
+
+        © 2027 John Ibrahim Ocheje. All rights reserved.
+        <br>
+        NDC • Idah Federal Constituency • 2027
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script>
+
+    function toggleMenu() {
+
+      document
+        .getElementById("mainNav")
+        .classList
+        .toggle("active");
+
+    }
+
+
+    document
+      .querySelectorAll("#mainNav a")
+      .forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+          document
+            .getElementById("mainNav")
+            .classList
+            .remove("active");
+
+        });
+
+      });
+
+  </script>
+
+</body>
+</html>
