@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Downloads | John Ibrahim Ocheje</title>
+
+  <meta name="description"
+        content="Download public documents, electoral resources, statements and publications relating to John Ibrahim Ocheje and Idah Federal Constituency.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+  <style>
+
+    :root {
+      --green:#006b3c;
+      --dark-green:#004f2c;
+      --gold:#f4c400;
+      --dark:#172033;
+      --muted:#667085;
+      --light:#f6f9f7;
+      --white:#ffffff;
+      --footer:#101820;
+      --border:#e5e7eb;
+      --shadow:0 15px 40px rgba(16,24,40,.08);
+    }
+
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html {
+      scroll-behavior:smooth;
+    }
+
+    body {
+      font-family:"Inter",sans-serif;
+      color:var(--dark);
+      background:var(--white);
+      line-height:1.7;
+    }
+
+    a {
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .container {
+      width:min(1120px,92%);
+      margin:auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(255,255,255,.97);
+      border-bottom:1px solid var(--border);
+      backdrop-filter:blur(10px);
+    }
+
+    .header-inner {
+      min-height:78px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:25px;
+    }
+
+    .brand {
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .brand-logo {
+      width:48px;
+      height:48px;
+      border-radius:50%;
+      background:var(--green);
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+      font-size:18px;
+      border:3px solid var(--gold);
+    }
+
+    .brand-text strong {
+      display:block;
+      font-size:14px;
+      letter-spacing:.3px;
+    }
+
+    .brand-text span {
+      display:block;
+      color:var(--green);
+      font-size:11px;
+      font-weight:700;
+    }
+
+    nav {
+      display:flex;
+      align-items:center;
+      gap:4px;
+    }
+
+    nav a {
+      padding:9px 11px;
+      font-size:13px;
+      font-weight:600;
+      color:#344054;
+      border-radius:7px;
+      transition:.2s;
+    }
+
+    nav a:hover {
+      color:var(--green);
+      background:#f0f8f4;
+    }
+
+    nav .nav-cta {
+      background:var(--green);
+      color:white;
+      margin-left:5px;
+      padding:10px 16px;
+    }
+
+    nav .nav-cta:hover {
+      background:var(--dark-green);
+      color:white;
+    }
+
+    .menu-btn {
+      display:none;
+      border:0;
+      background:var(--green);
+      color:white;
+      padding:9px 12px;
+      border-radius:7px;
+      font-size:20px;
+      cursor:pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height:420px;
+      display:flex;
+      align-items:center;
+      background:
+        linear-gradient(rgba(0,79,44,.85),rgba(0,79,44,.85)),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg")
+        center/cover no-repeat;
+      color:white;
+    }
+
+    .hero-content {
+      max-width:780px;
+      padding:80px 0;
+    }
+
+    .eyebrow {
+      display:inline-block;
+      color:var(--gold);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      margin-bottom:15px;
+    }
+
+    .hero h1 {
+      font-family:"Playfair Display",serif;
+      font-size:clamp(40px,6vw,64px);
+      line-height:1.1;
+      margin-bottom:20px;
+    }
+
+    .hero p {
+      max-width:700px;
+      font-size:17px;
+      color:rgba(255,255,255,.88);
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding:75px 0;
+    }
+
+    .section-heading {
+      max-width:720px;
+      margin-bottom:42px;
+    }
+
+    .label {
+      color:var(--green);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:1.4px;
+      text-transform:uppercase;
+      margin-bottom:10px;
+    }
+
+    .section-heading h2 {
+      font-family:"Playfair Display",serif;
+      font-size:38px;
+      line-height:1.2;
+      margin-bottom:14px;
+    }
+
+    .section-heading p {
+      color:var(--muted);
+    }
+
+    /* DOWNLOAD CARDS */
+
+    .download-section {
+      background:var(--light);
+    }
+
+    .downloads {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:22px;
+    }
+
+    .download-card {
+      background:white;
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:28px;
+      display:flex;
+      gap:20px;
+      align-items:flex-start;
+      transition:.25s ease;
+    }
+
+    .download-card:hover {
+      transform:translateY(-4px);
+      box-shadow:var(--shadow);
+      border-color:rgba(0,107,60,.25);
+    }
+
+    .download-icon {
+      width:58px;
+      height:58px;
+      min-width:58px;
+      border-radius:13px;
+      background:#edf8f2;
+      color:var(--green);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:27px;
+    }
+
+    .download-content h3 {
+      font-size:18px;
+      margin-bottom:7px;
+    }
+
+    .download-content p {
+      color:var(--muted);
+      font-size:14px;
+      margin-bottom:15px;
+    }
+
+    .download-btn {
+      display:inline-block;
+      padding:9px 15px;
+      background:var(--green);
+      color:white;
+      border-radius:7px;
+      font-size:12px;
+      font-weight:700;
+    }
+
+    .download-btn:hover {
+      background:var(--dark-green);
+    }
+
+    /* INFORMATION BOX */
+
+    .info-box {
+      background:white;
+      border:1px solid var(--border);
+      border-left:5px solid var(--gold);
+      border-radius:12px;
+      padding:28px;
+      margin-top:35px;
+    }
+
+    .info-box h3 {
+      margin-bottom:9px;
+      font-size:19px;
+    }
+
+    .info-box p {
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    /* PUBLICATIONS */
+
+    .publication-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+
+    .publication {
+      border:1px solid var(--border);
+      border-radius:15px;
+      padding:25px;
+      background:white;
+    }
+
+    .publication .number {
+      color:var(--green);
+      font-size:12px;
+      font-weight:800;
+      margin-bottom:10px;
+    }
+
+    .publication h3 {
+      font-size:18px;
+      margin-bottom:9px;
+    }
+
+    .publication p {
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    /* CTA */
+
+    .cta {
+      background:var(--green);
+      color:white;
+      text-align:center;
+    }
+
+    .cta h2 {
+      font-family:"Playfair Display",serif;
+      font-size:40px;
+      margin-bottom:12px;
+    }
+
+    .cta p {
+      max-width:680px;
+      margin:0 auto 25px;
+      color:rgba(255,255,255,.85);
+    }
+
+    .btn {
+      display:inline-block;
+      padding:12px 21px;
+      border-radius:8px;
+      font-size:14px;
+      font-weight:700;
+      margin:5px;
+    }
+
+    .btn-light {
+      background:white;
+      color:var(--green);
+    }
+
+    .btn-outline {
+      border:1px solid rgba(255,255,255,.6);
+      color:white;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background:var(--footer);
+      color:#d0d5dd;
+      padding:55px 0 20px;
+    }
+
+    .footer-grid {
+      display:grid;
+      grid-template-columns:1.4fr 1fr 1fr;
+      gap:45px;
+      padding-bottom:35px;
+    }
+
+    footer h3 {
+      color:white;
+      font-size:16px;
+      margin-bottom:15px;
+    }
+
+    footer p {
+      color:#98a2b3;
+      font-size:13px;
+      max-width:420px;
+    }
+
+    .footer-links {
+      display:grid;
+      gap:8px;
+    }
+
+    .footer-links a {
+      color:#98a2b3;
+      font-size:13px;
+    }
+
+    .footer-links a:hover {
+      color:var(--gold);
+    }
+
+    .footer-bottom {
+      border-top:1px solid rgba(255,255,255,.1);
+      padding-top:18px;
+      display:flex;
+      justify-content:space-between;
+      gap:15px;
+      flex-wrap:wrap;
+      color:#98a2b3;
+      font-size:12px;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:900px) {
+
+      .menu-btn {
+        display:block;
+      }
+
+      nav {
+        position:absolute;
+        top:78px;
+        left:0;
+        right:0;
+        background:white;
+        border-bottom:1px solid var(--border);
+        padding:12px 4%;
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      nav.active {
+        display:flex;
+      }
+
+      nav a {
+        width:100%;
+      }
+
+      nav .nav-cta {
+        margin-left:0;
+        text-align:center;
+      }
+
+      .downloads {
+        grid-template-columns:1fr;
+      }
+
+      .publication-grid {
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    @media(max-width:600px) {
+
+      .header-inner {
+        min-height:70px;
+      }
+
+      .brand-logo {
+        width:42px;
+        height:42px;
+        font-size:16px;
+      }
+
+      .brand-text strong {
+        font-size:12px;
+      }
+
+      .brand-text span {
+        font-size:9px;
+      }
+
+      .hero {
+        min-height:390px;
+      }
+
+      .hero-content {
+        padding:65px 0;
+      }
+
+      .hero h1 {
+        font-size:40px;
+      }
+
+      section {
+        padding:55px 0;
+      }
+
+      .section-heading h2 {
+        font-size:30px;
+      }
+
+      .publication-grid {
+        grid-template-columns:1fr;
+      }
+
+      .download-card {
+        flex-direction:column;
+      }
+
+      .footer-grid {
+        grid-template-columns:1fr;
+        gap:30px;
+      }
+
+      .cta h2 {
+        font-size:32px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+
+        <div class="brand-logo">
+          JO
+        </div>
+
+        <div class="brand-text">
+
+          <strong>
+            JOHN IBRAHIM OCHEJE
+          </strong>
+
+          <span>
+            2027 • IDAH FEDERAL CONSTITUENCY
+          </span>
+
+        </div>
+
+      </a>
+
+
+      <button
+        class="menu-btn"
+        onclick="toggleMenu()"
+        aria-label="Open menu">
+
+        ☰
+
+      </button>
+
+
+      <nav id="mainNav">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="agenda.html">
+          Agenda
+        </a>
+
+        <a href="news.html">
+          News
+        </a>
+
+        <a href="gallery.html">
+          Gallery
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+        <a href="volunteer.html" class="nav-cta">
+          Join Us
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          Documents & Resources
+        </span>
+
+        <h1>
+          Downloads
+        </h1>
+
+        <p>
+          Access public documents, electoral information,
+          publications and other resources made available
+          through this website.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DOWNLOADS -->
+
+  <section class="download-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="label">
+          Available Resources
+        </div>
+
+        <h2>
+          Documents & Official Resources
+        </h2>
+
+        <p>
+          This section provides direct access to documents and
+          external public resources. Additional documents can be
+          added as they become officially available.
+        </p>
+
+      </div>
+
+
+      <div class="downloads">
+
+
+        <!-- INEC TIMETABLE -->
+
+        <div class="download-card">
+
+          <div class="download-icon">
+            📅
+          </div>
+
+          <div class="download-content">
+
+            <h3>
+              2027 General Election Timetable
+            </h3>
+
+            <p>
+              Official timetable and schedule of activities
+              published by the Independent National Electoral
+              Commission.
+            </p>
+
+            <a
+              href="https://www.inecnigeria.org/wp-content/uploads/2027-GENERAL-ELECTION-TIMETABLE.pdf"
+              target="_blank"
+              rel="noopener"
+              class="download-btn">
+
+              Open Document
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- INEC WEBSITE -->
+
+        <div class="download-card">
+
+          <div class="download-icon">
+            🗳️
+          </div>
+
+          <div class="download-content">
+
+            <h3>
+              INEC Official Website
+            </h3>
+
+            <p>
+              Visit the official Independent National Electoral
+              Commission website for election information,
+              voter services and official announcements.
+            </p>
+
+            <a
+              href="https://inecnigeria.org/"
+              target="_blank"
+              rel="noopener"
+              class="download-btn">
+
+              Visit INEC
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- RESOURCES -->
+
+        <div class="download-card">
+
+          <div class="download-icon">
+            📚
+          </div>
+
+          <div class="download-content">
+
+            <h3>
+              Civic & Electoral Resources
+            </h3>
+
+            <p>
+              Access useful civic and electoral information
+              collected for public reference.
+            </p>
+
+            <a
+              href="resources.html"
+              class="download-btn">
+
+              View Resources
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- NEWS -->
+
+        <div class="download-card">
+
+          <div class="download-icon">
+            📰
+          </div>
+
+          <div class="download-content">
+
+            <h3>
+              News & Public Updates
+            </h3>
+
+            <p>
+              Browse published news reports, public updates
+              and historical information.
+            </p>
+
+            <a
+              href="news.html"
+              class="download-btn">
+
+              View News
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- MEDIA -->
+
+        <div class="download-card">
+
+          <div class="download-icon">
+            🎙️
+          </div>
+
+          <div class="download-content">
+
+            <h3>
+              Media Centre
+            </h3>
+
+            <p>
+              Access media information, public statements,
+              press information and media resources.
+            </p>
+
+            <a
+              href="media.html"
+              class="download-btn">
+
+              Media Centre
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- GALLERY -->
+
+        <div class="download-card">
+
+          <div class="download-icon">
+            📷
+          </div>
+
+          <div class="download-content">
+
+            <h3>
+              Photo Gallery
+            </h3>
+
+            <p>
+              View photographs and visual materials available
+              through the website.
+            </p>
+
+            <a
+              href="gallery.html"
+              class="download-btn">
+
+              View Gallery
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <h3>
+          Document Availability
+        </h3>
+
+        <p>
+          New documents may be added when they are officially
+          released or otherwise authorised for publication.
+          Visitors should verify important electoral information
+          with the relevant official authority.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PUBLICATIONS -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="label">
+          Website Publications
+        </div>
+
+        <h2>
+          Explore More Information
+        </h2>
+
+        <p>
+          These sections provide additional information without
+          requiring a separate document download.
+        </p>
+
+      </div>
+
+
+      <div class="publication-grid">
+
+
+        <div class="publication">
+
+          <div class="number">
+            01
+          </div>
+
+          <h3>
+            About
+          </h3>
+
+          <p>
+            Learn about John Ibrahim Ocheje and the information
+            presented on this website.
+          </p>
+
+          <br>
+
+          <a
+            href="about.html"
+            style="color:var(--green);font-weight:700;font-size:13px;">
+
+            Read More →
+
+          </a>
+
+        </div>
+
+
+        <div class="publication">
+
+          <div class="number">
+            02
+          </div>
+
+          <h3>
+            Agenda
+          </h3>
+
+          <p>
+            Review the published policy and development areas
+            presented on the website.
+          </p>
+
+          <br>
+
+          <a
+            href="agenda.html"
+            style="color:var(--green);font-weight:700;font-size:13px;">
+
+            View Agenda →
+
+          </a>
+
+        </div>
+
+
+        <div class="publication">
+
+          <div class="number">
+            03
+          </div>
+
+          <h3>
+            Frequently Asked Questions
+          </h3>
+
+          <p>
+            Find answers to common questions about the website,
+            public information and participation.
+          </p>
+
+          <br>
+
+          <a
+            href="faq.html"
+            style="color:var(--green);font-weight:700;font-size:13px;">
+
+            View FAQ →
+
+          </a>
+
+        </div>
+
+
+        <div class="publication">
+
+          <div class="number">
+            04
+          </div>
+
+          <h3>
+            Partners
+          </h3>
+
+          <p>
+            Learn about potential areas of collaboration and
+            stakeholder engagement.
+          </p>
+
+          <br>
+
+          <a
+            href="partners.html"
+            style="color:var(--green);font-weight:700;font-size:13px;">
+
+            View Partners →
+
+          </a>
+
+        </div>
+
+
+        <div class="publication">
+
+          <div class="number">
+            05
+          </div>
+
+          <h3>
+            Contact
+          </h3>
+
+          <p>
+            Use the contact page for enquiries and requests
+            for additional information.
+          </p>
+
+          <br>
+
+          <a
+            href="contact.html"
+            style="color:var(--green);font-weight:700;font-size:13px;">
+
+            Contact Us →
+
+          </a>
+
+        </div>
+
+
+        <div class="publication">
+
+          <div class="number">
+            06
+          </div>
+
+          <h3>
+            Sitemap
+          </h3>
+
+          <p>
+            See the complete list of pages available on the
+            website.
+          </p>
+
+          <br>
+
+          <a
+            href="sitemap.html"
+            style="color:var(--green);font-weight:700;font-size:13px;">
+
+            View Sitemap →
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>
+        Looking for More Information?
+      </h2>
+
+      <p>
+        Explore the website or contact the appropriate channel
+        for further public information.
+      </p>
+
+      <a
+        href="resources.html"
+        class="btn btn-light">
+
+        Resources
+
+      </a>
+
+      <a
+        href="contact.html"
+        class="btn btn-outline">
+
+        Contact Us
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div>
+
+          <h3>
+            JOHN IBRAHIM OCHEJE
+          </h3>
+
+          <p>
+            Public information website for Engr. John Ibrahim
+            Ocheje and information relating to the 2027 Idah
+            Federal Constituency political process.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Quick Links
+          </h3>
+
+          <div class="footer-links">
+
+            <a href="index.html">
+              Home
+            </a>
+
+            <a href="about.html">
+              About
+            </a>
+
+            <a href="agenda.html">
+              Agenda
+            </a>
+
+            <a href="news.html">
+              News
+            </a>
+
+            <a href="gallery.html">
+              Gallery
+            </a>
+
+            <a href="volunteer.html">
+              Volunteer
+            </a>
+
+            <a href="contact.html">
+              Contact
+            </a>
+
+            <a href="support.html">
+              Support Us
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Information
+          </h3>
+
+          <div class="footer-links">
+
+            <a href="partners.html">
+              Partners
+            </a>
+
+            <a href="media.html">
+              Media Centre
+            </a>
+
+            <a href="downloads.html">
+              Downloads
+            </a>
+
+            <a href="faq.html">
+              FAQ
+            </a>
+
+            <a href="resources.html">
+              Resources
+            </a>
+
+            <a href="privacy.html">
+              Privacy Policy
+            </a>
+
+            <a href="terms.html">
+              Terms & Conditions
+            </a>
+
+            <a href="sitemap.html">
+              Sitemap
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <div>
+          © 2027 John Ibrahim Ocheje. All rights reserved.
+        </div>
+
+        <div>
+          NDC • Idah Federal Constituency • 2027
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- MOBILE MENU -->
+
+  <script>
+
+    function toggleMenu() {
+
+      document
+        .getElementById("mainNav")
+        .classList
+        .toggle("active");
+
+    }
+
+    document
+      .querySelectorAll("#mainNav a")
+      .forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+          document
+            .getElementById("mainNav")
+            .classList
+            .remove("active");
+
+        });
+
+      });
+
+  </script>
+
+</body>
+</html>
