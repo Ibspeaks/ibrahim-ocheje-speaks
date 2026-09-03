@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Legal & Policies | John Ibrahim Ocheje 2027</title>
+
+  <meta name="description" content="Legal and policy information for the John Ibrahim Ocheje 2027 public information website.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #006b3c;
+      --dark-green: #004f2c;
+      --gold: #f4c400;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e7eb;
+      --shadow: 0 12px 35px rgba(0,0,0,0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 17px;
+      border: 3px solid var(--gold);
+      flex-shrink: 0;
+    }
+
+    .brand-text h1 {
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    .brand-text span {
+      display: block;
+      margin-top: 3px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    nav a {
+      padding: 10px 11px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #344054;
+      border-radius: 8px;
+      transition: 0.25s ease;
+    }
+
+    nav a:hover {
+      color: var(--green);
+      background: #f0f7f3;
+    }
+
+    nav .nav-cta {
+      color: var(--white);
+      background: var(--green);
+      padding: 10px 17px;
+      margin-left: 5px;
+    }
+
+    nav .nav-cta:hover {
+      background: var(--dark-green);
+      color: var(--white);
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 28px;
+      color: var(--green);
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 390px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(
+          rgba(0,79,44,0.90),
+          rgba(0,107,60,0.84)
+        ),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg")
+        center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .hero-content {
+      max-width: 800px;
+      padding: 80px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.08;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      font-size: 17px;
+      color: rgba(255,255,255,0.92);
+    }
+
+    /* INTRO */
+
+    .main {
+      padding: 75px 0;
+    }
+
+    .intro {
+      max-width: 850px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin-bottom: 10px;
+    }
+
+    .intro h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      color: var(--muted);
+    }
+
+    /* LEGAL CARDS */
+
+    .legal-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .legal-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+      transition: 0.25s ease;
+    }
+
+    .legal-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .legal-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #eaf5ef;
+      color: var(--green);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 19px;
+      margin-bottom: 18px;
+    }
+
+    .legal-card h4 {
+      font-size: 19px;
+      margin-bottom: 9px;
+    }
+
+    .legal-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* POLICY SECTION */
+
+    .policy-section {
+      background: var(--light);
+      padding: 75px 0;
+    }
+
+    .policy-header {
+      max-width: 760px;
+      margin-bottom: 35px;
+    }
+
+    .policy-header h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 38px;
+      line-height: 1.2;
+      margin-bottom: 13px;
+    }
+
+    .policy-header p {
+      color: var(--muted);
+    }
+
+    .policy-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .policy-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 23px 25px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .policy-number {
+      min-width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .policy-item h4 {
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+
+    .policy-item p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* LINKS */
+
+    .documents {
+      padding: 75px 0;
+    }
+
+    .documents-header {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 40px;
+    }
+
+    .documents-header h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .documents-header p {
+      color: var(--muted);
+    }
+
+    .document-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .document-card {
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 28px;
+      background: var(--white);
+      transition: 0.25s ease;
+    }
+
+    .document-card:hover {
+      border-color: var(--green);
+      box-shadow: var(--shadow);
+      transform: translateY(-3px);
+    }
+
+    .document-card h4 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .document-card p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 17px;
+    }
+
+    .document-card a {
+      color: var(--green);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .document-card a:hover {
+      color: var(--dark-green);
+    }
+
+    /* NOTICE */
+
+    .notice-section {
+      background: var(--light);
+      padding: 65px 0;
+    }
+
+    .notice {
+      max-width: 900px;
+      margin: auto;
+      background: var(--white);
+      border-left: 5px solid var(--gold);
+      border-top: 1px solid #ead99a;
+      border-right: 1px solid #ead99a;
+      border-bottom: 1px solid #ead99a;
+      border-radius: 14px;
+      padding: 32px;
+    }
+
+    .notice h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .notice p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .notice p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 75px 0;
+      background: var(--green);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .cta h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 4vw, 44px);
+      margin-bottom: 13px;
+    }
+
+    .cta p {
+      max-width: 680px;
+      margin: 0 auto 25px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 9px;
+      font-weight: 700;
+      font-size: 14px;
+      margin: 4px;
+      transition: 0.25s ease;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #182000;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.7);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--green);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--footer);
+      color: var(--white);
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+      padding-bottom: 40px;
+    }
+
+    footer h4 {
+      font-size: 16px;
+      margin-bottom: 17px;
+    }
+
+    footer p,
+    footer a {
+      color: #aeb7c2;
+      font-size: 13px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 9px;
+      transition: 0.2s ease;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .footer-brand {
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom p {
+      font-size: 12px;
+      color: #8f9aa7;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+
+      nav {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 15px 4%;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        width: 100%;
+        padding: 13px;
+      }
+
+      nav .nav-cta {
+        margin: 5px 0 0;
+        text-align: center;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .document-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+
+      .header-inner {
+        min-height: 70px;
+      }
+
+      .brand-logo {
+        width: 43px;
+        height: 43px;
+      }
+
+      .brand-text h1 {
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 340px;
+      }
+
+      .hero-content {
+        padding: 65px 0;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .legal-grid,
+      .document-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .policy-item {
+        padding: 20px;
+      }
+
+      .policy-header h3,
+      .documents-header h3 {
+        font-size: 31px;
+      }
+
+      .notice {
+        padding: 26px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+
+        <div class="brand-logo">
+          JO
+        </div>
+
+        <div class="brand-text">
+          <h1>JOHN IBRAHIM OCHEJE</h1>
+          <span>2027 • IDAH FEDERAL CONSTITUENCY</span>
+        </div>
+
+      </a>
+
+      <button
+        class="menu-btn"
+        onclick="toggleMenu()"
+        aria-label="Open navigation">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="manifesto.html">Manifesto</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="volunteer.html" class="nav-cta">Join Us</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          Website Policies
+        </span>
+
+        <h2>
+          Legal & Policies
+        </h2>
+
+        <p>
+          Access the policies and guidelines that explain how this website
+          presents information and how visitors are expected to use it.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO -->
+  <main class="main">
+
+    <div class="container">
+
+      <div class="intro">
+
+        <div class="section-label">
+          Legal Information
+        </div>
+
+        <h3>
+          Transparency, Responsibility & Respect
+        </h3>
+
+        <p>
+          This section brings together the main legal, privacy,
+          accessibility and responsible-use information applicable to
+          this public information website.
+        </p>
+
+      </div>
+
+
+      <!-- LEGAL CARDS -->
+
+      <div class="legal-grid">
+
+        <div class="legal-card">
+
+          <div class="legal-icon">
+            P
+          </div>
+
+          <h4>
+            Privacy Policy
+          </h4>
+
+          <p>
+            Learn about the general approach to personal information,
+            website forms and privacy-related matters.
+          </p>
+
+          <br>
+
+          <a href="privacy.html" style="color:var(--green);font-weight:800;font-size:13px;">
+            Read Privacy Policy →
+          </a>
+
+        </div>
+
+
+        <div class="legal-card">
+
+          <div class="legal-icon">
+            T
+          </div>
+
+          <h4>
+            Terms & Conditions
+          </h4>
+
+          <p>
+            Understand the general terms governing the use of this website,
+            its content and its online services.
+          </p>
+
+          <br>
+
+          <a href="terms.html" style="color:var(--green);font-weight:800;font-size:13px;">
+            Read Terms & Conditions →
+          </a>
+
+        </div>
+
+
+        <div class="legal-card">
+
+          <div class="legal-icon">
+            D
+          </div>
+
+          <h4>
+            Website Disclaimer
+          </h4>
+
+          <p>
+            Important information concerning accuracy, external sources,
+            public information and responsible use of website content.
+          </p>
+
+          <br>
+
+          <a href="disclaimer.html" style="color:var(--green);font-weight:800;font-size:13px;">
+            Read Disclaimer →
+          </a>
+
+        </div>
+
+
+        <div class="legal-card">
+
+          <div class="legal-icon">
+            C
+          </div>
+
+          <h4>
+            Code of Conduct
+          </h4>
+
+          <p>
+            Principles for respectful, peaceful and constructive engagement
+            across the website and its public communication channels.
+          </p>
+
+          <br>
+
+          <a href="code-of-conduct.html" style="color:var(--green);font-weight:800;font-size:13px;">
+            Read Code of Conduct →
+          </a>
+
+        </div>
+
+
+        <div class="legal-card">
+
+          <div class="legal-icon">
+            A
+          </div>
+
+          <h4>
+            Accessibility
+          </h4>
+
+          <p>
+            Information about the website's commitment to clear,
+            accessible and responsive digital communication.
+          </p>
+
+          <br>
+
+          <a href="accessibility.html" style="color:var(--green);font-weight:800;font-size:13px;">
+            View Accessibility →
+          </a>
+
+        </div>
+
+
+        <div class="legal-card">
+
+          <div class="legal-icon">
+            S
+          </div>
+
+          <h4>
+            Sitemap
+          </h4>
+
+          <p>
+            Find the main pages and information sections available across
+            the website in one convenient location.
+          </p>
+
+          <br>
+
+          <a href="sitemap.html" style="color:var(--green);font-weight:800;font-size:13px;">
+            View Sitemap →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- POLICY PRINCIPLES -->
+
+  <section class="policy-section">
+
+    <div class="container">
+
+      <div class="policy-header">
+
+        <div class="section-label">
+          Our Approach
+        </div>
+
+        <h3>
+          Principles Behind Our Website Policies
+        </h3>
+
+        <p>
+          The website aims to provide useful public information while
+          encouraging accuracy, responsible communication and respect for
+          visitors and members of the public.
+        </p>
+
+      </div>
+
+
+      <div class="policy-list">
+
+        <div class="policy-item">
+
+          <div class="policy-number">
+            01
+          </div>
+
+          <div>
+
+            <h4>
+              Transparency
+            </h4>
+
+            <p>
+              Website information should be presented clearly, with
+              appropriate distinctions between public information,
+              opinions, proposals and confirmed information.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="policy-item">
+
+          <div class="policy-number">
+            02
+          </div>
+
+          <div>
+
+            <h4>
+              Responsible Communication
+            </h4>
+
+            <p>
+              Public communication should promote constructive dialogue,
+              respect and informed participation.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="policy-item">
+
+          <div class="policy-number">
+            03
+          </div>
+
+          <div>
+
+            <h4>
+              Privacy
+            </h4>
+
+            <p>
+              Personal information submitted through website channels
+              should be handled responsibly and in accordance with the
+              applicable privacy principles described on this website.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="policy-item">
+
+          <div class="policy-number">
+            04
+          </div>
+
+          <div>
+
+            <h4>
+              Respect
+            </h4>
+
+            <p>
+              Visitors are expected to communicate respectfully and avoid
+              harassment, impersonation, abusive conduct and the deliberate
+              spread of false information.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="policy-item">
+
+          <div class="policy-number">
+            05
+          </div>
+
+          <div>
+
+            <h4>
+              Accessibility
+            </h4>
+
+            <p>
+              The website seeks to make its information understandable and
+              usable across different devices and for as many visitors as
+              reasonably possible.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DOCUMENTS -->
+
+  <section class="documents">
+
+    <div class="container">
+
+      <div class="documents-header">
+
+        <div class="section-label">
+          Useful Pages
+        </div>
+
+        <h3>
+          Explore Our Policies
+        </h3>
+
+        <p>
+          Use the links below to access important website information and
+          supporting resources.
+        </p>
+
+      </div>
+
+
+      <div class="document-grid">
+
+        <div class="document-card">
+
+          <h4>
+            Privacy Policy
+          </h4>
+
+          <p>
+            Privacy and personal information guidance.
+          </p>
+
+          <a href="privacy.html">
+            Open Page →
+          </a>
+
+        </div>
+
+
+        <div class="document-card">
+
+          <h4>
+            Terms & Conditions
+          </h4>
+
+          <p>
+            Website terms and acceptable use information.
+          </p>
+
+          <a href="terms.html">
+            Open Page →
+          </a>
+
+        </div>
+
+
+        <div class="document-card">
+
+          <h4>
+            Disclaimer
+          </h4>
+
+          <p>
+            Information accuracy and responsible-use notice.
+          </p>
+
+          <a href="disclaimer.html">
+            Open Page →
+          </a>
+
+        </div>
+
+
+        <div class="document-card">
+
+          <h4>
+            Code of Conduct
+          </h4>
+
+          <p>
+            Principles for respectful public engagement.
+          </p>
+
+          <a href="code-of-conduct.html">
+            Open Page →
+          </a>
+
+        </div>
+
+
+        <div class="document-card">
+
+          <h4>
+            Accessibility
+          </h4>
+
+          <p>
+            Digital accessibility and inclusive design information.
+          </p>
+
+          <a href="accessibility.html">
+            Open Page →
+          </a>
+
+        </div>
+
+
+        <div class="document-card">
+
+          <h4>
+            Sitemap
+          </h4>
+
+          <p>
+            Browse the complete website structure.
+          </p>
+
+          <a href="sitemap.html">
+            Open Page →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- NOTICE -->
+
+  <section class="notice-section">
+
+    <div class="container">
+
+      <div class="notice">
+
+        <h3>
+          Important Information
+        </h3>
+
+        <p>
+          The information contained on this website is intended for public
+          information, awareness and engagement. Website content may change
+          as new information becomes available.
+        </p>
+
+        <p>
+          Information concerning elections, official procedures, laws,
+          government institutions or other regulated matters should be
+          verified through the appropriate official authorities.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h3>
+        Need More Information?
+      </h3>
+
+      <p>
+        Visit our resources or contact page if you need additional
+        information about this website or its content.
+      </p>
+
+      <a href="resources.html" class="btn btn-gold">
+        View Resources
+      </a>
+
+      <a href="contact.html" class="btn btn-outline">
+        Contact Us
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <div class="footer-brand">
+            John Ibrahim Ocheje
+          </div>
+
+          <p>
+            Public information platform for the 2027 Idah Federal
+            Constituency aspiration.
+          </p>
+
+          <p style="margin-top:12px;">
+            NDC • Idah Federal Constituency • 2027
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            Quick Links
+          </h4>
+
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="agenda.html">Agenda</a>
+          <a href="manifesto.html">Manifesto</a>
+          <a href="news.html">News</a>
+          <a href="events.html">Events</a>
+          <a href="speeches.html">Speeches</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            Information
+          </h4>
+
+          <a href="support.html">Support Us</a>
+          <a href="partners.html">Partners</a>
+          <a href="media.html">Media Centre</a>
+          <a href="downloads.html">Downloads</a>
+          <a href="faq.html">FAQ</a>
+          <a href="resources.html">Resources</a>
+          <a href="code-of-conduct.html">Code of Conduct</a>
+          <a href="accessibility.html">Accessibility</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="legal.html">Legal & Policies</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <p>
+          © 2026 John Ibrahim Ocheje. All rights reserved.
+        </p>
+
+        <p>
+          Information is provided for public awareness and engagement.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function toggleMenu() {
+
+      document
+        .getElementById("mainNav")
+        .classList.toggle("active");
+
+    }
+
+
+    document
+      .querySelectorAll("#mainNav a")
+      .forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+          document
+            .getElementById("mainNav")
+            .classList.remove("active");
+
+        });
+
+      });
+
+  </script>
+
+</body>
+</html>
