@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Engr. John Ibrahim Ocheje | Idah Federal Constituency 2027</title>
+
+  <meta name="description" content="Biography and professional profile of Engr. John Ibrahim Ocheje, House of Representatives aspirant for Idah Federal Constituency in 2027.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #006b3c;
+      --green-dark: #004f2c;
+      --gold: #f4c400;
+      --gold-dark: #d9a900;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e7eb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      border: 3px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 14px;
+      letter-spacing: .4px;
+    }
+
+    .brand-text span {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+    }
+
+    nav a {
+      font-size: 13px;
+      font-weight: 600;
+      color: #344054;
+      transition: .2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--green);
+    }
+
+    .nav-cta {
+      background: var(--green);
+      color: white !important;
+      padding: 11px 17px;
+      border-radius: 8px;
+    }
+
+    .nav-cta:hover {
+      background: var(--green-dark);
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 28px;
+      cursor: pointer;
+      color: var(--dark);
+    }
+
+    /* HERO */
+    .page-hero {
+      background:
+        linear-gradient(135deg, rgba(0,107,60,.97), rgba(0,79,44,.92)),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 90px 0;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .page-hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .page-hero p {
+      max-width: 720px;
+      font-size: 17px;
+      color: rgba(255,255,255,.9);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 80px 0;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 45px;
+    }
+
+    .section-heading .eyebrow {
+      color: var(--green);
+    }
+
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 5vw, 45px);
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    /* PROFILE */
+    .profile-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .profile-image {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 55px rgba(0,0,0,.14);
+      border: 5px solid white;
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: 560px;
+      object-fit: cover;
+    }
+
+    .profile-content h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .profile-content .lead {
+      font-size: 18px;
+      color: #475467;
+      margin-bottom: 20px;
+    }
+
+    .profile-content p {
+      color: #667085;
+      margin-bottom: 17px;
+    }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 28px;
+    }
+
+    .fact {
+      padding: 18px;
+      background: var(--light);
+      border-left: 4px solid var(--gold);
+      border-radius: 8px;
+    }
+
+    .fact strong {
+      display: block;
+      font-size: 12px;
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      margin-bottom: 4px;
+    }
+
+    .fact span {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* BIOGRAPHY */
+    .bio-section {
+      background: var(--light);
+    }
+
+    .bio-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .bio-card {
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(16,24,40,.04);
+    }
+
+    .bio-number {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--green);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 17px;
+    }
+
+    .bio-card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .bio-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* PROFESSIONAL CAREER */
+    .career {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .career-card {
+      padding: 32px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+    }
+
+    .career-card h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+      color: var(--green);
+    }
+
+    .career-card p {
+      color: var(--muted);
+    }
+
+    /* FOCUS */
+    .focus-section {
+      background: #fff;
+    }
+
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .focus-card {
+      padding: 27px;
+      border-radius: 14px;
+      background: var(--light);
+      border-top: 4px solid var(--green);
+    }
+
+    .focus-card h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .focus-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* POLITICAL RECORD */
+    .record-section {
+      background: var(--green);
+      color: white;
+    }
+
+    .record-section .section-heading .eyebrow {
+      color: var(--gold);
+    }
+
+    .record-section .section-heading h2 {
+      color: white;
+    }
+
+    .record-section .section-heading p {
+      color: rgba(255,255,255,.82);
+    }
+
+    .timeline {
+      border-left: 2px solid rgba(255,255,255,.35);
+      margin-left: 10px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 0 0 30px 30px;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -8px;
+      top: 5px;
+      width: 14px;
+      height: 14px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+
+    .timeline-item strong {
+      display: block;
+      color: var(--gold);
+      margin-bottom: 5px;
+    }
+
+    .timeline-item p {
+      color: rgba(255,255,255,.86);
+    }
+
+    /* CTA */
+    .cta {
+      padding: 70px 0;
+    }
+
+    .cta-box {
+      background:
+        linear-gradient(110deg, rgba(0,107,60,.96), rgba(0,79,44,.94)),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 22px;
+      padding: 55px;
+      color: white;
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: rgba(255,255,255,.85);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      margin: 5px;
+      transition: .2s;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #111;
+    }
+
+    .btn-gold:hover {
+      background: #ffd72e;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,.7);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--green);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--footer);
+      color: white;
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+      margin-bottom: 40px;
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    footer p,
+    footer a {
+      color: #aeb8c4;
+      font-size: 13px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .footer-brand {
+      color: white;
+      font-weight: 800;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 20px;
+      text-align: center;
+      color: #8793a1;
+      font-size: 12px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+      nav {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: white;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 15px 30px rgba(0,0,0,.08);
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      nav a {
+        padding: 12px 5px;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .profile-grid,
+      .career {
+        grid-template-columns: 1fr;
+      }
+
+      .focus-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 60px 0;
+      }
+
+      .page-hero {
+        padding: 70px 0;
+      }
+
+      .profile-image img {
+        height: 430px;
+      }
+
+      .facts,
+      .bio-grid,
+      .focus-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-box {
+        padding: 35px 22px;
+      }
+
+      .cta-box h2 {
+        font-size: 31px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+
+      <a href="index.html" class="brand">
+        <div class="logo">JO</div>
+
+        <div class="brand-text">
+          <strong>JOHN IBRAHIM OCHEJE</strong>
+          <span>2027 • IDAH FEDERAL CONSTITUENCY</span>
+        </div>
+      </a>
+
+      <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="volunteer.html" class="nav-cta">Join Us</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container hero-content">
+
+      <span class="eyebrow">
+        About Engr. John Ibrahim Ocheje
+      </span>
+
+      <h1>
+        Professional Experience, Public Service & Community Focus
+      </h1>
+
+      <p>
+        A profile of Engr. John Ibrahim Ocheje, his educational background,
+        professional career, community involvement and public-service journey.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- PROFILE -->
+  <section>
+    <div class="container profile-grid">
+
+      <div class="profile-image">
+        <img
+          src="https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg"
+          alt="Engr. John Ibrahim Ocheje">
+      </div>
+
+      <div class="profile-content">
+
+        <span class="eyebrow">Candidate Profile</span>
+
+        <h2>Engr. John Ibrahim Ocheje</h2>
+
+        <p class="lead">
+          Petroleum Engineer, business executive and public-service aspirant
+          from Ojiala Village in Ayah Ward, Ibaji Local Government Area of
+          Kogi State.
+        </p>
+
+        <p>
+          Published profiles describe Engr. John Ibrahim Ocheje as a
+          petroleum engineering professional whose career has been closely
+          associated with Nigeria's oil and gas industry.
+        </p>
+
+        <p>
+          His professional experience includes a long career with Chevron
+          Nigeria Limited, following earlier experience in the oil-field
+          services sector. Published reports also describe subsequent
+          executive responsibilities in the private sector.
+        </p>
+
+        <p>
+          His public profile has included community development activities,
+          professional engagement and participation in Nigerian politics,
+          particularly in relation to Idah Federal Constituency and Kogi East.
+        </p>
+
+        <div class="facts">
+
+          <div class="fact">
+            <strong>Origin</strong>
+            <span>Ojiala, Ayah Ward, Ibaji LGA</span>
+          </div>
+
+          <div class="fact">
+            <strong>Profession</strong>
+            <span>Petroleum Engineer</span>
+          </div>
+
+          <div class="fact">
+            <strong>Education</strong>
+            <span>University of Ibadan</span>
+          </div>
+
+          <div class="fact">
+            <strong>Constituency</strong>
+            <span>Idah Federal Constituency</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- BIOGRAPHY -->
+  <section class="bio-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">Biography</span>
+
+        <h2>
+          Background & Professional Journey
+        </h2>
+
+        <p>
+          Key areas of Engr. Ocheje's publicly reported background and career.
+        </p>
+      </div>
+
+
+      <div class="bio-grid">
+
+        <article class="bio-card">
+
+          <div class="bio-number">01</div>
+
+          <h3>Early Life & Background</h3>
+
+          <p>
+            Engr. John Ibrahim Ocheje is publicly reported as being from
+            Ojiala Village, Ayah Ward, in Ibaji Local Government Area of
+            Kogi State. His background has been described in published
+            profiles as one rooted in the local community.
+          </p>
+
+        </article>
+
+
+        <article class="bio-card">
+
+          <div class="bio-number">02</div>
+
+          <h3>Education</h3>
+
+          <p>
+            Published biographies identify him as a graduate of Petroleum
+            Engineering from the University of Ibadan. Some profiles also
+            report that he distinguished himself academically while at the
+            university.
+          </p>
+
+        </article>
+
+
+        <article class="bio-card">
+
+          <div class="bio-number">03</div>
+
+          <h3>Oil & Gas Career</h3>
+
+          <p>
+            Ocheje built a substantial professional career in Nigeria's
+            oil and gas industry. Published reports state that he spent
+            more than two decades with Chevron Nigeria Limited, including
+            significant management experience.
+          </p>
+
+        </article>
+
+
+        <article class="bio-card">
+
+          <div class="bio-number">04</div>
+
+          <h3>Private Sector Experience</h3>
+
+          <p>
+            Following his career in the oil and gas industry, published
+            profiles describe him as having taken on executive responsibilities
+            in the private sector, including work connected with oil and gas
+            asset development and management.
+          </p>
+
+        </article>
+
+
+        <article class="bio-card">
+
+          <div class="bio-number">05</div>
+
+          <h3>Professional Associations</h3>
+
+          <p>
+            Published profiles identify Engr. Ocheje as having professional
+            links with the Nigerian Society of Engineers (NSE) and the
+            Society of Petroleum Engineers (SPE).
+          </p>
+
+        </article>
+
+
+        <article class="bio-card">
+
+          <div class="bio-number">06</div>
+
+          <h3>Community Engagement</h3>
+
+          <p>
+            Reports about his community activities have referenced support
+            for local infrastructure, education and vulnerable members of
+            the community. These claims should be independently documented
+            where specific project details are published on this website.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROFESSIONAL CAREER -->
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">Professional Experience</span>
+
+        <h2>
+          A Career Built Around Engineering & Energy
+        </h2>
+
+        <p>
+          His professional record has largely been associated with
+          engineering, oil and gas operations and management.
+        </p>
+      </div>
+
+
+      <div class="career">
+
+        <div class="career-card">
+
+          <h3>Chevron Nigeria Limited</h3>
+
+          <p>
+            Published reports describe a career spanning more than 20 years
+            at Chevron Nigeria Limited, with substantial experience in
+            management and petroleum engineering.
+          </p>
+
+        </div>
+
+
+        <div class="career-card">
+
+          <h3>Oil & Gas Management</h3>
+
+          <p>
+            Available professional profiles also describe experience in
+            project management, well-related operations, asset development
+            and oil and gas management.
+          </p>
+
+        </div>
+
+
+        <div class="career-card">
+
+          <h3>Executive Leadership</h3>
+
+          <p>
+            Published accounts state that after his Chevron career,
+            Engr. Ocheje took on executive responsibilities in the private
+            sector, including at Oceangate Oil & Gas.
+          </p>
+
+        </div>
+
+
+        <div class="career-card">
+
+          <h3>Business Interests</h3>
+
+          <p>
+            Publicly available profiles have also associated him with
+            private-sector business activities involving property,
+            aluminium and other commercial interests.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- AREAS OF FOCUS -->
+  <section class="focus-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">Areas of Focus</span>
+
+        <h2>
+          Issues Relevant to the Constituency
+        </h2>
+
+        <p>
+          The following areas reflect themes contained in his publicly
+          reported political agenda and statements.
+        </p>
+      </div>
+
+
+      <div class="focus-grid">
+
+        <div class="focus-card">
+          <h3>Transparency & Accountability</h3>
+          <p>
+            Greater openness and accountability in the handling of
+            constituency responsibilities and public resources.
+          </p>
+        </div>
+
+
+        <div class="focus-card">
+          <h3>Infrastructure</h3>
+          <p>
+            Attention to roads, electricity, water and other infrastructure
+            needs affecting communities.
+          </p>
+        </div>
+
+
+        <div class="focus-card">
+          <h3>Human Capital Development</h3>
+          <p>
+            Greater attention to education, skills development and
+            opportunities for young people.
+          </p>
+        </div>
+
+
+        <div class="focus-card">
+          <h3>Economic Opportunities</h3>
+          <p>
+            Exploring opportunities connected to agriculture, energy,
+            enterprise and local economic development.
+          </p>
+        </div>
+
+
+        <div class="focus-card">
+          <h3>Community Representation</h3>
+          <p>
+            Effective communication between communities and representatives
+            on issues requiring federal attention.
+          </p>
+        </div>
+
+
+        <div class="focus-card">
+          <h3>Youth & Women</h3>
+          <p>
+            Supporting discussions around participation, skills,
+            entrepreneurship and economic inclusion.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- POLITICAL JOURNEY -->
+  <section class="record-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">Public & Political Journey</span>
+
+        <h2>
+          Participation in Public Affairs
+        </h2>
+
+        <p>
+          Published reports document several stages of Engr. Ocheje's
+          participation in Nigerian political affairs.
+        </p>
+
+      </div>
+
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+
+          <strong>2014</strong>
+
+          <p>
+            Published reports state that Engr. Ocheje contested for the
+            Idah Federal Constituency ticket within the Peoples Democratic
+            Party (PDP).
+          </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <strong>2018</strong>
+
+          <p>
+            Reports documented his participation in the Kogi East
+            senatorial political process and his continued involvement
+            in party affairs.
+          </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <strong>2022</strong>
+
+          <p>
+            Blueprint reported that Engr. Ocheje won the PDP primary for
+            the Idah, Ibaji, Igalamela/Odolu and Ofu Federal Constituency
+            ahead of the 2023 general elections.
+          </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <strong>2027</strong>
+
+          <p>
+            His current public profile is associated with an aspiration
+            for representation of Idah Federal Constituency in the
+            2027 election cycle.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta">
+
+    <div class="container">
+
+      <div class="cta-box">
+
+        <h2>
+          Explore the Public Agenda
+        </h2>
+
+        <p>
+          Read the published areas of focus and constituency priorities
+          presented on this website.
+        </p>
+
+        <a href="agenda.html" class="btn btn-gold">
+          View Agenda
+        </a>
+
+        <a href="news.html" class="btn btn-outline">
+          View News
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <div class="footer-brand">
+            JOHN IBRAHIM OCHEJE
+          </div>
+
+          <p>
+            Public information portal for Engr. John Ibrahim Ocheje,
+            House of Representatives aspirant for Idah Federal Constituency.
+          </p>
+
+          <p style="margin-top:12px;">
+            NDC • Idah Federal Constituency • 2027
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>Quick Links</h3>
+
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="agenda.html">Agenda</a>
+          <a href="news.html">News</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="contact.html">Contact</a>
+          <a href="support.html">Support Us</a>
+
+        </div>
+
+
+        <div>
+
+          <h3>Information</h3>
+
+          <a href="support.html">Support Us</a>
+          <a href="faq.html">FAQ</a>
+          <a href="resources.html">Resources</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="copyright">
+        © 2027 John Ibrahim Ocheje. All rights reserved.
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("mainNav");
+      nav.classList.toggle("show");
+    }
+
+    document.querySelectorAll("#mainNav a").forEach(link => {
+      link.addEventListener("click", () => {
+        document.getElementById("mainNav").classList.remove("show");
+      });
+    });
+  </script>
+
+</body>
+</html>
