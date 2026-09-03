@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Public Record | John Ibrahim Ocheje 2027</title>
+
+  <meta name="description" content="Public record, professional background and documented information relating to John Ibrahim Ocheje.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root {
+      --green: #006b3c;
+      --dark-green: #004f2c;
+      --gold: #f4c400;
+      --dark: #172033;
+      --muted: #667085;
+      --light: #f6f9f7;
+      --white: #ffffff;
+      --footer: #101820;
+      --border: #e5e7eb;
+      --shadow: 0 12px 35px rgba(0,0,0,0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 17px;
+      border: 3px solid var(--gold);
+      flex-shrink: 0;
+    }
+
+    .brand-text h1 {
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    .brand-text span {
+      display: block;
+      margin-top: 3px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    nav a {
+      padding: 10px 11px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #344054;
+      border-radius: 8px;
+      transition: 0.25s ease;
+    }
+
+    nav a:hover {
+      color: var(--green);
+      background: #f0f7f3;
+    }
+
+    nav .nav-cta {
+      color: var(--white);
+      background: var(--green);
+      padding: 10px 17px;
+      margin-left: 5px;
+    }
+
+    nav .nav-cta:hover {
+      background: var(--dark-green);
+      color: var(--white);
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 28px;
+      color: var(--green);
+      cursor: pointer;
+    }
+
+
+    /* HERO */
+
+    .hero {
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+
+      background:
+        linear-gradient(
+          rgba(0,79,44,0.93),
+          rgba(0,107,60,0.88)
+        ),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg")
+        center/cover no-repeat;
+
+      color: var(--white);
+    }
+
+    .hero-content {
+      max-width: 820px;
+      padding: 85px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(40px, 6vw, 62px);
+      line-height: 1.08;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      font-size: 17px;
+      color: rgba(255,255,255,0.93);
+    }
+
+
+    /* INTRO */
+
+    .intro-section {
+      padding: 80px 0 50px;
+    }
+
+    .intro {
+      max-width: 820px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin-bottom: 10px;
+    }
+
+    .intro h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      color: var(--muted);
+    }
+
+
+    /* RECORD CARDS */
+
+    .records {
+      padding: 25px 0 80px;
+    }
+
+    .record-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .record-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      transition: 0.25s ease;
+    }
+
+    .record-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .record-number {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: #eaf5ef;
+      color: var(--green);
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .record-card h4 {
+      font-family: "Playfair Display", serif;
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+
+    .record-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+
+    /* PROFESSIONAL PROFILE */
+
+    .profile {
+      background: var(--light);
+      padding: 80px 0;
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .profile-image {
+      min-height: 450px;
+      border-radius: 20px;
+      background:
+        linear-gradient(
+          rgba(0,79,44,0.12),
+          rgba(0,79,44,0.12)
+        ),
+        url("https://i.ibb.co/VY3K58ZT/IMG-20260901-WA0070.jpg")
+        center/cover no-repeat;
+      box-shadow: var(--shadow);
+    }
+
+    .profile-content .section-label {
+      margin-bottom: 9px;
+    }
+
+    .profile-content h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .profile-content p {
+      color: var(--muted);
+      margin-bottom: 17px;
+      font-size: 15px;
+    }
+
+    .profile-note {
+      padding: 18px 20px;
+      background: var(--white);
+      border-left: 4px solid var(--green);
+      border-radius: 8px;
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+
+    /* PUBLIC RECORD */
+
+    .timeline-section {
+      padding: 80px 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 40px;
+    }
+
+    .section-heading h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 13px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .timeline {
+      border-left: 2px solid #d7e6de;
+      margin-left: 12px;
+      padding-left: 35px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-bottom: 35px;
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -44px;
+      top: 4px;
+      width: 16px;
+      height: 16px;
+      background: var(--gold);
+      border: 4px solid var(--white);
+      box-shadow: 0 0 0 2px var(--green);
+      border-radius: 50%;
+    }
+
+    .timeline-year {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .timeline-item h4 {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .timeline-item p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+
+    /* SOURCES */
+
+    .sources {
+      background: var(--light);
+      padding: 75px 0;
+    }
+
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .source-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 27px;
+    }
+
+    .source-card h4 {
+      font-size: 17px;
+      margin-bottom: 9px;
+    }
+
+    .source-card p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .source-link {
+      color: var(--green);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+
+    /* NOTICE */
+
+    .notice {
+      padding: 70px 0;
+    }
+
+    .notice-box {
+      max-width: 900px;
+      margin: auto;
+      padding: 32px;
+      border-left: 5px solid var(--gold);
+      background: #fffdf2;
+      border-radius: 12px;
+    }
+
+    .notice-box h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 29px;
+      margin-bottom: 10px;
+    }
+
+    .notice-box p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+
+    /* CTA */
+
+    .cta {
+      padding: 75px 0;
+      background: var(--green);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .cta h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 4vw, 44px);
+      margin-bottom: 13px;
+    }
+
+    .cta p {
+      max-width: 680px;
+      margin: 0 auto 25px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 9px;
+      font-weight: 700;
+      font-size: 14px;
+      margin: 4px;
+      transition: 0.25s ease;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #182000;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.7);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--green);
+    }
+
+
+    /* FOOTER */
+
+    footer {
+      background: var(--footer);
+      color: var(--white);
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+      padding-bottom: 40px;
+    }
+
+    footer h4 {
+      font-size: 16px;
+      margin-bottom: 17px;
+    }
+
+    footer p,
+    footer a {
+      color: #aeb7c2;
+      font-size: 13px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 9px;
+      transition: 0.2s ease;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .footer-brand {
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom p {
+      font-size: 12px;
+      color: #8f9aa7;
+    }
+
+
+    /* MOBILE */
+
+    @media (max-width: 950px) {
+
+      .record-grid,
+      .source-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-image {
+        min-height: 420px;
+      }
+
+      nav {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 15px 4%;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        width: 100%;
+        padding: 13px;
+      }
+
+      nav .nav-cta {
+        margin: 5px 0 0;
+        text-align: center;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+    }
+
+
+    @media (max-width: 650px) {
+
+      .header-inner {
+        min-height: 70px;
+      }
+
+      .brand-logo {
+        width: 43px;
+        height: 43px;
+      }
+
+      .brand-text h1 {
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 360px;
+      }
+
+      .hero-content {
+        padding: 65px 0;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .profile-image {
+        min-height: 360px;
+      }
+
+      .section-heading h3 {
+        font-size: 31px;
+      }
+
+      .timeline {
+        padding-left: 25px;
+      }
+
+      .timeline-item::before {
+        left: -34px;
+      }
+
+      .notice-box {
+        padding: 27px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+
+        <div class="brand-logo">
+          JO
+        </div>
+
+        <div class="brand-text">
+
+          <h1>
+            JOHN IBRAHIM OCHEJE
+          </h1>
+
+          <span>
+            2027 • IDAH FEDERAL CONSTITUENCY
+          </span>
+
+        </div>
+
+      </a>
+
+
+      <button
+        class="menu-btn"
+        onclick="toggleMenu()"
+        aria-label="Open navigation">
+        ☰
+      </button>
+
+
+      <nav id="mainNav">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="manifesto.html">Manifesto</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="volunteer.html" class="nav-cta">Join Us</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          Public Record
+        </span>
+
+        <h2>
+          Experience, Record & Accountability
+        </h2>
+
+        <p>
+          A public-facing overview of documented information,
+          professional background and published records relating
+          to John Ibrahim Ocheje.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- INTRO -->
+
+  <section class="intro-section">
+
+    <div class="container">
+
+      <div class="intro">
+
+        <div class="section-label">
+          Public Information
+        </div>
+
+        <h3>
+          A Record That Can Be Examined
+        </h3>
+
+        <p>
+          Public leadership should be assessed through evidence,
+          experience, conduct and openness. This page provides
+          information intended to help visitors distinguish
+          documented records from future plans and aspirations.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- RECORD CARDS -->
+
+  <section class="records">
+
+    <div class="container">
+
+      <div class="record-grid">
+
+
+        <article class="record-card">
+
+          <div class="record-number">
+            01
+          </div>
+
+          <h4>
+            Professional Background
+          </h4>
+
+          <p>
+            John Ibrahim Ocheje has been publicly described in
+            published profiles as an engineer with professional
+            experience in the petroleum sector. Visitors should
+            consult published sources and official documentation
+            when assessing professional claims.
+          </p>
+
+        </article>
+
+
+
+        <article class="record-card">
+
+          <div class="record-number">
+            02
+          </div>
+
+          <h4>
+            Public & Political Record
+          </h4>
+
+          <p>
+            Previous public reports have discussed Ocheje's
+            participation in political activities and electoral
+            processes. Historical reports should be understood
+            within the context and date in which they were published.
+          </p>
+
+        </article>
+
+
+
+        <article class="record-card">
+
+          <div class="record-number">
+            03
+          </div>
+
+          <h4>
+            Issue-Based Engagement
+          </h4>
+
+          <p>
+            Public communication around development has included
+            discussions concerning representation, infrastructure,
+            human capital development, economic opportunity and
+            community interests.
+          </p>
+
+        </article>
+
+
+
+        <article class="record-card">
+
+          <div class="record-number">
+            04
+          </div>
+
+          <h4>
+            Public Accountability
+          </h4>
+
+          <p>
+            A responsible public platform should distinguish
+            verified information, historical reports, policy
+            proposals and personal opinions rather than presenting
+            every claim as an established fact.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- PROFILE -->
+
+  <section class="profile">
+
+    <div class="container">
+
+      <div class="profile-grid">
+
+
+        <div class="profile-image"></div>
+
+
+        <div class="profile-content">
+
+          <div class="section-label">
+            Professional Perspective
+          </div>
+
+          <h3>
+            Experience Should Serve the Public Interest
+          </h3>
+
+          <p>
+            The purpose of documenting professional experience is
+            not simply to present a biography. It is also to provide
+            context for understanding a person's approach to public
+            issues and representation.
+          </p>
+
+          <p>
+            For the 2027 Idah Federal Constituency aspiration,
+            public information should remain focused on issues,
+            evidence, responsible representation and constructive
+            engagement.
+          </p>
+
+          <div class="profile-note">
+            <strong>Important:</strong>
+            Professional descriptions and historical political
+            information should be checked against reliable
+            published or official records before being treated
+            as definitive.
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- TIMELINE -->
+
+  <section class="timeline-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Documented History
+        </div>
+
+        <h3>
+          Selected Public Record
+        </h3>
+
+        <p>
+          The entries below provide historical context based on
+          publicly reported information. They are not presented
+          as a complete biography or exhaustive political record.
+        </p>
+
+      </div>
+
+
+
+      <div class="timeline">
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-year">
+            Previous Public Record
+          </div>
+
+          <h4>
+            Professional Career
+          </h4>
+
+          <p>
+            Published profiles have described John Ibrahim Ocheje
+            as an engineer with experience in the petroleum sector.
+          </p>
+
+        </div>
+
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-year">
+            2022
+          </div>
+
+          <h4>
+            Reported Electoral Participation
+          </h4>
+
+          <p>
+            Nigerian media reports documented Ocheje's participation
+            in the political and electoral process ahead of the
+            2023 general elections.
+          </p>
+
+        </div>
+
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-year">
+            2022
+          </div>
+
+          <h4>
+            Reported Legal Proceedings
+          </h4>
+
+          <p>
+            Published media reports discussed court proceedings
+            relating to the earlier electoral process. Such reports
+            should be read together with the underlying legal record
+            where available.
+          </p>
+
+        </div>
+
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-year">
+            2027
+          </div>
+
+          <h4>
+            Current Public Aspiration
+          </h4>
+
+          <p>
+            The website presents information concerning the
+            2027 Idah Federal Constituency aspiration, including
+            policy interests, public updates and opportunities
+            for engagement.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- SOURCES -->
+
+  <section class="sources">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Verification
+        </div>
+
+        <h3>
+          Check the Sources
+        </h3>
+
+        <p>
+          Public information is stronger when visitors can review
+          the sources behind important claims and distinguish
+          historical reporting from current information.
+        </p>
+
+      </div>
+
+
+
+      <div class="source-grid">
+
+
+        <div class="source-card">
+
+          <h4>
+            News & Reports
+          </h4>
+
+          <p>
+            Browse published reports and historical media coverage
+            relating to John Ibrahim Ocheje.
+          </p>
+
+          <a href="news.html" class="source-link">
+            View News →
+          </a>
+
+        </div>
+
+
+
+        <div class="source-card">
+
+          <h4>
+            Verification Guide
+          </h4>
+
+          <p>
+            Learn how to check dates, sources, context and official
+            information before relying on or sharing a claim.
+          </p>
+
+          <a href="verification.html" class="source-link">
+            Verify Information →
+          </a>
+
+        </div>
+
+
+
+        <div class="source-card">
+
+          <h4>
+            Public Resources
+          </h4>
+
+          <p>
+            Access electoral and civic resources, including links
+            to relevant official information.
+          </p>
+
+          <a href="resources.html" class="source-link">
+            View Resources →
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- NOTICE -->
+
+  <section class="notice">
+
+    <div class="container">
+
+      <div class="notice-box">
+
+        <h3>
+          Accuracy Matters
+        </h3>
+
+        <p>
+          This page is intended for public information and historical
+          context. It should not be interpreted as an official
+          government record. Political, electoral, legal and other
+          important claims should be independently verified with
+          the relevant official authority or original source.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h3>
+        Learn More About the Platform
+      </h3>
+
+      <p>
+        Explore the agenda, manifesto, public updates and resources
+        available throughout the website.
+      </p>
+
+      <a href="agenda.html" class="btn btn-gold">
+        View Agenda
+      </a>
+
+      <a href="updates.html" class="btn btn-outline">
+        Public Updates
+      </a>
+
+      <a href="contact.html" class="btn btn-outline">
+        Contact Us
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div>
+
+          <div class="footer-brand">
+            John Ibrahim Ocheje
+          </div>
+
+          <p>
+            Public information platform for the 2027 Idah Federal
+            Constituency aspiration.
+          </p>
+
+          <p style="margin-top:12px;">
+            NDC • Idah Federal Constituency • 2027
+          </p>
+
+        </div>
+
+
+
+        <div>
+
+          <h4>
+            Quick Links
+          </h4>
+
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="agenda.html">Agenda</a>
+          <a href="manifesto.html">Manifesto</a>
+          <a href="news.html">News</a>
+          <a href="events.html">Events</a>
+          <a href="speeches.html">Speeches</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="contact.html">Contact</a>
+
+        </div>
+
+
+
+        <div>
+
+          <h4>
+            Information
+          </h4>
+
+          <a href="support.html">Support Us</a>
+          <a href="partners.html">Partners</a>
+          <a href="media.html">Media Centre</a>
+          <a href="downloads.html">Downloads</a>
+          <a href="faq.html">FAQ</a>
+          <a href="resources.html">Resources</a>
+          <a href="verification.html">Verification Guide</a>
+          <a href="transparency.html">Transparency</a>
+          <a href="updates.html">Public Updates</a>
+          <a href="results.html">Public Record</a>
+          <a href="code-of-conduct.html">Code of Conduct</a>
+          <a href="accessibility.html">Accessibility</a>
+          <a href="security.html">Security</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="legal.html">Legal & Policies</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <p>
+          © 2026 John Ibrahim Ocheje. All rights reserved.
+        </p>
+
+        <p>
+          Information is provided for public awareness and engagement.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function toggleMenu() {
+
+      document
+        .getElementById("mainNav")
+        .classList.toggle("active");
+
+    }
+
+
+    document
+      .querySelectorAll("#mainNav a")
+      .forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+          document
+            .getElementById("mainNav")
+            .classList.remove("active");
+
+        });
+
+      });
+
+  </script>
+
+
+</body>
+</html>
